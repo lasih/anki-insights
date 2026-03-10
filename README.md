@@ -1,1 +1,1 @@
-# anki-insights
+Useful for my Anki :)

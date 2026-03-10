@@ -35,10 +35,10 @@ ANKI_URL = "http://127.0.0.1:8765"
 # Kiswahili: 🇰🇪
 
 # Name of the source deck
-SOURCE_DECK = "🇮🇩"
+SOURCE_DECK = "🇦🇺"
 
 # Name of the target deck
-TARGET_DECK = "🇦🇺"
+TARGET_DECK = "🇮🇩"
 
 # Tag added to source notes after they are copied
 SOURCE_TAG = "copied_source"
@@ -256,7 +256,7 @@ def find_uncopied_source_note_ids():
 
     This is what prevents repeated copying across runs.
     """
-    query = f'deck:"{SOURCE_DECK}" -tag:{SOURCE_TAG}'
+    query = f'deck:"{SOURCE_DECK}" -tag:{SOURCE_TAG} -tag:{TARGET_TAG}'
     return invoke("findNotes", query=query)
 
 

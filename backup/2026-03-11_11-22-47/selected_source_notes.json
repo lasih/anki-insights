@@ -1,0 +1,602 @@
+[
+  {
+    "noteId": 1773220647287,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum beli kecap hari ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "I haven't bought soy sauce today",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220647,
+    "cards": [
+      1773220647287
+    ]
+  },
+  {
+    "noteId": 1773220746243,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu sudah memotong bawang?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Have you already cut the onion?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220746,
+    "cards": [
+      1773220746243
+    ]
+  },
+  {
+    "noteId": 1773220761944,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku pernah menunggang kuda di desa",
+        "order": 0
+      },
+      "Back": {
+        "value": "I once rode a horse in the village",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220761,
+    "cards": [
+      1773220761944
+    ]
+  },
+  {
+    "noteId": 1773220770746,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang berlari menuju halte",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am running toward the bus stop",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220770,
+    "cards": [
+      1773220770746
+    ]
+  },
+  {
+    "noteId": 1773220785234,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan menunggang kuda besok pagi",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will ride a horse tomorrow morning",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220785,
+    "cards": [
+      1773220785234
+    ]
+  },
+  {
+    "noteId": 1773220797601,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak percaya tipuan itu",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not believe that deception",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220797,
+    "cards": [
+      1773220797601
+    ]
+  },
+  {
+    "noteId": 1773220819034,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu percaya ceritaku kemarin?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Do you believe my story yesterday?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220819,
+    "cards": [
+      1773220819035
+    ]
+  },
+  {
+    "noteId": 1773220824435,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia penipu, aku tidak akan percaya",
+        "order": 0
+      },
+      "Back": {
+        "value": "He is a scammer, I will not believe",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220824,
+    "cards": [
+      1773220824435
+    ]
+  },
+  {
+    "noteId": 1773220841189,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku hampir terlambat tadi pagi",
+        "order": 0
+      },
+      "Back": {
+        "value": "I almost arrived late this morning",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220841,
+    "cards": [
+      1773220841190
+    ]
+  },
+  {
+    "noteId": 1773220846999,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang olahraga di taman",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am exercising in the park",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220846,
+    "cards": [
+      1773220846999
+    ]
+  },
+  {
+    "noteId": 1773220876846,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu sudah berolahraga pagi ini?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Have you already exercised this morning?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220876,
+    "cards": [
+      1773220876847
+    ]
+  },
+  {
+    "noteId": 1773220923744,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum berlatih hari ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not practiced today",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220923,
+    "cards": [
+      1773220923744
+    ]
+  },
+  {
+    "noteId": 1773220935941,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sudah mencoba tiga kali",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have already tried three times",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220935,
+    "cards": [
+      1773220935941
+    ]
+  },
+  {
+    "noteId": 1773220947602,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah aku akan mendapat kesempatan lagi?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Will I get another opportunity?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220947,
+    "cards": [
+      1773220947602
+    ]
+  },
+  {
+    "noteId": 1773220953418,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Sepatu ini sudah sering dipakai",
+        "order": 0
+      },
+      "Back": {
+        "value": "These shoes have been used often",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220953,
+    "cards": [
+      1773220953418
+    ]
+  },
+  {
+    "noteId": 1773220969318,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan mendapat kabar baik besok",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will get good news tomorrow",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220969,
+    "cards": [
+      1773220969318
+    ]
+  },
+  {
+    "noteId": 1773220974274,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah olahraga memberi banyak manfaat?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Does exercise give many benefits?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220974,
+    "cards": [
+      1773220974274
+    ]
+  },
+  {
+    "noteId": 1773220986141,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak memberi jawaban tadi",
+        "order": 0
+      },
+      "Back": {
+        "value": "I did not give an answer earlier",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220986,
+    "cards": [
+      1773220986141
+    ]
+  },
+  {
+    "noteId": 1773220992961,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Ini bukan jenis kopi favoritku",
+        "order": 0
+      },
+      "Back": {
+        "value": "This is not my favorite type of coffee",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220992,
+    "cards": [
+      1773220992961
+    ]
+  },
+  {
+    "noteId": 1773221003932,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah ini makanan favoritmu?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Is this your favorite food?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221003,
+    "cards": [
+      1773221003932
+    ]
+  },
+  {
+    "noteId": 1773221126470,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Tenagaku sudah hampir terkuras hari ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "My energy is almost drained today",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221126,
+    "cards": [
+      1773221126470
+    ]
+  },
+  {
+    "noteId": 1773221137220,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Tenagaku belum kembali setelah olahraga",
+        "order": 0
+      },
+      "Back": {
+        "value": "My energy has not returned after exercise",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221137,
+    "cards": [
+      1773221137220
+    ]
+  },
+  {
+    "noteId": 1773221148848,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu akan kembali malam ini?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Will you return tonight?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221148,
+    "cards": [
+      1773221148848
+    ]
+  },
+  {
+    "noteId": 1773221297816,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kami makan lalu langsung pulang",
+        "order": 0
+      },
+      "Back": {
+        "value": "We ate then went straight home",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221297,
+    "cards": [
+      1773221297816
+    ]
+  },
+  {
+    "noteId": 1773221303696,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah jarum itu sudah disterilkan?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Has that needle already been sterilized?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221303,
+    "cards": [
+      1773221303696
+    ]
+  },
+  {
+    "noteId": 1773221319816,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Alat itu belum disterilkan tadi",
+        "order": 0
+      },
+      "Back": {
+        "value": "That tool was not sterilized earlier",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221319,
+    "cards": [
+      1773221319816
+    ]
+  },
+  {
+    "noteId": 1773221334291,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah alat ini akan dipakai besok?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Will this tool be used tomorrow?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221334,
+    "cards": [
+      1773221334291
+    ]
+  },
+  {
+    "noteId": 1773221344860,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku langsung pulang setelah kerja",
+        "order": 0
+      },
+      "Back": {
+        "value": "I went straight home after work",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221344,
+    "cards": [
+      1773221344860
+    ]
+  },
+  {
+    "noteId": 1773221370109,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Jenis musik itu tidak aku suka",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not like that type of music",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221370,
+    "cards": [
+      1773221370109
+    ]
+  },
+  {
+    "noteId": 1773221377187,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu sudah mengenal diri sendiri?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Do you already know yourself?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221377,
+    "cards": [
+      1773221377187
+    ]
+  }
+]

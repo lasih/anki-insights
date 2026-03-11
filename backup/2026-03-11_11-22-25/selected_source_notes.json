@@ -1,0 +1,262 @@
+[
+  {
+    "noteId": 1773220432189,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "He finally received recognition for his work",
+        "order": 0
+      },
+      "Back": {
+        "value": "Dia akhirnya mendapat pengakuan atas karyanya",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220432,
+    "cards": [
+      1773220432189
+    ]
+  },
+  {
+    "noteId": 1773220443731,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Has he already given acknowledgement of the mistake?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Apakah dia sudah memberi pengakuan kesalahan?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220443,
+    "cards": [
+      1773220443731
+    ]
+  },
+  {
+    "noteId": 1773220468346,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Tomorrow the manager will give an appraisal of my work",
+        "order": 0
+      },
+      "Back": {
+        "value": "Besok manajer akan memberi penilaian kerjaku",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220468,
+    "cards": [
+      1773220468346
+    ]
+  },
+  {
+    "noteId": 1773220476629,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "I haven't used dental floss today",
+        "order": 0
+      },
+      "Back": {
+        "value": "Aku belum memakai benang gigi hari ini",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220476,
+    "cards": [
+      1773220476629
+    ]
+  },
+  {
+    "noteId": 1773220492045,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Was this table polished yesterday?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Apakah meja ini sudah dipoles kemarin?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773220492,
+    "cards": [
+      1773220492045
+    ]
+  },
+  {
+    "noteId": 1773221763957,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "They will revamp the old system",
+        "order": 0
+      },
+      "Back": {
+        "value": "Mereka akan merombak sistem lama",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221763,
+    "cards": [
+      1773221763957
+    ]
+  },
+  {
+    "noteId": 1773221826622,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "I am typing an important report",
+        "order": 0
+      },
+      "Back": {
+        "value": "Aku sedang mengetik laporan penting",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221826,
+    "cards": [
+      1773221826622
+    ]
+  },
+  {
+    "noteId": 1773221981876,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "I have not mastered that expertise",
+        "order": 0
+      },
+      "Back": {
+        "value": "Keahlian itu belum aku kuasai",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221981,
+    "cards": [
+      1773221981876
+    ]
+  },
+  {
+    "noteId": 1773221999790,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "I have not mastered this technique",
+        "order": 0
+      },
+      "Back": {
+        "value": "Aku belum kuasai teknik ini",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773221999,
+    "cards": [
+      1773221999791
+    ]
+  },
+  {
+    "noteId": 1773222026149,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Is this technique often used?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Apakah teknik ini sering dipakai?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773222026,
+    "cards": [
+      1773222026149
+    ]
+  },
+  {
+    "noteId": 1773222144095,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "I often eat at that food stall",
+        "order": 0
+      },
+      "Back": {
+        "value": "Aku sering makan di warung itu",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773222144,
+    "cards": [
+      1773222144095
+    ]
+  },
+  {
+    "noteId": 1773222167471,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "That stall has not opened today",
+        "order": 0
+      },
+      "Back": {
+        "value": "Kios itu belum buka hari ini",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773222167,
+    "cards": [
+      1773222167471
+    ]
+  },
+  {
+    "noteId": 1773222189714,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Does this kiosk sell SIM cards?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Apakah kios ini menjual kartu SIM?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773222189,
+    "cards": [
+      1773222189714
+    ]
+  }
+]

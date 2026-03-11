@@ -6,7 +6,7 @@ import urllib.error
 
 # ==========================================
 # Considerations and assumptions
-# 
+#
 # AnkiConnect must be installed and enabled in Anki for this script to work.
 # The script is designed to be run multiple times, and it will only copy
 # source notes that have not been copied before, based on the presence of a tag.
@@ -35,10 +35,10 @@ ANKI_URL = "http://127.0.0.1:8765"
 # Kiswahili: 🇰🇪
 
 # Name of the source deck
-SOURCE_DECK = "🇦🇺"
+SOURCE_DECK = "🇮🇩"
 
 # Name of the target deck
-TARGET_DECK = "🇮🇩"
+TARGET_DECK = "🇦🇺"
 
 # Tag added to source notes after they are copied
 SOURCE_TAG = "copied_source"
@@ -71,6 +71,7 @@ BACKUP_ROOT = os.path.join(PROJECT_ROOT, "backup")
 # AnkiConnect helper
 # ==========================================
 
+
 def invoke(action, **params):
     """
     Send a request to AnkiConnect and return the result.
@@ -92,16 +93,12 @@ def invoke(action, **params):
     RuntimeError
         If AnkiConnect is not reachable or returns an error.
     """
-    payload = json.dumps({
-        "action": action,
-        "version": 6,
-        "params": params
-    }).encode("utf-8")
+    payload = json.dumps({"action": action, "version": 6, "params": params}).encode(
+        "utf-8"
+    )
 
     request = urllib.request.Request(
-        ANKI_URL,
-        data=payload,
-        headers={"Content-Type": "application/json"}
+        ANKI_URL, data=payload, headers={"Content-Type": "application/json"}
     )
 
     try:
@@ -122,6 +119,7 @@ def invoke(action, **params):
 # ==========================================
 # File helpers
 # ==========================================
+
 
 def save_json(path, data):
     """
@@ -189,6 +187,7 @@ def make_backup_dir():
 # Deck helpers
 # ==========================================
 
+
 def create_deck_if_missing(deck_name):
     """
     Create the deck if it does not already exist.
@@ -226,6 +225,7 @@ def get_all_deck_notes(deck_name):
 # Backup logic
 # ==========================================
 
+
 def backup_current_state(backup_dir):
     """
     Backup both source and target decks before making any changes.
@@ -249,6 +249,7 @@ def backup_current_state(backup_dir):
 # ==========================================
 # Copy logic
 # ==========================================
+
 
 def find_uncopied_source_note_ids():
     """
@@ -285,7 +286,9 @@ def prepare_inverted_notes(source_notes):
 
         # Skip notes that do not contain the required fields
         if FRONT_FIELD not in fields or BACK_FIELD not in fields:
-            print(f"Skipping note {note_id}: missing '{FRONT_FIELD}' or '{BACK_FIELD}'.")
+            print(
+                f"Skipping note {note_id}: missing '{FRONT_FIELD}' or '{BACK_FIELD}'."
+            )
             continue
 
         original_front = fields[FRONT_FIELD]["value"]
@@ -295,20 +298,22 @@ def prepare_inverted_notes(source_notes):
             print(f"Skipping note {note_id}: empty front or back.")
             continue
 
-        new_notes.append({
-            "deckName": TARGET_DECK,
-            "modelName": MODEL_NAME,
-            "fields": {
-                FRONT_FIELD: original_back,
-                BACK_FIELD: original_front,
-            },
-            "tags": [TARGET_TAG],
-            "options": {
-                "allowDuplicate": True # Allow duplicates because it's blocking the creation of inverted notes somehow, 
-                                       # even when the content is different. 
-                                       # This is a workaround to ensure all valid notes are created.
+        new_notes.append(
+            {
+                "deckName": TARGET_DECK,
+                "modelName": MODEL_NAME,
+                "fields": {
+                    FRONT_FIELD: original_back,
+                    BACK_FIELD: original_front,
+                },
+                "tags": [TARGET_TAG],
+                "options": {
+                    "allowDuplicate": True  # Allow duplicates because it's blocking the creation of inverted notes somehow,
+                    # even when the content is different.
+                    # This is a workaround to ensure all valid notes are created.
+                },
             }
-        })
+        )
 
         valid_source_note_ids.append(note_id)
 
@@ -348,6 +353,7 @@ def tag_successfully_copied_source_notes(source_note_ids, created_note_ids):
 # Main script
 # ==========================================
 
+
 def main():
     """
     Main workflow:
@@ -384,7 +390,7 @@ def main():
             "prepared_notes": 0,
             "created_notes": 0,
             "tagged_source_notes": 0,
-            "backup_dir": backup_dir
+            "backup_dir": backup_dir,
         }
 
         save_json(os.path.join(backup_dir, "selected_source_notes.json"), [])
@@ -400,18 +406,14 @@ def main():
 
     # Save the exact source notes selected for this run
     save_json(
-        os.path.join(backup_dir, "selected_source_notes.json"),
-        selected_source_notes
+        os.path.join(backup_dir, "selected_source_notes.json"), selected_source_notes
     )
 
     # Build the new inverted notes and keep only valid source note IDs
     new_notes, valid_source_note_ids = prepare_inverted_notes(selected_source_notes)
 
     # Save the exact payload that will be sent to the target deck
-    save_json(
-        os.path.join(backup_dir, "copied_notes_payload.json"),
-        new_notes
-    )
+    save_json(os.path.join(backup_dir, "copied_notes_payload.json"), new_notes)
 
     # If no valid notes could be prepared, save summary and exit
     if not new_notes:
@@ -436,8 +438,7 @@ def main():
 
     # Tag only the source notes whose inverted copies were created successfully
     tagged_source_ids = tag_successfully_copied_source_notes(
-        valid_source_note_ids,
-        created_note_ids
+        valid_source_note_ids, created_note_ids
     )
 
     # Save the final run summary

@@ -1,0 +1,702 @@
+[
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "That bag’s color is not my favorite",
+      "Back": "Warna tas itu bukan favoritku"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "I have been colorblind since childhood",
+      "Back": "Aku buta warna sejak kecil"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "Was he not blind from birth?",
+      "Back": "Dia tidak buta sejak lahir?"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "His child was born this morning",
+      "Back": "Anaknya lahir tadi pagi"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "Does this soup use coriander?",
+      "Back": "Apakah sup ini pakai ketumbar?"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "A rainbow appeared after the rain stopped",
+      "Back": "Pelangi muncul setelah hujan berhenti"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "That star has not appeared tonight",
+      "Back": "Bintang itu belum muncul malam ini"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "That bus suddenly stopped on the road",
+      "Back": "Bus itu tiba-tiba berhenti di jalan"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "I am rinsing vegetables in the kitchen",
+      "Back": "Aku sedang membilas sayur di dapur"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "He has not eaten vegetables today",
+      "Back": "Dia belum makan sayur hari ini"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "Choose one between coffee or tea?",
+      "Back": "Pilih satu antara kopi atau teh?"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "That concrete wall is very strong",
+      "Back": "Dinding beton itu sangat kuat"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "The marine ecosystem is changing quickly",
+      "Back": "Ekosistem laut sedang berubah cepat"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "That hotel will feel very luxurious",
+      "Back": "Hotel itu akan terasa sangat mewah"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "I have never stayed in a hotel",
+      "Back": "Aku belum pernah menginap di hotel"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "Why was the reaction so fast?",
+      "Back": "Mengapa reaksinya begitu cepat?"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "I will take that book",
+      "Back": "Aku akan ambil buku itu"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "I will transfer this task tomorrow",
+      "Back": "Aku akan alih tugas ini besok"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "The door is already locked from inside",
+      "Back": "Pintunya sudah terkunci dari dalam"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "I returned home from the office earlier",
+      "Back": "Aku pulang dari kantor tadi"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "That cat sleeps inside the box",
+      "Back": "Kucing itu tidur dalam kotak"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "He no longer works at the office",
+      "Back": "Dia tidak bekerja di kantor lagi"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "I will send that box tomorrow",
+      "Back": "Kotak itu akan kukirim besok"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "I will send that package this afternoon",
+      "Back": "Paket itu akan kukirim sore ini"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "Why did you not answer my call?",
+      "Back": "Mengapa kamu tidak angkat teleponku?"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "My cellphone is being charged now",
+      "Back": "Ponselku sedang dicas sekarang"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "That phone has not been charged all night",
+      "Back": "Ponsel itu belum dicas semalaman"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "We did not sleep all night",
+      "Back": "Kami tidak tidur semalaman"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "I will work all day tomorrow",
+      "Back": "Aku akan bekerja seharian besok"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "Why is that microphone not working?",
+      "Back": "Mengapa mikrofon itu tidak berfungsi?"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "This forest keeps the ecosystem balanced",
+      "Back": "Hutan ini menjaga ekosistem tetap seimbang"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "Its price and quality are not balanced",
+      "Back": "Harga dan kualitasnya tidak seimbang"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "Its sound quality is decreasing today",
+      "Back": "Kualitas suaranya sedang menurun hari ini"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "Why did the price of coffee rise again?",
+      "Back": "Mengapa harga kopi naik lagi?"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "That shop's sales have decreased since January",
+      "Back": "Penjualan toko itu menurun sejak Januari"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "Sales this week have not increased",
+      "Back": "Penjualan minggu ini belum meningkat"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "The sky suddenly became very dark",
+      "Back": "Langit tiba-tiba menjadi sangat gelap"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "That child is eating ice cream",
+      "Back": "Anak itu sedang makan es krim"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "I did not add cream to the coffee",
+      "Back": "Aku tidak menambahkan krim ke kopi"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "The chef will add salt later",
+      "Back": "Koki akan menambahkan garam nanti"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "That chef has not prepared the meal yet",
+      "Back": "Koki itu belum menyiapkan makanannya"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "This soup tastes too salty",
+      "Back": "Sup ini terasa terlalu asin"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "Have you already prepared the document?",
+      "Back": "Apakah kamu sudah menyiapkan dokumennya?"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "That chef did not add salt",
+      "Back": "Koki itu tidak menambahkan garam"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "I will join that team",
+      "Back": "Aku akan gabung tim itu"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "He is recapping the sales report",
+      "Back": "Dia sedang rekap laporan penjualan"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "Has that report already been sent?",
+      "Back": "Apakah laporan itu sudah dikirim?"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "The moon has not appeared tonight",
+      "Back": "Bulan belum terlihat malam ini"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "That heavy rain finally subsided",
+      "Back": "Hujan deras itu akhirnya reda"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  },
+  {
+    "deckName": "🇦🇺",
+    "modelName": "Basic",
+    "fields": {
+      "Front": "The ticket price is still very low",
+      "Back": "Harga tiketnya masih sangat rendah"
+    },
+    "tags": [
+      "copied_inverted"
+    ],
+    "options": {
+      "allowDuplicate": true
+    }
+  }
+]

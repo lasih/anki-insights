@@ -1,0 +1,602 @@
+[
+  {
+    "noteId": 1773647184546,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Prasangka itu belum tentu benar",
+        "order": 0
+      },
+      "Back": {
+        "value": "That prejudice is not necessarily true",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647184,
+    "cards": [
+      1773647184546
+    ]
+  },
+  {
+    "noteId": 1773647199700,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu tentu akan datang besok?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Are you certainly coming tomorrow?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647199,
+    "cards": [
+      1773647199700
+    ]
+  },
+  {
+    "noteId": 1773647205200,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Pesanku belum dijawab sejak kemarin",
+        "order": 0
+      },
+      "Back": {
+        "value": "My message has not been answered since yesterday",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647205,
+    "cards": [
+      1773647205200
+    ]
+  },
+  {
+    "noteId": 1773647217029,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sudah mengirim faktur kemarin",
+        "order": 0
+      },
+      "Back": {
+        "value": "I already sent the invoice yesterday",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647217,
+    "cards": [
+      1773647217029
+    ]
+  },
+  {
+    "noteId": 1773647225398,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang mengetik pesan panjang",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am typing a long message",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647225,
+    "cards": [
+      1773647225398
+    ]
+  },
+  {
+    "noteId": 1773647270950,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak setujui rencana itu",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not approve that plan",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647270,
+    "cards": [
+      1773647270950
+    ]
+  },
+  {
+    "noteId": 1773647279164,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu setuju dengan keputusan itu?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Do you agree with that decision?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647279,
+    "cards": [
+      1773647279164
+    ]
+  },
+  {
+    "noteId": 1773647307542,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum minta izin orang tua",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not asked my parents' permission yet",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647307,
+    "cards": [
+      1773647307542
+    ]
+  },
+  {
+    "noteId": 1773647327369,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan minta bantuan besok",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will ask for help tomorrow",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647327,
+    "cards": [
+      1773647327369
+    ]
+  },
+  {
+    "noteId": 1773647347225,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Bisakah kamu bantu aku sekarang?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Can you help me now?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647347,
+    "cards": [
+      1773647347225
+    ]
+  },
+  {
+    "noteId": 1773647359980,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak perlu uang itu",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not need that money",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647359,
+    "cards": [
+      1773647359980
+    ]
+  },
+  {
+    "noteId": 1773647413802,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Hewan itu sedang tidur di kebun",
+        "order": 0
+      },
+      "Back": {
+        "value": "That animal is sleeping in the garden",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647413,
+    "cards": [
+      1773647413802
+    ]
+  },
+  {
+    "noteId": 1773647426965,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu pernah bekerja di kebun?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Have you ever worked in a garden?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647426,
+    "cards": [
+      1773647426965
+    ]
+  },
+  {
+    "noteId": 1773647457323,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Tanaman itu tidak tumbuh cepat",
+        "order": 0
+      },
+      "Back": {
+        "value": "That plant does not grow quickly",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647457,
+    "cards": [
+      1773647457323
+    ]
+  },
+  {
+    "noteId": 1773647464926,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Tubuhku masih terasa lelah",
+        "order": 0
+      },
+      "Back": {
+        "value": "My body still feels tired",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647464,
+    "cards": [
+      1773647464926
+    ]
+  },
+  {
+    "noteId": 1773647479565,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Badanku belum terasa lebih baik",
+        "order": 0
+      },
+      "Back": {
+        "value": "My body does not feel better yet",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647479,
+    "cards": [
+      1773647479565
+    ]
+  },
+  {
+    "noteId": 1773647497335,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu masih merasa lelah?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Do you still feel tired?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647497,
+    "cards": [
+      1773647497335
+    ]
+  },
+  {
+    "noteId": 1773647698970,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu sedang mengupas kentang?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Are you peeling potatoes?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647698,
+    "cards": [
+      1773647698970
+    ]
+  },
+  {
+    "noteId": 1773647724426,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang mengupas mangga matang",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am peeling a ripe mango",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647724,
+    "cards": [
+      1773647724426
+    ]
+  },
+  {
+    "noteId": 1773647738679,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Mengapa langit sore terlihat kuning?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Why does the evening sky look yellow?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647738,
+    "cards": [
+      1773647738679
+    ]
+  },
+  {
+    "noteId": 1773647751733,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Mangga itu sudah matang sekarang",
+        "order": 0
+      },
+      "Back": {
+        "value": "That mango is already ripe now",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773647751,
+    "cards": [
+      1773647751733
+    ]
+  },
+  {
+    "noteId": 1773648913153,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apel itu belum matang sepenuhnya",
+        "order": 0
+      },
+      "Back": {
+        "value": "That apple is not fully ripe yet",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773648913,
+    "cards": [
+      1773648913153
+    ]
+  },
+  {
+    "noteId": 1773648924566,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan membeli jeruk segar nanti",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will buy fresh oranges later",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773648924,
+    "cards": [
+      1773648924566
+    ]
+  },
+  {
+    "noteId": 1773648929861,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum sepenuhnya mengerti masalah itu",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not fully understand that problem yet",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773648929,
+    "cards": [
+      1773648929861
+    ]
+  },
+  {
+    "noteId": 1773648941027,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu mengerti penjelasan itu?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Do you understand that explanation?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773648941,
+    "cards": [
+      1773648941028
+    ]
+  },
+  {
+    "noteId": 1773648952129,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Penjelasanmu tadi sangat jelas",
+        "order": 0
+      },
+      "Back": {
+        "value": "Your explanation earlier was very clear",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773648952,
+    "cards": [
+      1773648952129
+    ]
+  },
+  {
+    "noteId": 1773650255780,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Api itu tidak padam semalam",
+        "order": 0
+      },
+      "Back": {
+        "value": "That fire did not go out last night",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773650255,
+    "cards": [
+      1773650255780
+    ]
+  },
+  {
+    "noteId": 1773650267953,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Lampu itu tiba-tiba padam",
+        "order": 0
+      },
+      "Back": {
+        "value": "That light suddenly went out",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773650267,
+    "cards": [
+      1773650267953
+    ]
+  },
+  {
+    "noteId": 1773650273880,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah sendok itu sudah kamu cuci?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Have you already washed that spoon?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773650273,
+    "cards": [
+      1773650273880
+    ]
+  },
+  {
+    "noteId": 1773676247167,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Piring itu akan pecah nanti",
+        "order": 0
+      },
+      "Back": {
+        "value": "That plate will break later",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773676247,
+    "cards": [
+      1773676247167
+    ]
+  }
+]

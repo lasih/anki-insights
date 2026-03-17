@@ -1,0 +1,1402 @@
+[
+  {
+    "noteId": 1773739943082,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak suka campuran rasa aneh",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not like strange flavor mixtures",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773739943,
+    "cards": [
+      1773739943082
+    ]
+  },
+  {
+    "noteId": 1773740002456,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Hari-hari ini terasa sangat rumit bagiku",
+        "order": 0
+      },
+      "Back": {
+        "value": "These days feel very complicated to me",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740002,
+    "cards": [
+      1773740002457
+    ]
+  },
+  {
+    "noteId": 1773740008671,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sudah mendownload file itu kemarin",
+        "order": 0
+      },
+      "Back": {
+        "value": "I already downloaded that file yesterday",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740008,
+    "cards": [
+      1773740008671
+    ]
+  },
+  {
+    "noteId": 1773740048736,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Hari-hari mendatang akan terasa lebih ringan",
+        "order": 0
+      },
+      "Back": {
+        "value": "The coming days will feel lighter",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740048,
+    "cards": [
+      1773740048736
+    ]
+  },
+  {
+    "noteId": 1773740100084,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah acara mendatang sudah kamu rencanakan?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Have you already planned the upcoming event?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740100,
+    "cards": [
+      1773740100084
+    ]
+  },
+  {
+    "noteId": 1773740140150,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Masalah ini belum rumit sebelumnya",
+        "order": 0
+      },
+      "Back": {
+        "value": "This problem was not complicated before",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740140,
+    "cards": [
+      1773740140150
+    ]
+  },
+  {
+    "noteId": 1773740157364,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang menyiapkan acara penting besok",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am preparing an important event tomorrow",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740157,
+    "cards": [
+      1773740157364
+    ]
+  },
+  {
+    "noteId": 1773740276514,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah dokumen itu sudah kamu kirim?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Have you already sent that document?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740276,
+    "cards": [
+      1773740276514
+    ]
+  },
+  {
+    "noteId": 1773740282729,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan membawa semua barang nanti",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will bring all the items later",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740282,
+    "cards": [
+      1773740282729
+    ]
+  },
+  {
+    "noteId": 1773740304842,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum kirim pesan itu tadi",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not sent that message earlier",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740304,
+    "cards": [
+      1773740304842
+    ]
+  },
+  {
+    "noteId": 1773740311920,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia sedang membawa hadiah untukmu sekarang",
+        "order": 0
+      },
+      "Back": {
+        "value": "He is bringing a gift for you now",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740311,
+    "cards": [
+      1773740311920
+    ]
+  },
+  {
+    "noteId": 1773740321645,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Hadiah itu belum aku buka sampai sekarang",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not opened that gift until now",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740321,
+    "cards": [
+      1773740321645
+    ]
+  },
+  {
+    "noteId": 1773740354838,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Jam ini tidak berjalan sejak tadi",
+        "order": 0
+      },
+      "Back": {
+        "value": "This clock has not been running since earlier",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740354,
+    "cards": [
+      1773740354838
+    ]
+  },
+  {
+    "noteId": 1773740362158,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum cuci piring setelah makan",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not washed the dishes after eating",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740362,
+    "cards": [
+      1773740362158
+    ]
+  },
+  {
+    "noteId": 1773740380491,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Piring itu bukan milikku, jangan ambil",
+        "order": 0
+      },
+      "Back": {
+        "value": "That plate is not mine, do not take it",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740380,
+    "cards": [
+      1773740380491
+    ]
+  },
+  {
+    "noteId": 1773740389759,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Jangan kamu ganggu aku saat bekerja",
+        "order": 0
+      },
+      "Back": {
+        "value": "Do not disturb me while I am working",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740389,
+    "cards": [
+      1773740389759
+    ]
+  },
+  {
+    "noteId": 1773740399249,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kenapa kamu belum ambil paket itu?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Why have you not taken that package?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740399,
+    "cards": [
+      1773740399249
+    ]
+  },
+  {
+    "noteId": 1773740403638,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak ingin ganggu kamu malam ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not want to disturb you tonight",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740412,
+    "cards": [
+      1773740403638
+    ]
+  },
+  {
+    "noteId": 1773740432828,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia pernah merana karena kehilangan arah",
+        "order": 0
+      },
+      "Back": {
+        "value": "He once suffered because he lost direction",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740432,
+    "cards": [
+      1773740432828
+    ]
+  },
+  {
+    "noteId": 1773740442508,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum sepenuhnya mengerti maksudmu",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not fully understand your meaning yet",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740442,
+    "cards": [
+      1773740442508
+    ]
+  },
+  {
+    "noteId": 1773740454803,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apa maksudmu dengan ucapan tadi?",
+        "order": 0
+      },
+      "Back": {
+        "value": "What do you mean by what you said earlier?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740454,
+    "cards": [
+      1773740454804
+    ]
+  },
+  {
+    "noteId": 1773740574336,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Ucapanmu akan aku ingat selamanya",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will remember your words forever",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740574,
+    "cards": [
+      1773740574336
+    ]
+  },
+  {
+    "noteId": 1773740605020,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu akan menunggu di sini selamanya?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Will you wait here forever?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740605,
+    "cards": [
+      1773740605020
+    ]
+  },
+  {
+    "noteId": 1773740634959,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan mencintaimu selamanya",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will love you forever",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740634,
+    "cards": [
+      1773740634959
+    ]
+  },
+  {
+    "noteId": 1773740643690,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia tidak tinggal di sini selamanya",
+        "order": 0
+      },
+      "Back": {
+        "value": "He does not stay here forever",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740643,
+    "cards": [
+      1773740643690
+    ]
+  },
+  {
+    "noteId": 1773740656659,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah ini akan berlangsung selamanya?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Will this last forever?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740656,
+    "cards": [
+      1773740656659
+    ]
+  },
+  {
+    "noteId": 1773740660116,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kami pernah berharap hidup bahagia selamanya",
+        "order": 0
+      },
+      "Back": {
+        "value": "We once hoped to live happily forever",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740660,
+    "cards": [
+      1773740660116
+    ]
+  },
+  {
+    "noteId": 1773740679219,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak ingin menunggu selamanya lagi",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not want to wait forever anymore",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740679,
+    "cards": [
+      1773740679219
+    ]
+  },
+  {
+    "noteId": 1773740687149,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Mereka akan bersama selamanya nanti",
+        "order": 0
+      },
+      "Back": {
+        "value": "They will be together forever later",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740687,
+    "cards": [
+      1773740687149
+    ]
+  },
+  {
+    "noteId": 1773740696019,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kenangan itu terasa hidup selamanya",
+        "order": 0
+      },
+      "Back": {
+        "value": "That memory feels alive forever",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740696,
+    "cards": [
+      1773740696019
+    ]
+  },
+  {
+    "noteId": 1773740703311,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum melupakanmu selamanya",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not forgotten you forever",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740703,
+    "cards": [
+      1773740703312
+    ]
+  },
+  {
+    "noteId": 1773740710947,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah dia akan pergi selamanya?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Will he leave forever?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740710,
+    "cards": [
+      1773740710947
+    ]
+  },
+  {
+    "noteId": 1773740716955,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Cinta ini tidak akan hilang selamanya",
+        "order": 0
+      },
+      "Back": {
+        "value": "This love will not disappear forever",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740716,
+    "cards": [
+      1773740716955
+    ]
+  },
+  {
+    "noteId": 1773740726759,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak lagi mencintaimu seperti dulu",
+        "order": 0
+      },
+      "Back": {
+        "value": "I no longer love you like before",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740726,
+    "cards": [
+      1773740726760
+    ]
+  },
+  {
+    "noteId": 1773740732373,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Pertemuan itu berlangsung lebih lama tadi",
+        "order": 0
+      },
+      "Back": {
+        "value": "That meeting lasted longer earlier",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740732,
+    "cards": [
+      1773740732373
+    ]
+  },
+  {
+    "noteId": 1773740743148,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku berharap kamu akan datang besok",
+        "order": 0
+      },
+      "Back": {
+        "value": "I hope you will come tomorrow",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740743,
+    "cards": [
+      1773740743148
+    ]
+  },
+  {
+    "noteId": 1773740747805,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kenangan itu masih terasa hangat sekarang",
+        "order": 0
+      },
+      "Back": {
+        "value": "That memory still feels warm now",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740747,
+    "cards": [
+      1773740747805
+    ]
+  },
+  {
+    "noteId": 1773740793006,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah tugas ini terlalu sulit untukmu?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Is this task too difficult for you?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740793,
+    "cards": [
+      1773740793007
+    ]
+  },
+  {
+    "noteId": 1773740801511,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Makanan ini terlalu pedas untukku sekarang",
+        "order": 0
+      },
+      "Back": {
+        "value": "This food is too spicy for me now",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740801,
+    "cards": [
+      1773740801511
+    ]
+  },
+  {
+    "noteId": 1773740828282,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kenapa kamu bilang itu kepadaku tadi?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Why did you say that to me earlier?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740828,
+    "cards": [
+      1773740828283
+    ]
+  },
+  {
+    "noteId": 1773740838147,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia memberikan hadiah pada temannya kemarin",
+        "order": 0
+      },
+      "Back": {
+        "value": "He gave a gift to his friend yesterday",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740838,
+    "cards": [
+      1773740838147
+    ]
+  },
+  {
+    "noteId": 1773740887552,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan memberikan bantuan jika kamu perlu",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will give help if you need it",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740887,
+    "cards": [
+      1773740887552
+    ]
+  },
+  {
+    "noteId": 1773740892808,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum membuang sampah sejak kemarin",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not thrown away the trash since yesterday",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740892,
+    "cards": [
+      1773740892808
+    ]
+  },
+  {
+    "noteId": 1773740911975,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Jangan membuang makanan yang masih layak",
+        "order": 0
+      },
+      "Back": {
+        "value": "Do not throw away food that is still edible",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740911,
+    "cards": [
+      1773740911975
+    ]
+  },
+  {
+    "noteId": 1773740917009,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia kayak tidak peduli dengan masalah ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "He seems like he does not care about this problem",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740917,
+    "cards": [
+      1773740917009
+    ]
+  },
+  {
+    "noteId": 1773740938748,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah pakaian ini masih layak dipakai?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Is this clothing still suitable to wear?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740938,
+    "cards": [
+      1773740938748
+    ]
+  },
+  {
+    "noteId": 1773740948044,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak peduli lagi tentang hal itu",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not care anymore about that matter",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740948,
+    "cards": [
+      1773740948044
+    ]
+  },
+  {
+    "noteId": 1773740961360,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Hal itu belum pernah aku dengar sebelumnya",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have never heard that thing before",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740961,
+    "cards": [
+      1773740961360
+    ]
+  },
+  {
+    "noteId": 1773740973142,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang dengar musik saat kamu datang",
+        "order": 0
+      },
+      "Back": {
+        "value": "I was listening to music when you arrived",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773740973,
+    "cards": [
+      1773740973142
+    ]
+  },
+  {
+    "noteId": 1773741044849,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Saat itu aku tidak tahu harus apa",
+        "order": 0
+      },
+      "Back": {
+        "value": "At that moment I did not know what to do",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741044,
+    "cards": [
+      1773741044850
+    ]
+  },
+  {
+    "noteId": 1773741203980,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Buku ini belum aku baca sampai selesai",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not read this book until finished",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741203,
+    "cards": [
+      1773741203980
+    ]
+  },
+  {
+    "noteId": 1773741222658,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu sudah selesai dengan tugas itu?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Have you already finished that task?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741222,
+    "cards": [
+      1773741222658
+    ]
+  },
+  {
+    "noteId": 1773741240976,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Tugas ini tidak terlalu sulit bagiku",
+        "order": 0
+      },
+      "Back": {
+        "value": "This task is not too difficult for me",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741240,
+    "cards": [
+      1773741240976
+    ]
+  },
+  {
+    "noteId": 1773741254963,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah soal ini akan menjadi mudah nanti?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Will this problem become easy later?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741254,
+    "cards": [
+      1773741254963
+    ]
+  },
+  {
+    "noteId": 1773741314791,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Daun itu belum berubah menjadi hijau",
+        "order": 0
+      },
+      "Back": {
+        "value": "That leaf has not turned green yet",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741314,
+    "cards": [
+      1773741314792
+    ]
+  },
+  {
+    "noteId": 1773741333759,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Daun itu jatuh perlahan tadi pagi",
+        "order": 0
+      },
+      "Back": {
+        "value": "That leaf fell slowly earlier this morning",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741333,
+    "cards": [
+      1773741333759
+    ]
+  },
+  {
+    "noteId": 1773741350911,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku ingin menjadi lebih sabar mulai sekarang",
+        "order": 0
+      },
+      "Back": {
+        "value": "I want to become more patient starting now",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741350,
+    "cards": [
+      1773741350911
+    ]
+  },
+  {
+    "noteId": 1773741357477,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Mobil itu bergerak perlahan di jalan sempit",
+        "order": 0
+      },
+      "Back": {
+        "value": "That car moves slowly on the narrow road",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741357,
+    "cards": [
+      1773741357477
+    ]
+  },
+  {
+    "noteId": 1773741394735,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah mesin ini masih bisa bergerak?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Can this machine still move?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741394,
+    "cards": [
+      1773741394735
+    ]
+  },
+  {
+    "noteId": 1773741428529,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Mesin itu tidak bekerja sejak kemarin",
+        "order": 0
+      },
+      "Back": {
+        "value": "That machine has not worked since yesterday",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741428,
+    "cards": [
+      1773741428529
+    ]
+  },
+  {
+    "noteId": 1773741437941,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum bertemu dia sejak kejadian itu",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not met him since that incident",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741437,
+    "cards": [
+      1773741437942
+    ]
+  },
+  {
+    "noteId": 1773741454053,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang meningkatkan kemampuan berbicara bahasa Indonesia",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am improving my ability to speak Indonesian",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741454,
+    "cards": [
+      1773741454053
+    ]
+  },
+  {
+    "noteId": 1773741459317,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kejadian itu akan selalu aku ingat",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will always remember that incident",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741459,
+    "cards": [
+      1773741459317
+    ]
+  },
+  {
+    "noteId": 1773741467232,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kemungkinan itu belum bisa aku pastikan sekarang",
+        "order": 0
+      },
+      "Back": {
+        "value": "That possibility cannot be confirmed by me yet now",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741467,
+    "cards": [
+      1773741467232
+    ]
+  },
+  {
+    "noteId": 1773741484046,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Pastikan kamu tidak lupa membawa kunci",
+        "order": 0
+      },
+      "Back": {
+        "value": "Make sure you do not forget to bring the key",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741484,
+    "cards": [
+      1773741484046
+    ]
+  },
+  {
+    "noteId": 1773741495172,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku pernah lupa janji penting sebelumnya",
+        "order": 0
+      },
+      "Back": {
+        "value": "I once forgot an important promise before",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741495,
+    "cards": [
+      1773741495172
+    ]
+  },
+  {
+    "noteId": 1773741513282,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah aku masih punya kesempatan untuk mencoba?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Do I still have a chance to try?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741513,
+    "cards": [
+      1773741513282
+    ]
+  },
+  {
+    "noteId": 1773741524086,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia tidak memiliki kekuatan untuk melawan lagi",
+        "order": 0
+      },
+      "Back": {
+        "value": "He does not have the strength to fight anymore",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741524,
+    "cards": [
+      1773741524086
+    ]
+  },
+  {
+    "noteId": 1773741585548,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak ingin melawan mereka tanpa alasan",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not want to fight them without reason",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741585,
+    "cards": [
+      1773741585548
+    ]
+  },
+  {
+    "noteId": 1773741620349,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Berapa lama kamu akan tinggal di sini?",
+        "order": 0
+      },
+      "Back": {
+        "value": "How long will you stay here?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773741620,
+    "cards": [
+      1773741620349
+    ]
+  }
+]

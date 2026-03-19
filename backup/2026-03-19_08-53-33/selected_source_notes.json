@@ -1,0 +1,642 @@
+[
+  {
+    "noteId": 1773909725590,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak mau ikut pula",
+        "order": 0
+      },
+      "Back": {
+        "value": "I don't want to join either",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909725,
+    "cards": [
+      1773909725590
+    ]
+  },
+  {
+    "noteId": 1773909734139,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sudah lelah, lagipula hujan deras",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am already tired, besides it’s raining heavily",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909734,
+    "cards": [
+      1773909734139
+    ]
+  },
+  {
+    "noteId": 1773909749271,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu akan datang segera?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Will you come immediately?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909749,
+    "cards": [
+      1773909749271
+    ]
+  },
+  {
+    "noteId": 1773909755330,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia belum berani bicara jujur",
+        "order": 0
+      },
+      "Back": {
+        "value": "He is not yet brave to speak honestly",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909755,
+    "cards": [
+      1773909755330
+    ]
+  },
+  {
+    "noteId": 1773909814472,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang bekerja keras kini",
+        "order": 0
+      },
+      "Back": {
+        "value": "Aku sedang bekerja keras kini",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909814,
+    "cards": [
+      1773909814472
+    ]
+  },
+  {
+    "noteId": 1773909846210,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum fasih berbicara Jepang",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am not yet fluent speaking Japanese",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909846,
+    "cards": [
+      1773909846210
+    ]
+  },
+  {
+    "noteId": 1773909889801,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia akan berbahasa Indonesia dengan lancar",
+        "order": 0
+      },
+      "Back": {
+        "value": "He will speak Indonesian fluently",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909889,
+    "cards": [
+      1773909889801
+    ]
+  },
+  {
+    "noteId": 1773909911371,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah penjelasanmu cukup singkat?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Is your explanation concise enough?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909911,
+    "cards": [
+      1773909911372
+    ]
+  },
+  {
+    "noteId": 1773909920926,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang mencoba variasi baru resep",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am trying a new variation of the recipe",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909920,
+    "cards": [
+      1773909920926
+    ]
+  },
+  {
+    "noteId": 1773909933784,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum pernah mencoba resep itu",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have never tried that recipe",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909933,
+    "cards": [
+      1773909933784
+    ]
+  },
+  {
+    "noteId": 1773909941200,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan tinggal dalam rumah ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will live in this house",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909941,
+    "cards": [
+      1773909941200
+    ]
+  },
+  {
+    "noteId": 1773909956698,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kemarin aku bikin kue cokelat sendiri",
+        "order": 0
+      },
+      "Back": {
+        "value": "Yesterday I made a chocolate cake myself",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909956,
+    "cards": [
+      1773909956698
+    ]
+  },
+  {
+    "noteId": 1773909967367,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak suka kue terlalu manis",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not like cakes that are too sweet",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909967,
+    "cards": [
+      1773909967367
+    ]
+  },
+  {
+    "noteId": 1773909972888,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Bisakah kamu memberi contoh lain?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Can you give another example?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909972,
+    "cards": [
+      1773909972888
+    ]
+  },
+  {
+    "noteId": 1773909985985,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia makin cepat memahami pelajaran",
+        "order": 0
+      },
+      "Back": {
+        "value": "He is increasingly quick at understanding lessons",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773909985,
+    "cards": [
+      1773909985985
+    ]
+  },
+  {
+    "noteId": 1773910001474,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum mengerti pelajaran hari ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not yet understand today’s lesson",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910001,
+    "cards": [
+      1773910001475
+    ]
+  },
+  {
+    "noteId": 1773910013098,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Bahasanya sudah lancar sejak kecil",
+        "order": 0
+      },
+      "Back": {
+        "value": "His speech has been smooth since childhood",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910013,
+    "cards": [
+      1773910013098
+    ]
+  },
+  {
+    "noteId": 1773910024732,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Masih tersisa sedikit waktu sebelum berangkat",
+        "order": 0
+      },
+      "Back": {
+        "value": "There is still a little time remaining before departure",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910024,
+    "cards": [
+      1773910024732
+    ]
+  },
+  {
+    "noteId": 1773910185386,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Pemahamanmu tentang topik itu makin dalam",
+        "order": 0
+      },
+      "Back": {
+        "value": "Your understanding of that topic is getting deeper",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910185,
+    "cards": [
+      1773910185386
+    ]
+  },
+  {
+    "noteId": 1773910207010,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia belum masuk dalam daftar peserta",
+        "order": 0
+      },
+      "Back": {
+        "value": "He has not yet entered the participant list",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910207,
+    "cards": [
+      1773910207011
+    ]
+  },
+  {
+    "noteId": 1773910226284,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Para peserta akan berkumpul besok pagi",
+        "order": 0
+      },
+      "Back": {
+        "value": "The participants will gather tomorrow morning",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910226,
+    "cards": [
+      1773910226284
+    ]
+  },
+  {
+    "noteId": 1773910231083,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Namaku tidak ada dalam daftar itu",
+        "order": 0
+      },
+      "Back": {
+        "value": "My name is not on that list",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910231,
+    "cards": [
+      1773910231083
+    ]
+  },
+  {
+    "noteId": 1773910246358,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kami sedang berkumpul di taman sore ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "We are gathering in the park this afternoon",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910246,
+    "cards": [
+      1773910246358
+    ]
+  },
+  {
+    "noteId": 1773910256987,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan dapatkan tiket itu nanti",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will obtain that ticket later",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910256,
+    "cards": [
+      1773910256987
+    ]
+  },
+  {
+    "noteId": 1773910266765,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah mereka sudah membeli semen cukup?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Have they already bought enough cement?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910266,
+    "cards": [
+      1773910266765
+    ]
+  },
+  {
+    "noteId": 1773910304082,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dokter memeriksa air mani di laboratorium",
+        "order": 0
+      },
+      "Back": {
+        "value": "The doctor examines semen in the laboratory",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910304,
+    "cards": [
+      1773910304082
+    ]
+  },
+  {
+    "noteId": 1773910317213,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan bekerja di laboratorium baru",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will work in a new laboratory",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910317,
+    "cards": [
+      1773910317213
+    ]
+  },
+  {
+    "noteId": 1773910322282,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Mengapa ada lubang di dinding itu?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Why is there a hole in that wall?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910322,
+    "cards": [
+      1773910322282
+    ]
+  },
+  {
+    "noteId": 1773910334923,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum memahami fungsi imbuhan itu",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not yet understand the function of that affix",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910334,
+    "cards": [
+      1773910334923
+    ]
+  },
+  {
+    "noteId": 1773910356926,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Inilah alasan aku memilih jalan ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "This is the reason I chose this path",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910356,
+    "cards": [
+      1773910356926
+    ]
+  },
+  {
+    "noteId": 1773910374477,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia tidak memakai akal saat marah",
+        "order": 0
+      },
+      "Back": {
+        "value": "He does not use reason when angry",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910374,
+    "cards": [
+      1773910374478
+    ]
+  },
+  {
+    "noteId": 1773910389060,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Nilai ujianmu belum keluar hari ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "Your exam score has not come out today",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773910389,
+    "cards": [
+      1773910389060
+    ]
+  }
+]

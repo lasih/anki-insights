@@ -1,0 +1,662 @@
+[
+  {
+    "noteId": 1773988058084,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak memakai sepatu hari ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am not wearing shoes today",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773988058,
+    "cards": [
+      1773988058084
+    ]
+  },
+  {
+    "noteId": 1773988070282,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan bertemu pacarku nanti malam",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will meet my girlfriend tonight",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773988070,
+    "cards": [
+      1773988070283
+    ]
+  },
+  {
+    "noteId": 1773988085451,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu sudah punya pacar?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Do you already have a boyfriend?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773988085,
+    "cards": [
+      1773988085451
+    ]
+  },
+  {
+    "noteId": 1773988113409,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang membeli sayur di pasar",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am buying vegetables at the market",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773988113,
+    "cards": [
+      1773988113409
+    ]
+  },
+  {
+    "noteId": 1773988118381,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Anak itu bermain di pasir tadi",
+        "order": 0
+      },
+      "Back": {
+        "value": "That child played in the sand earlier",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773988118,
+    "cards": [
+      1773988118381
+    ]
+  },
+  {
+    "noteId": 1773988805483,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku capek banget setelah kerja tadi",
+        "order": 0
+      },
+      "Back": {
+        "value": "I was very tired after working earlier",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773988805,
+    "cards": [
+      1773988805483
+    ]
+  },
+  {
+    "noteId": 1773989505088,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum melihat pratinjau videonya",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not seen the preview of the video",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773989505,
+    "cards": [
+      1773989505088
+    ]
+  },
+  {
+    "noteId": 1773996185820,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan mengulang latihan itu besok",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will repeat that exercise tomorrow",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996185,
+    "cards": [
+      1773996185820
+    ]
+  },
+  {
+    "noteId": 1773996207648,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum mengucapkan selamat ulang tahun padanya",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not wished him a happy birthday yet",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996207,
+    "cards": [
+      1773996207648
+    ]
+  },
+  {
+    "noteId": 1773996220211,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku pernah berharap hal itu terjadi",
+        "order": 0
+      },
+      "Back": {
+        "value": "I once wished that it would happen",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996220,
+    "cards": [
+      1773996220211
+    ]
+  },
+  {
+    "noteId": 1773996246487,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Mengapa itu tidak terjadi kemarin?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Why did that not happen yesterday?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996246,
+    "cards": [
+      1773996246487
+    ]
+  },
+  {
+    "noteId": 1773996261376,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum mengucapkan terima kasih padanya",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not expressed thanks to him yet",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996261,
+    "cards": [
+      1773996261376
+    ]
+  },
+  {
+    "noteId": 1773996280354,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku bilang kamu akan datang besok",
+        "order": 0
+      },
+      "Back": {
+        "value": "I said you would come tomorrow",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996280,
+    "cards": [
+      1773996280354
+    ]
+  },
+  {
+    "noteId": 1773996293354,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kunci itu tiba-tiba hilang dari meja",
+        "order": 0
+      },
+      "Back": {
+        "value": "That key suddenly disappeared from the table",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996293,
+    "cards": [
+      1773996293354
+    ]
+  },
+  {
+    "noteId": 1773996330608,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku lagi ngantuk, jadi mau tidur",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am sleepy, so I want to sleep",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996330,
+    "cards": [
+      1773996330608
+    ]
+  },
+  {
+    "noteId": 1773996341424,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu pernah melihat binatang itu?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Have you ever seen that animal?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996341,
+    "cards": [
+      1773996341424
+    ]
+  },
+  {
+    "noteId": 1773996350410,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Hewan itu bukan peliharaan aku",
+        "order": 0
+      },
+      "Back": {
+        "value": "That animal is not my pet",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996350,
+    "cards": [
+      1773996350410
+    ]
+  },
+  {
+    "noteId": 1773996365406,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang merawat peliharaan baru di rumah",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am taking care of a new pet at home",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996365,
+    "cards": [
+      1773996365406
+    ]
+  },
+  {
+    "noteId": 1773996370967,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan pelihara kucing kecil itu",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will raise that small kitten",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996370,
+    "cards": [
+      1773996370967
+    ]
+  },
+  {
+    "noteId": 1773996387828,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang merawat ibuku yang sakit",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am taking care of my sick mother",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996387,
+    "cards": [
+      1773996387828
+    ]
+  },
+  {
+    "noteId": 1773996417430,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum berpuasa hari ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not fasted today",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996417,
+    "cards": [
+      1773996417430
+    ]
+  },
+  {
+    "noteId": 1773996431521,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Ribuan orang akan datang ke acara itu",
+        "order": 0
+      },
+      "Back": {
+        "value": "Thousands of people will come to that event",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996431,
+    "cards": [
+      1773996431521
+    ]
+  },
+  {
+    "noteId": 1773996485935,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kapal itu tidak mendekati palung laut dalam",
+        "order": 0
+      },
+      "Back": {
+        "value": "That ship did not approach the deep sea trench",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996485,
+    "cards": [
+      1773996485935
+    ]
+  },
+  {
+    "noteId": 1773996527222,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang mendekati target penjualan bulan ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am approaching this month's sales target",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996527,
+    "cards": [
+      1773996527222
+    ]
+  },
+  {
+    "noteId": 1773996577107,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kapal itu akan berangkat malam ini?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Will that ship depart tonight?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996577,
+    "cards": [
+      1773996577107
+    ]
+  },
+  {
+    "noteId": 1773996597051,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kemampuannya sudah melampaui harapan kita",
+        "order": 0
+      },
+      "Back": {
+        "value": "His ability has already gone beyond our expectations",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996597,
+    "cards": [
+      1773996597051
+    ]
+  },
+  {
+    "noteId": 1773996618764,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak mau lebih lama menunggu di sini",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not want to wait here longer",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996618,
+    "cards": [
+      1773996618764
+    ]
+  },
+  {
+    "noteId": 1773996627035,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Ini paling enak yang pernah aku coba",
+        "order": 0
+      },
+      "Back": {
+        "value": "This is the most delicious I have ever tried",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996627,
+    "cards": [
+      1773996627035
+    ]
+  },
+  {
+    "noteId": 1773996635877,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan jalan santai di taman nanti",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will take a walk in the park later",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996635,
+    "cards": [
+      1773996635877
+    ]
+  },
+  {
+    "noteId": 1773996654062,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kami sedang santai di rumah sekarang",
+        "order": 0
+      },
+      "Back": {
+        "value": "We are relaxing at home now",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996654,
+    "cards": [
+      1773996654062
+    ]
+  },
+  {
+    "noteId": 1773996663459,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Tempat itu belum buka sejak kemarin",
+        "order": 0
+      },
+      "Back": {
+        "value": "That place has not opened since yesterday",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996663,
+    "cards": [
+      1773996663459
+    ]
+  },
+  {
+    "noteId": 1773996672132,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kami akan menjelajah nusa itu minggu depan",
+        "order": 0
+      },
+      "Back": {
+        "value": "We will explore that island next week",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996672,
+    "cards": [
+      1773996672132
+    ]
+  },
+  {
+    "noteId": 1773996704077,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia tidak pernah jelajah hutan sendirian",
+        "order": 0
+      },
+      "Back": {
+        "value": "He has never explored the forest alone",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1773996704,
+    "cards": [
+      1773996704077
+    ]
+  }
+]

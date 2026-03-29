@@ -1199,3 +1199,99 @@ order,note_id,status,front_text,tokens,new_tokens
 1198,1774717275733,KEEP,Semen itu dicor ke dalam cetakan bangunan,bangunan | cetakan | dalam | dicor | itu | ke | semen,cetakan | dicor
 1199,1774717288557,KEEP,Adonan kue dituangkan ke dalam cetakan kecil,adonan | cetakan | dalam | dituangkan | ke | kecil | kue,adonan | dituangkan
 1200,1774717322356,KEEP,Konflik di Yaman telah berlangsung bertahun-tahun,berlangsung | bertahun-tahun | di | konflik | telah | yaman,konflik | yaman
+1201,1774798005717,KEEP,Aku belum pernah ke Afganistan,afganistan | aku | belum | ke | pernah,afganistan
+1202,1774798029811,KEEP,Apakah kamu akan pergi ke Albania besok?,akan | albania | apakah | besok | kamu | ke | pergi,albania
+1203,1774798053670,KEEP,Dia tidak tinggal di Aljazair sekarang,aljazair | di | dia | sekarang | tidak | tinggal,aljazair
+1204,1774798074186,KEEP,Kami sedang merencanakan liburan ke Andorra,andorra | kami | ke | liburan | merencanakan | sedang,andorra
+1205,1774798088914,KEEP,Apakah mereka sudah tiba di Angola tadi?,angola | apakah | di | mereka | sudah | tadi | tiba,angola
+1206,1774798116127,KEEP,Aku akan bekerja di Argentina tahun depan,akan | aku | argentina | bekerja | depan | di | tahun,argentina
+1207,1774798134842,KEEP,Kami belum pernah mengunjungi Armenia sebelumnya,armenia | belum | kami | mengunjungi | pernah | sebelumnya,armenia
+1208,1774798158060,KEEP,Dia sedang belajar di Australia sekarang,australia | belajar | di | dia | sedang | sekarang,australia
+1209,1774798189731,KEEP,Apakah dia tidak akan pindah ke Austria?,akan | apakah | austria | dia | ke | pindah | tidak,austria
+1210,1774798375442,KEEP,Aku pernah menghadiri konferensi di Azerbaijan,aku | azerbaijan | di | konferensi | menghadiri | pernah,azerbaijan | konferensi
+1211,1774798387482,KEEP,Mereka akan berlibur ke Bahama musim panas ini,akan | bahama | berlibur | ini | ke | mereka | musim | panas,bahama | berlibur
+1212,1774798403683,KEEP,Aku sedang menunggu teman di Bahrain sekarang,aku | bahrain | di | menunggu | sedang | sekarang | teman,bahrain
+1213,1774798415860,KEEP,Apakah kamu sudah mengirim paket ke Bangladesh?,apakah | bangladesh | kamu | ke | mengirim | paket | sudah,bangladesh
+1214,1774798429530,KEEP,Kami akan mengunjungi Barbados bulan depan,akan | barbados | bulan | depan | kami | mengunjungi,barbados
+1215,1774798450890,KEEP,Dia belum pernah tinggal di Belarusia,belarusia | belum | di | dia | pernah | tinggal,belarusia
+1216,1774798462965,KEEP,Apakah kamu sudah pernah ke Belgia sebelumnya?,apakah | belgia | kamu | ke | pernah | sebelumnya | sudah,belgia
+1217,1774798480537,KEEP,Aku akan mengunjungi Belize saat liburan nanti,akan | aku | belize | liburan | mengunjungi | nanti | saat,belize
+1218,1774798495486,KEEP,Mereka sedang bekerja di Benin sekarang,bekerja | benin | di | mereka | sedang | sekarang,benin
+1219,1774798509285,KEEP,Apakah kamu pernah mendaki di Bhutan?,apakah | bhutan | di | kamu | mendaki | pernah,bhutan
+1220,1774798522282,KEEP,Aku belum pernah mengunjungi Bolivia sebelumnya,aku | belum | bolivia | mengunjungi | pernah | sebelumnya,bolivia
+1221,1774798537826,KEEP,Mereka akan melakukan safari di Botswana tahun ini,akan | botswana | di | ini | melakukan | mereka | safari | tahun,botswana | melakukan | safari
+1222,1774798554060,KEEP,Aku sedang belajar bahasa Portugis untuk pergi ke Brasil,aku | bahasa | belajar | brasil | ke | pergi | portugis | sedang | untuk,brasil | portugis
+1223,1774798567839,KEEP,Apakah dia sudah tinggal di Brunei sebelumnya?,apakah | brunei | di | dia | sebelumnya | sudah | tinggal,brunei
+1224,1774798580866,KEEP,Aku akan menghadiri konferensi di Bulgaria minggu depan,akan | aku | bulgaria | depan | di | konferensi | menghadiri | minggu,bulgaria
+1225,1774798594067,KEEP,Mereka belum pernah mengunjungi Burundi sebelumnya,belum | burundi | mengunjungi | mereka | pernah | sebelumnya,burundi
+1226,1774798604740,KEEP,Aku sedang merencanakan perjalanan ke Kamboja bulan depan,aku | bulan | depan | kamboja | ke | merencanakan | perjalanan | sedang,kamboja
+1227,1774798621552,KEEP,Apakah kamu akan tinggal di Kamerun tahun ini?,akan | apakah | di | ini | kamerun | kamu | tahun | tinggal,kamerun
+1228,1774798643533,KEEP,Aku sudah bekerja di Kanada selama tiga tahun,aku | bekerja | di | kanada | selama | sudah | tahun | tiga,kanada
+1229,1774798674645,KEEP,Mereka sedang membangun proyek baru di Chad,baru | chad | di | membangun | mereka | proyek | sedang,chad
+1230,1774798688779,KEEP,Aku akan berlibur di Chili musim panas ini,akan | aku | berlibur | chili | di | ini | musim | panas,chili
+1231,1774798729529,KEEP,Dia belum pernah belajar bahasa Mandarin di Cina,bahasa | belajar | belum | cina | di | dia | mandarin | pernah,cina | mandarin
+1232,1774798741051,KEEP,Apakah kamu akan mengunjungi Kolombia bulan depan?,akan | apakah | bulan | depan | kamu | kolombia | mengunjungi,kolombia
+1233,1774798750615,KEEP,Mereka sedang melakukan penelitian di Komoro sekarang,di | komoro | melakukan | mereka | penelitian | sedang | sekarang,komoro | penelitian
+1234,1774798763627,KEEP,Aku akan berlayar di Kroasia musim panas nanti,akan | aku | berlayar | di | kroasia | musim | nanti | panas,berlayar | kroasia
+1235,1774798785163,KEEP,Apakah mereka sudah pernah tinggal di Kuba?,apakah | di | kuba | mereka | pernah | sudah | tinggal,kuba
+1236,1774798796488,KEEP,Aku sedang merencanakan perjalanan ke Siprus bulan depan,aku | bulan | depan | ke | merencanakan | perjalanan | sedang | siprus,siprus
+1237,1774798809331,KEEP,Apakah kamu akan belajar di Ceko tahun ini?,akan | apakah | belajar | ceko | di | ini | kamu | tahun,ceko
+1238,1774798820239,KEEP,Aku belum pernah mengunjungi Denmark sebelumnya,aku | belum | denmark | mengunjungi | pernah | sebelumnya,denmark
+1239,1774798836179,KEEP,Mereka akan melakukan ekspedisi ilmiah di Djibouti,akan | di | djibouti | ekspedisi | ilmiah | melakukan | mereka,djibouti | ekspedisi
+1240,1774798850430,KEEP,Aku akan berlibur di Dominika bulan depan,akan | aku | berlibur | bulan | depan | di | dominika,dominika
+1241,1774798868178,KEEP,Apakah dia sudah pernah tinggal di Ekuador?,apakah | di | dia | ekuador | pernah | sudah | tinggal,ekuador
+1242,1774798883745,DUPLICATE,Aku sedang belajar sejarah Mesir kuno sekarang,aku | belajar | kuno | mesir | sedang | sejarah | sekarang,
+1243,1774798908595,KEEP,Mereka belum pernah mengunjungi Eritrea sebelumnya,belum | eritrea | mengunjungi | mereka | pernah | sebelumnya,eritrea
+1244,1774798917947,KEEP,Aku akan menghadiri konferensi di Estonia minggu depan,akan | aku | depan | di | estonia | konferensi | menghadiri | minggu,estonia
+1245,1774798931531,KEEP,Apakah mereka akan tinggal di Eswatini tahun ini?,akan | apakah | di | eswatini | ini | mereka | tahun | tinggal,eswatini
+1246,1774798943041,KEEP,Aku sedang merencanakan perjalanan ke Ethiopia bulan depan,aku | bulan | depan | ethiopia | ke | merencanakan | perjalanan | sedang,ethiopia
+1247,1774798960268,KEEP,Mereka akan berlibur di Fiji musim panas ini,akan | berlibur | di | fiji | ini | mereka | musim | panas,fiji
+1248,1774798972892,KEEP,Aku belum pernah belajar di Finlandia sebelumnya,aku | belajar | belum | di | finlandia | pernah | sebelumnya,finlandia
+1249,1774798984753,KEEP,Apakah kamu akan tinggal di Prancis tahun depan?,akan | apakah | depan | di | kamu | prancis | tahun | tinggal,prancis
+1250,1774798997736,KEEP,Mereka sedang melakukan penelitian di Gabon sekarang,di | gabon | melakukan | mereka | penelitian | sedang | sekarang,gabon
+1251,1774799028309,KEEP,Aku akan mengunjungi Gambia musim panas nanti,akan | aku | gambia | mengunjungi | musim | nanti | panas,gambia
+1252,1774799040111,KEEP,Apakah kamu sudah pernah tinggal di Georgia?,apakah | di | georgia | kamu | pernah | sudah | tinggal,georgia
+1253,1774799049709,KEEP,Aku sedang belajar bahasa Jerman untuk pergi ke Jerman,aku | bahasa | belajar | jerman | ke | pergi | sedang | untuk,jerman
+1254,1774799062995,KEEP,Mereka akan memulai proyek baru di Ghana tahun ini,akan | baru | di | ghana | ini | memulai | mereka | proyek | tahun,ghana
+1255,1774799086751,KEEP,Aku akan berlibur di Yunani musim panas nanti,akan | aku | berlibur | di | musim | nanti | panas | yunani,yunani
+1256,1774799101537,KEEP,Apakah kamu pernah mengunjungi Guatemala sebelumnya?,apakah | guatemala | kamu | mengunjungi | pernah | sebelumnya,guatemala
+1257,1774799114011,KEEP,Mereka sedang bekerja di proyek pertanian di Guinea,bekerja | di | guinea | mereka | pertanian | proyek | sedang,guinea
+1258,1774799144310,KEEP,Aku akan mengunjungi Guyana bulan depan,akan | aku | bulan | depan | guyana | mengunjungi,guyana
+1259,1774799156227,KEEP,Apakah mereka sudah pernah tinggal di Haiti?,apakah | di | haiti | mereka | pernah | sudah | tinggal,haiti
+1260,1774799166826,KEEP,Aku sedang merencanakan perjalanan ke Honduras bulan depan,aku | bulan | depan | honduras | ke | merencanakan | perjalanan | sedang,honduras
+1261,1774799182424,KEEP,Apakah kamu akan belajar di Hungaria tahun ini?,akan | apakah | belajar | di | hungaria | ini | kamu | tahun,hungaria
+1262,1774799192406,KEEP,Aku belum pernah mengunjungi Islandia sebelumnya,aku | belum | islandia | mengunjungi | pernah | sebelumnya,islandia
+1263,1774799203243,KEEP,Dia sedang belajar bahasa Hindi di India sekarang,bahasa | belajar | di | dia | hindi | india | sedang | sekarang,hindi | india
+1264,1774799223373,DUPLICATE,Aku akan berlibur di Indonesia musim panas nanti,akan | aku | berlibur | di | indonesia | musim | nanti | panas,
+1265,1774799236386,KEEP,Apakah kamu akan bekerja di Iran tahun depan?,akan | apakah | bekerja | depan | di | iran | kamu | tahun,iran
+1266,1774799262430,KEEP,Aku sedang mempelajari sejarah Nusantara sekarang,aku | mempelajari | nusantara | sedang | sejarah | sekarang,nusantara
+1267,1774799279346,KEEP,Mereka akan membangun sekolah baru di Irak,akan | baru | di | irak | membangun | mereka | sekolah,irak
+1268,1774799286331,KEEP,Apakah kamu sudah pernah tinggal di Irlandia sebelumnya?,apakah | di | irlandia | kamu | pernah | sebelumnya | sudah | tinggal,irlandia
+1269,1774799297789,KEEP,Aku sedang merencanakan perjalanan ke Israel bulan depan,aku | bulan | depan | israel | ke | merencanakan | perjalanan | sedang,israel
+1270,1774799307935,DUPLICATE,Aku akan belajar seni di Italia tahun depan,akan | aku | belajar | depan | di | italia | seni | tahun,
+1271,1774799324304,KEEP,Mereka akan berlibur di Jamaika musim panas ini,akan | berlibur | di | ini | jamaika | mereka | musim | panas,jamaika
+1272,1774799335378,DUPLICATE,Aku sedang belajar bahasa Jepang untuk pergi ke Jepang,aku | bahasa | belajar | jepang | ke | pergi | sedang | untuk,
+1273,1774799345666,KEEP,Apakah kamu akan mengunjungi Yordania tahun ini?,akan | apakah | ini | kamu | mengunjungi | tahun | yordania,yordania
+1274,1774799356352,KEEP,Aku belum pernah menghadiri konferensi di Kazakhstan,aku | belum | di | kazakhstan | konferensi | menghadiri | pernah,kazakhstan
+1275,1774799369513,KEEP,Mereka sedang melakukan safari di Kenya sekarang,di | kenya | melakukan | mereka | safari | sedang | sekarang,kenya
+1276,1774799382013,KEEP,Aku akan mengunjungi Kiribati saat liburan nanti,akan | aku | kiribati | liburan | mengunjungi | nanti | saat,kiribati
+1277,1774799393190,KEEP,Apakah dia sudah bekerja di Kuwait sebelumnya?,apakah | bekerja | di | dia | kuwait | sebelumnya | sudah,kuwait
+1278,1774799417507,KEEP,Aku sedang merencanakan perjalanan ke Kirgizstan bulan depan,aku | bulan | depan | ke | kirgizstan | merencanakan | perjalanan | sedang,kirgizstan
+1279,1774799439511,KEEP,Mereka akan belajar budaya di Laos tahun ini,akan | belajar | budaya | di | ini | laos | mereka | tahun,laos
+1280,1774799451679,KEEP,Aku belum pernah mengunjungi Latvia sebelumnya,aku | belum | latvia | mengunjungi | pernah | sebelumnya,latvia
+1281,1774799462325,KEEP,Apakah kamu akan tinggal di Lebanon tahun depan?,akan | apakah | depan | di | kamu | lebanon | tahun | tinggal,lebanon
+1282,1774799498240,KEEP,Aku sedang merencanakan perjalanan ke Lesotho bulan depan,aku | bulan | depan | ke | lesotho | merencanakan | perjalanan | sedang,lesotho
+1283,1774799511724,KEEP,Mereka belum pernah mengunjungi Liberia sebelumnya,belum | liberia | mengunjungi | mereka | pernah | sebelumnya,liberia
+1284,1774799517987,KEEP,Apakah kamu sudah pernah tinggal di Libya sebelumnya?,apakah | di | kamu | libya | pernah | sebelumnya | sudah | tinggal,libya
+1285,1774799625722,KEEP,Aku akan mengunjungi Liechtenstein musim panas nanti,akan | aku | liechtenstein | mengunjungi | musim | nanti | panas,liechtenstein
+1286,1774799636416,KEEP,Mereka sedang belajar sejarah Lituania sekarang,belajar | lituania | mereka | sedang | sejarah | sekarang,lituania
+1287,1774799651514,KEEP,Apakah kamu akan bekerja di Luksemburg tahun ini?,akan | apakah | bekerja | di | ini | kamu | luksemburg | tahun,luksemburg
+1288,1774799656418,KEEP,Aku sedang merencanakan perjalanan ke Madagaskar bulan depan,aku | bulan | depan | ke | madagaskar | merencanakan | perjalanan | sedang,madagaskar
+1289,1774799670223,KEEP,Mereka akan memulai proyek baru di Malawi tahun ini,akan | baru | di | ini | malawi | memulai | mereka | proyek | tahun,malawi
+1290,1774799682043,KEEP,Aku akan berlibur di Malaysia musim panas nanti,akan | aku | berlibur | di | malaysia | musim | nanti | panas,malaysia
+1291,1774799737018,KEEP,Apakah mereka sudah pernah tinggal di Mali sebelumnya?,apakah | di | mali | mereka | pernah | sebelumnya | sudah | tinggal,mali
+1292,1774799744231,KEEP,Aku akan berlibur di Maladewa bulan depan,akan | aku | berlibur | bulan | depan | di | maladewa,maladewa
+1293,1774799763104,KEEP,Mereka sedang mempelajari sejarah Malta sekarang,malta | mempelajari | mereka | sedang | sejarah | sekarang,malta
+1294,1774799768208,KEEP,Aku belum pernah mengunjungi Mauritania sebelumnya,aku | belum | mauritania | mengunjungi | pernah | sebelumnya,mauritania
+1295,1774799796504,KEEP,Aku sedang belajar bahasa Spanyol untuk pergi ke Meksiko,aku | bahasa | belajar | ke | meksiko | pergi | sedang | spanyol | untuk,meksiko | spanyol
+1296,1774799800829,KEEP,Mereka akan berlibur di Mauritius musim panas ini,akan | berlibur | di | ini | mauritius | mereka | musim | panas,mauritius

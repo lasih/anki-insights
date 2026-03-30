@@ -1,0 +1,562 @@
+[
+  {
+    "noteId": 1774856471519,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu pernah ke Mikronesia?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Have you ever been to Micronesia?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856471,
+    "cards": [
+      1774856471519
+    ]
+  },
+  {
+    "noteId": 1774856553682,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum pernah mengunjungi Moldova",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have never visited Moldova",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856553,
+    "cards": [
+      1774856553684
+    ]
+  },
+  {
+    "noteId": 1774856565240,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan pergi ke Monako besok",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will go to Monaco tomorrow",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856565,
+    "cards": [
+      1774856565240
+    ]
+  },
+  {
+    "noteId": 1774856572722,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia tidak tinggal di Mongolia sekarang",
+        "order": 0
+      },
+      "Back": {
+        "value": "He does not live in Mongolia now",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856572,
+    "cards": [
+      1774856572722
+    ]
+  },
+  {
+    "noteId": 1774856601123,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah mereka sedang berlibur di Montenegro?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Are they currently vacationing in Montenegro?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856601,
+    "cards": [
+      1774856601123
+    ]
+  },
+  {
+    "noteId": 1774856607977,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sudah lama tinggal di Maroko",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have lived in Morocco for a long time",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856607,
+    "cards": [
+      1774856607977
+    ]
+  },
+  {
+    "noteId": 1774856622475,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Kami belum akan pindah ke Mozambik",
+        "order": 0
+      },
+      "Back": {
+        "value": "We will not move to Mozambique yet",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856622,
+    "cards": [
+      1774856622475
+    ]
+  },
+  {
+    "noteId": 1774856640061,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Mengapa dia pernah bekerja di Myanmar?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Why did he once work in Myanmar?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856640,
+    "cards": [
+      1774856640061
+    ]
+  },
+  {
+    "noteId": 1774856656087,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang menjelajahi Namibia sekarang",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am exploring Namibia now",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856656,
+    "cards": [
+      1774856656087
+    ]
+  },
+  {
+    "noteId": 1774856667774,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu belum pernah ke Nauru?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Have you never been to Nauru?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856667,
+    "cards": [
+      1774856667775
+    ]
+  },
+  {
+    "noteId": 1774856686175,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Mereka akan mendaki gunung di Nepal",
+        "order": 0
+      },
+      "Back": {
+        "value": "They will climb mountains in Nepal",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856686,
+    "cards": [
+      1774856686175
+    ]
+  },
+  {
+    "noteId": 1774856694517,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sudah tinggal di Belanda selama setahun",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have lived in the Netherlands for a year",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856694,
+    "cards": [
+      1774856694517
+    ]
+  },
+  {
+    "noteId": 1774856709907,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu akan pergi ke Selandia Baru tahun ini?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Will you go to New Zealand this year?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856709,
+    "cards": [
+      1774856709907
+    ]
+  },
+  {
+    "noteId": 1774856733396,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum pernah mencicipi makanan khas Nikaragua",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have never tried traditional Nicaraguan food",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856733,
+    "cards": [
+      1774856733396
+    ]
+  },
+  {
+    "noteId": 1774856738260,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Mereka sedang meneliti satwa liar di Niger",
+        "order": 0
+      },
+      "Back": {
+        "value": "They are researching wildlife in Niger",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856738,
+    "cards": [
+      1774856738260
+    ]
+  },
+  {
+    "noteId": 1774856755776,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan belajar budaya Nigeria bulan depan",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will study Nigerian culture next month",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856755,
+    "cards": [
+      1774856755776
+    ]
+  },
+  {
+    "noteId": 1774856766616,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu pernah melihat berita dari Korea Utara?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Have you ever seen news from North Korea?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856766,
+    "cards": [
+      1774856766616
+    ]
+  },
+  {
+    "noteId": 1774856792169,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku tidak tinggal di Norwegia saat ini",
+        "order": 0
+      },
+      "Back": {
+        "value": "I do not live in Norway right now",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856792,
+    "cards": [
+      1774856792169
+    ]
+  },
+  {
+    "noteId": 1774856812312,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Mereka akan mengunjungi pasar tradisional di Oman",
+        "order": 0
+      },
+      "Back": {
+        "value": "They will visit the traditional market in Oman",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856812,
+    "cards": [
+      1774856812312
+    ]
+  },
+  {
+    "noteId": 1774856840752,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sudah belajar bahasa Pakistan selama sebulan",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have been studying the Pakistani language for a month",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856840,
+    "cards": [
+      1774856840752
+    ]
+  },
+  {
+    "noteId": 1774856849863,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah mereka akan berlayar di kanal Panama?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Will they sail through the Panama Canal?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856849,
+    "cards": [
+      1774856849863
+    ]
+  },
+  {
+    "noteId": 1774856863662,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum pernah mengunjungi kota-kota di Paraguay",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have never visited the cities in Paraguay",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856863,
+    "cards": [
+      1774856863662
+    ]
+  },
+  {
+    "noteId": 1774856883386,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Dia sedang mempelajari sejarah Inca di Peru",
+        "order": 0
+      },
+      "Back": {
+        "value": "He is studying Inca history in Peru",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856883,
+    "cards": [
+      1774856883386
+    ]
+  },
+  {
+    "noteId": 1774856895553,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku akan berenang di pantai Filipina minggu depan",
+        "order": 0
+      },
+      "Back": {
+        "value": "I will swim at the Philippine beaches next week",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856895,
+    "cards": [
+      1774856895553
+    ]
+  },
+  {
+    "noteId": 1774856902718,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Mereka sudah merencanakan perjalanan ke Polandia",
+        "order": 0
+      },
+      "Back": {
+        "value": "They have already planned a trip to Poland",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856902,
+    "cards": [
+      1774856902719
+    ]
+  },
+  {
+    "noteId": 1774856924304,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku sedang menikmati anggur lokal di Portugal",
+        "order": 0
+      },
+      "Back": {
+        "value": "I am enjoying local wine in Portugal",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856924,
+    "cards": [
+      1774856924305
+    ]
+  },
+  {
+    "noteId": 1774856938944,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Apakah kamu akan menghadiri pameran di Qatar?",
+        "order": 0
+      },
+      "Back": {
+        "value": "Will you attend the exhibition in Qatar?",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856938,
+    "cards": [
+      1774856938944
+    ]
+  },
+  {
+    "noteId": 1774856955000,
+    "profile": "User 1",
+    "tags": [],
+    "fields": {
+      "Front": {
+        "value": "Aku belum mengunjungi kastil tua di Rumania",
+        "order": 0
+      },
+      "Back": {
+        "value": "I have not visited the old castles in Romania",
+        "order": 1
+      }
+    },
+    "modelName": "Basic",
+    "mod": 1774856955,
+    "cards": [
+      1774856955000
+    ]
+  }
+]

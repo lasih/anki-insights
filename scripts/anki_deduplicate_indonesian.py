@@ -2,7 +2,7 @@ import csv
 import html
 import re
 from html.parser import HTMLParser
-from typing import Iterable, List, Set, Dict, Any
+from typing import Any, Dict, Iterable, List, Set
 
 import requests
 import spacy

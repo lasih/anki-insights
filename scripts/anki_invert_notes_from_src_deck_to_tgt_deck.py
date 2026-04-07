@@ -1,8 +1,8 @@
 import json
 import os
-from datetime import datetime
-import urllib.request
 import urllib.error
+import urllib.request
+from datetime import datetime
 
 # ==========================================
 # Considerations and assumptions

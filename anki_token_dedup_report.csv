@@ -1319,3 +1319,126 @@ order,note_id,status,front_text,tokens,new_tokens
 1318,1774856924304,KEEP,Aku sedang menikmati anggur lokal di Portugal,aku | anggur | di | lokal | menikmati | portugal | sedang,lokal | menikmati | portugal
 1319,1774856938944,KEEP,Apakah kamu akan menghadiri pameran di Qatar?,akan | apakah | di | kamu | menghadiri | pameran | qatar,pameran | qatar
 1320,1774856955000,KEEP,Aku belum mengunjungi kastil tua di Rumania,aku | belum | di | kastil | mengunjungi | rumania | tua,kastil | rumania
+1321,1774943843784,KEEP,Apakah kamu akan pergi ke Zimbabwe?,akan | apakah | kamu | ke | pergi | zimbabwe,zimbabwe
+1322,1774943858059,KEEP,Aku tidak tinggal di Zambia sekarang,aku | di | sekarang | tidak | tinggal | zambia,zambia
+1323,1774943879898,KEEP,Aku pernah mengunjungi Vietnam tahun lalu,aku | lalu | mengunjungi | pernah | tahun | vietnam,vietnam
+1324,1774943893510,KEEP,Aku belum pernah tinggal di Venezuela,aku | belum | di | pernah | tinggal | venezuela,venezuela
+1325,1774943906169,KEEP,Apakah dia akan pindah ke Vanuatu?,akan | apakah | dia | ke | pindah | vanuatu,vanuatu
+1326,1774943928281,KEEP,Aku sedang belajar tentang Uzbekistan sekarang,aku | belajar | sedang | sekarang | tentang | uzbekistan,uzbekistan
+1327,1774943933599,KEEP,Kami akan berlibur ke Uruguay nanti,akan | berlibur | kami | ke | nanti | uruguay,uruguay
+1328,1774943956293,KEEP,Dia tidak berasal dari Ukraina,berasal | dari | dia | tidak | ukraina,ukraina
+1329,1774943961351,KEEP,Aku pernah melihat dokumenter tentang Uganda,aku | dokumenter | melihat | pernah | tentang | uganda,dokumenter | uganda
+1330,1774943973768,KEEP,Apakah kamu ingin tinggal di Tuvalu suatu hari?,apakah | di | hari | ingin | kamu | suatu | tinggal | tuvalu,tuvalu
+1331,1774943985139,KEEP,Aku belum pernah mengunjungi Turkmenistan,aku | belum | mengunjungi | pernah | turkmenistan,turkmenistan
+1332,1774943997170,KEEP,Aku akan belajar budaya Turki minggu depan,akan | aku | belajar | budaya | depan | minggu | turki,turki
+1333,1774944006444,KEEP,Aku sedang merencanakan perjalanan ke Tunisia,aku | ke | merencanakan | perjalanan | sedang | tunisia,tunisia
+1334,1774944017159,KEEP,Apakah mereka sudah tiba di Tonga?,apakah | di | mereka | sudah | tiba | tonga,tonga
+1335,1774944029570,KEEP,Aku tidak tinggal di Togo saat ini,aku | di | ini | saat | tidak | tinggal | togo,togo
+1336,1774944041610,KEEP,Aku akan mengunjungi Timor Leste bulan depan,akan | aku | bulan | depan | leste | mengunjungi | timor,leste | timor
+1337,1774944059136,KEEP,Aku pernah mencoba makanan Thailand yang pedas,aku | makanan | mencoba | pedas | pernah | thailand | yang,thailand
+1338,1774944064438,KEEP,Apakah kamu sudah melihat safari di Tanzania?,apakah | di | kamu | melihat | safari | sudah | tanzania,tanzania
+1339,1774944077105,KEEP,Aku belum pernah belajar tentang Tajikistan,aku | belajar | belum | pernah | tajikistan | tentang,tajikistan
+1340,1774944084133,KEEP,Dia sedang membaca berita tentang Suriah,berita | dia | membaca | sedang | suriah | tentang,suriah
+1341,1775118883453,KEEP,Dia tidak tinggal di Rusia sekarang,di | dia | rusia | sekarang | tidak | tinggal,rusia
+1342,1775118897575,KEEP,Kami akan mengunjungi Rwanda tahun depan,akan | depan | kami | mengunjungi | rwanda | tahun,rwanda
+1343,1775118910026,KEEP,Mereka belum pernah melihat Samoa dari dekat,belum | dari | dekat | melihat | mereka | pernah | samoa,samoa
+1344,1775118926156,KEEP,Dia sedang bekerja di Senegal minggu ini,bekerja | di | dia | ini | minggu | sedang | senegal,senegal
+1345,1775118936925,KEEP,Apakah mereka akan pindah ke Serbia nanti?,akan | apakah | ke | mereka | nanti | pindah | serbia,serbia
+1346,1775118950454,KEEP,Kami tidak pernah tinggal di Seychelles,di | kami | pernah | seychelles | tidak | tinggal,seychelles
+1347,1775118962269,KEEP,Dia sudah pindah ke Singapura sejak Januari,dia | januari | ke | pindah | sejak | singapura | sudah,singapura
+1348,1775118987151,KEEP,Kami belum akan pergi ke Slovenia bulan ini,akan | belum | bulan | ini | kami | ke | pergi | slovenia,slovenia
+1349,1775119008830,KEEP,Mengapa dia belum kembali dari Sudan?,belum | dari | dia | kembali | mengapa | sudan,sudan
+1350,1775119016159,KEEP,Kami jarang mendengar kabar dari Suriname,dari | jarang | kabar | kami | mendengar | suriname,suriname
+1351,1775119029489,KEEP,Mereka sedang merencanakan pindah ke Swedia,ke | mereka | merencanakan | pindah | sedang | swedia,swedia
+1352,1775119043728,KEEP,Apakah kamu akan menetap di Swiss selamanya?,akan | apakah | di | kamu | menetap | selamanya | swiss,menetap | swiss
+1353,1775119148354,KEEP,Saya sedang belajar Bahasa Inggris setiap malam,bahasa | belajar | inggris | malam | saya | sedang | setiap,inggris
+1354,1775119172796,KEEP,Kami pernah mendengar Bahasa Arab di sana,arab | bahasa | di | kami | mendengar | pernah | sana,arab
+1355,1775119184656,KEEP,Dia tidak sedang belajar Bahasa Bengali sekarang,bahasa | belajar | bengali | dia | sedang | sekarang | tidak,bengali
+1356,1775119204044,KEEP,Kami sering menggunakan Bahasa Indonesia sehari-hari,bahasa | indonesia | kami | menggunakan | sehari-hari | sering,sehari-hari
+1357,1775119257854,KEEP,Kami akan mendengar Bahasa Punjabi Barat di sana,akan | bahasa | barat | di | kami | mendengar | punjabi | sana,punjabi
+1358,1775119263711,KEEP,Dia belum pernah belajar Bahasa Tamil sama sekali,bahasa | belajar | belum | dia | pernah | sama | sekali | tamil,tamil
+1359,1775119273067,KEEP,Saya sedang menonton acara dalam Bahasa Tagalog,acara | bahasa | dalam | menonton | saya | sedang | tagalog,tagalog
+1360,1775119285366,KEEP,Apakah kamu bisa memahami Bahasa Swahili?,apakah | bahasa | bisa | kamu | memahami | swahili,swahili
+1361,1775119290230,KEEP,Mereka tidak menggunakan Bahasa Hausa di sini,bahasa | di | hausa | menggunakan | mereka | sini | tidak,hausa
+1362,1775119300440,KEEP,Kami belum pernah berbicara Bahasa Telugu sebelumnya,bahasa | belum | berbicara | kami | pernah | sebelumnya | telugu,telugu
+1363,1775119313734,KEEP,Saya pernah mendengar Bahasa Marathi di radio,bahasa | di | marathi | mendengar | pernah | radio | saya,marathi
+1364,1775119617737,KEEP,Apakah kamu akan belajar Bahasa Thai nanti?,akan | apakah | bahasa | belajar | kamu | nanti | thai,thai
+1365,1775119755764,KEEP,Apakah kamu akan menggunakan Bahasa Khmer di sana?,akan | apakah | bahasa | di | kamu | khmer | menggunakan | sana,khmer
+1366,1775119760888,KEEP,Saya belum pernah mendengar Bahasa Somalia langsung,bahasa | belum | langsung | mendengar | pernah | saya | somalia,somalia
+1367,1775119766341,KEEP,Mereka sedang belajar Bahasa Burma secara mandiri,bahasa | belajar | burma | mandiri | mereka | secara | sedang,burma | mandiri
+1368,1775119771179,KEEP,Apakah dia memahami Bahasa Sinhala dengan jelas?,apakah | bahasa | dengan | dia | jelas | memahami | sinhala,sinhala
+1369,1775119776249,KEEP,Kami belum akan belajar Bahasa Nepali sekarang,akan | bahasa | belajar | belum | kami | nepali | sekarang,nepali
+1370,1775119782505,KEEP,Dia pernah belajar Bahasa Uzbek di luar negeri,bahasa | belajar | di | dia | luar | negeri | pernah | uzbek,uzbek
+1371,1775119787089,KEEP,Saya tidak bisa menulis dalam Bahasa Amharik,amharik | bahasa | bisa | dalam | menulis | saya | tidak,amharik
+1372,1775119841144,KEEP,Apakah dia sedang menonton film Bahasa Malayalam?,apakah | bahasa | dia | film | malayalam | menonton | sedang,malayalam
+1373,1775119846254,KEEP,Dia pernah menerjemahkan puisi ke Bahasa Persia,bahasa | dia | ke | menerjemahkan | pernah | persia | puisi,menerjemahkan | persia | puisi
+1374,1775119976586,KEEP,Saya akan melamar posisi Insinyur Cloud besok,akan | besok | cloud | insinyur | melamar | posisi | saya,cloud | melamar | posisi
+1375,1775119981344,KEEP,Apakah kamu bekerja sebagai Insinyur DevOps sekarang?,apakah | bekerja | devops | insinyur | kamu | sebagai | sekarang,devops
+1376,1775119986125,KEEP,Mereka sedang mencari Insinyur Perangkat Lunak baru,baru | insinyur | lunak | mencari | mereka | perangkat | sedang,lunak
+1377,1775119998938,KEEP,Dia belum pernah menjadi Administrator Basis Data sebelumnya,administrator | basis | belum | data | dia | menjadi | pernah | sebelumnya,administrator | basis
+1378,1775120006682,KEEP,Apakah dia sudah menjadi Arsitek Data senior?,apakah | arsitek | data | dia | menjadi | senior | sudah,arsitek | senior
+1379,1775120011351,KEEP,Kami pernah merekrut Insinyur Analitik tahun lalu,analitik | insinyur | kami | lalu | merekrut | pernah | tahun,analitik | merekrut
+1380,1775120018358,KEEP,Dia tidak bekerja sebagai Analis Intelijen Bisnis lagi,analis | bekerja | bisnis | dia | intelijen | lagi | sebagai | tidak,analis | intelijen
+1381,1775323095790,KEEP,Dia sudah menato lengannya kemarin,dia | kemarin | lengannya | menato | sudah,lengannya | menato
+1382,1775323130323,KEEP,Saya punya dua tato di lengan,di | dua | lengan | punya | saya | tato,tato
+1383,1775323158875,KEEP,Rumput ini belum dipotong minggu ini,belum | dipotong | ini | minggu | rumput,rumput
+1384,1775324084081,KEEP,Dia sangat hebat saat presentasi tadi,dia | hebat | presentasi | saat | sangat | tadi,hebat
+1385,1775324101080,KEEP,Mereka hebat-hebat dalam bidang teknologi,bidang | dalam | hebat | mereka | teknologi,bidang | teknologi
+1386,1775324113699,KEEP,Kamu harus hati-hati saat menyetir nanti,harus | hati-hati | kamu | menyetir | nanti | saat,menyetir
+1387,1775324306814,KEEP,Apakah kamu pernah melihat makhluk asing?,apakah | asing | kamu | makhluk | melihat | pernah,makhluk
+1388,1775324315382,KEEP,Dia bukan jalang seperti yang mereka bilang,bilang | bukan | dia | jalang | mereka | seperti | yang,jalang
+1389,1775324346174,KEEP,Dia tidak pernah bilang dia lesbian sebelumnya,bilang | dia | lesbian | pernah | sebelumnya | tidak,lesbian
+1390,1775326049096,KEEP,Suasana di kafe itu terasa sangat nyaman,di | itu | kafe | nyaman | sangat | suasana | terasa,suasana
+1391,1775326357811,KEEP,Apakah kamu sudah mengubah konfigurasi server ini?,apakah | ini | kamu | konfigurasi | mengubah | server | sudah,konfigurasi | server
+1392,1775326482609,KEEP,Kenapa kamu memanggilnya jalang kemarin?,jalang | kamu | kemarin | kenapa | memanggilnya,memanggilnya
+1393,1775326581808,KEEP,Dokter memeriksa payudara pasien tadi pagi,dokter | memeriksa | pagi | pasien | payudara | tadi,payudara
+1394,1775326595318,KEEP,Dia lupa membawa payung saat hujan tadi,dia | hujan | lupa | membawa | payung | saat | tadi,payung
+1395,1775326636677,KEEP,Saudara laki-laki saya sedang bekerja di luar negeri,bekerja | di | laki-laki | luar | negeri | saudara | saya | sedang,laki-laki
+1396,1775326664982,KEEP,Apakah kamu sudah membaca doa pagi ini?,apakah | doa | ini | kamu | membaca | pagi | sudah,doa
+1397,1775326692711,KEEP,Dia terlihat tampan saat memakai jas itu,dia | itu | jas | memakai | saat | tampan | terlihat,tampan
+1398,1775326716887,KEEP,Dia akan membeli mantel baru besok,akan | baru | besok | dia | mantel | membeli,mantel
+1399,1775326777543,KEEP,Saya belum membeli pasta gigi baru,baru | belum | gigi | membeli | pasta | saya,pasta
+1400,1775326925343,KEEP,Dia pernah menjadi pengembara selama bertahun-tahun,bertahun-tahun | dia | menjadi | pengembara | pernah | selama,pengembara
+1401,1775420696996,KEEP,Suaminya akan memasak makan malam nanti,akan | makan | malam | memasak | nanti | suaminya,suaminya
+1402,1775420730102,KEEP,Apakah mereka akan menari di pesta nanti?,akan | apakah | di | menari | mereka | nanti | pesta,menari
+1403,1775420790347,KEEP,Pesawat itu belum lepas landas karena hujan,belum | hujan | itu | karena | landas | lepas | pesawat,landas | lepas
+1404,1775420808141,KEEP,Dia tidak mau lepas dari tanggung jawabnya,dari | dia | jawabnya | lepas | mau | tanggung | tidak,jawabnya | tanggung
+1405,1775420880735,KEEP,Dia membawa buku serta laptop ke kelas,buku | dia | ke | kelas | laptop | membawa | serta,serta
+1406,1775420902607,KEEP,Dia sedang menyempurnakan rencananya sekarang,dia | menyempurnakan | rencananya | sedang | sekarang,menyempurnakan
+1407,1775420930952,KEEP,Produk ini belum tersedia di toko itu,belum | di | ini | itu | produk | tersedia | toko,tersedia
+1408,1775420983381,KEEP,Dia tidak bisa mengontrol emosinya tadi,bisa | dia | emosinya | mengontrol | tadi | tidak,emosinya | mengontrol
+1409,1775421090642,KEEP,Tolong aktifkan fitur ini sebelum mulai,aktifkan | fitur | ini | mulai | sebelum | tolong,fitur
+1410,1775421107590,KEEP,Saya sedang menelusuri situs itu sekarang,itu | menelusuri | saya | sedang | sekarang | situs,menelusuri
+1411,1775421127453,KEEP,Apakah perangkat ini akan diganti besok?,akan | apakah | besok | diganti | ini | perangkat,diganti
+1412,1775421132275,KEEP,Saya akan mengganti ponsel ini segera,akan | ini | mengganti | ponsel | saya | segera,mengganti
+1413,1775421458638,KEEP,Kotak itu berisi dokumen penting tadi,berisi | dokumen | itu | kotak | penting | tadi,berisi
+1414,1775421530532,KEEP,Film itu sangat disukai oleh penonton,disukai | film | itu | oleh | penonton | sangat,disukai | penonton
+1415,1775421567168,KEEP,Dia akan pindah ke Amerika tahun depan,akan | amerika | depan | dia | ke | pindah | tahun,amerika
+1416,1775421576368,KEEP,Mereka belum pernah pergi ke Afrika sebelumnya,afrika | belum | ke | mereka | pergi | pernah | sebelumnya,afrika
+1417,1775421624073,KEEP,Dia belum pernah tinggal di Oseania sebelumnya,belum | di | dia | oseania | pernah | sebelumnya | tinggal,oseania
+1418,1775421663322,KEEP,Angin bertiup dari arah tenggara sejak pagi,angin | arah | bertiup | dari | pagi | sejak | tenggara,bertiup | tenggara
+1419,1775421684847,KEEP,Dokter tidak memberi obat itu kepadanya,dokter | itu | kepadanya | memberi | obat | tidak,kepadanya
+1420,1775421703270,KEEP,Dia pernah terlibat dengan narkoba sebelumnya,dengan | dia | narkoba | pernah | sebelumnya | terlibat,narkoba | terlibat
+1421,1775459431306,KEEP,Dia kandidat terbaik tahun ini,dia | ini | kandidat | tahun | terbaik,kandidat
+1422,1775459454757,KEEP,Kenapa kamu bermalas-malasan sepanjang hari?,bermalas-malasan | hari | kamu | kenapa | sepanjang,bermalas-malasan
+1423,1775459464364,KEEP,"Aku tidak malas, hanya sedang lelah",aku | hanya | lelah | malas | sedang | tidak,malas
+1424,1775459492650,KEEP,Kami akan membuat makan malam istimewa besok,akan | besok | istimewa | kami | makan | malam | membuat,istimewa
+1425,1775459501597,KEEP,Mereka akan mengadakan pesta raya minggu depan,akan | depan | mengadakan | mereka | minggu | pesta | raya,raya
+1426,1775459519251,KEEP,Di sini gadak sinyal sejak tadi,di | gadak | sejak | sini | sinyal | tadi,sinyal
+1427,1775459532574,KEEP,Gadak alasan kamu menolak undangan itu,alasan | gadak | itu | kamu | menolak | undangan,undangan
+1428,1775459898794,KEEP,Saya masih menunggu kabar darinya,darinya | kabar | masih | menunggu | saya,darinya
+1429,1775459938975,KEEP,Burung itu belum kembali ke sarangnya,belum | burung | itu | ke | kembali | sarangnya,sarangnya
+1430,1775459947968,KEEP,Apakah sarang itu masih aman sekarang?,aman | apakah | itu | masih | sarang | sekarang,sarang
+1431,1775551156645,KEEP,Dia belum makan cabai pedas itu,belum | cabai | dia | itu | makan | pedas,cabai
+1432,1775551167454,DUPLICATE,Apakah sup ini terlalu pedas?,apakah | ini | pedas | sup | terlalu,
+1433,1775551196734,DUPLICATE,Kue itu akan terasa sangat manis,akan | itu | kue | manis | sangat | terasa,
+1434,1775551212357,KEEP,Dia sedang menggarami sup di dapur,dapur | di | dia | menggarami | sedang | sup,menggarami
+1435,1775551241089,KEEP,Air di panci itu sudah memanas,air | di | itu | memanas | panci | sudah,memanas | panci
+1436,1775551284637,KEEP,"Tunggu bentar, aku akan kembali",akan | aku | bentar | kembali | tunggu,bentar
+1437,1775551313978,KEEP,Kami akan menyelesaikan ini secepatnya,akan | ini | kami | menyelesaikan | secepatnya,secepatnya
+1438,1775551326820,DUPLICATE,Apakah merokok di sini dilarang?,apakah | di | dilarang | merokok | sini,
+1439,1775551350157,KEEP,Dia pernah mencapai tingkat tertinggi sebelumnya,dia | mencapai | pernah | sebelumnya | tertinggi | tingkat,tertinggi | tingkat
+1440,1775551369227,KEEP,Kefasihannya dalam bahasa itu belum stabil,bahasa | belum | dalam | itu | kefasihannya | stabil,kefasihannya
+1441,1775551470028,KEEP,Apakah dia sudah kefasih berbicara bahasa itu?,apakah | bahasa | berbicara | dia | itu | kefasih | sudah,kefasih
+1442,1775551494049,KEEP,Anak itu akan menjadi dwibahasa sejak kecil,akan | anak | dwibahasa | itu | kecil | menjadi | sejak,dwibahasa
+1443,1775551502728,KEEP,Dia bukan penutur asli bahasa Jepang,asli | bahasa | bukan | dia | jepang | penutur,penutur

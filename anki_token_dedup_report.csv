@@ -1430,15 +1430,152 @@ order,note_id,status,front_text,tokens,new_tokens
 1429,1775459938975,KEEP,Burung itu belum kembali ke sarangnya,belum | burung | itu | ke | kembali | sarangnya,sarangnya
 1430,1775459947968,KEEP,Apakah sarang itu masih aman sekarang?,aman | apakah | itu | masih | sarang | sekarang,sarang
 1431,1775551156645,KEEP,Dia belum makan cabai pedas itu,belum | cabai | dia | itu | makan | pedas,cabai
-1432,1775551167454,DUPLICATE,Apakah sup ini terlalu pedas?,apakah | ini | pedas | sup | terlalu,
-1433,1775551196734,DUPLICATE,Kue itu akan terasa sangat manis,akan | itu | kue | manis | sangat | terasa,
-1434,1775551212357,KEEP,Dia sedang menggarami sup di dapur,dapur | di | dia | menggarami | sedang | sup,menggarami
-1435,1775551241089,KEEP,Air di panci itu sudah memanas,air | di | itu | memanas | panci | sudah,memanas | panci
-1436,1775551284637,KEEP,"Tunggu bentar, aku akan kembali",akan | aku | bentar | kembali | tunggu,bentar
-1437,1775551313978,KEEP,Kami akan menyelesaikan ini secepatnya,akan | ini | kami | menyelesaikan | secepatnya,secepatnya
-1438,1775551326820,DUPLICATE,Apakah merokok di sini dilarang?,apakah | di | dilarang | merokok | sini,
-1439,1775551350157,KEEP,Dia pernah mencapai tingkat tertinggi sebelumnya,dia | mencapai | pernah | sebelumnya | tertinggi | tingkat,tertinggi | tingkat
-1440,1775551369227,KEEP,Kefasihannya dalam bahasa itu belum stabil,bahasa | belum | dalam | itu | kefasihannya | stabil,kefasihannya
-1441,1775551470028,KEEP,Apakah dia sudah kefasih berbicara bahasa itu?,apakah | bahasa | berbicara | dia | itu | kefasih | sudah,kefasih
-1442,1775551494049,KEEP,Anak itu akan menjadi dwibahasa sejak kecil,akan | anak | dwibahasa | itu | kecil | menjadi | sejak,dwibahasa
-1443,1775551502728,KEEP,Dia bukan penutur asli bahasa Jepang,asli | bahasa | bukan | dia | jepang | penutur,penutur
+1432,1775551212357,KEEP,Dia sedang menggarami sup di dapur,dapur | di | dia | menggarami | sedang | sup,menggarami
+1433,1775551241089,KEEP,Air di panci itu sudah memanas,air | di | itu | memanas | panci | sudah,memanas | panci
+1434,1775551284637,KEEP,"Tunggu bentar, aku akan kembali",akan | aku | bentar | kembali | tunggu,bentar
+1435,1775551313978,KEEP,Kami akan menyelesaikan ini secepatnya,akan | ini | kami | menyelesaikan | secepatnya,secepatnya
+1436,1775551350157,KEEP,Dia pernah mencapai tingkat tertinggi sebelumnya,dia | mencapai | pernah | sebelumnya | tertinggi | tingkat,tertinggi | tingkat
+1437,1775551369227,KEEP,Kefasihannya dalam bahasa itu belum stabil,bahasa | belum | dalam | itu | kefasihannya | stabil,kefasihannya
+1438,1775551470028,KEEP,Apakah dia sudah kefasih berbicara bahasa itu?,apakah | bahasa | berbicara | dia | itu | kefasih | sudah,kefasih
+1439,1775551494049,KEEP,Anak itu akan menjadi dwibahasa sejak kecil,akan | anak | dwibahasa | itu | kecil | menjadi | sejak,dwibahasa
+1440,1775551502728,KEEP,Dia bukan penutur asli bahasa Jepang,asli | bahasa | bukan | dia | jepang | penutur,penutur
+1441,1775637357988,KEEP,Dia sudah kehilangan minat pada proyek itu,dia | itu | kehilangan | minat | pada | proyek | sudah,minat
+1442,1775637389281,KEEP,Saya tidak akan sebut namanya di sini,akan | di | namanya | saya | sebut | sini | tidak,sebut
+1443,1775637401986,KEEP,Dia maklum akan kesalahan saya tadi,akan | dia | kesalahan | maklum | saya | tadi,maklum
+1444,1775637427428,KEEP,"Maklumlah, dia belum pernah bekerja sebelumnya",bekerja | belum | dia | maklumlah | pernah | sebelumnya,maklumlah
+1445,1775637438982,KEEP,Dia tampil sangat berkelas di acara itu,acara | berkelas | di | dia | itu | sangat | tampil,berkelas | tampil
+1446,1775637458667,KEEP,"Saya belum minum, jadi masih haus",belum | haus | jadi | masih | minum | saya,haus | jadi
+1447,1775637468800,KEEP,Kami akan makan karena sudah lapar,akan | kami | karena | lapar | makan | sudah,lapar
+1448,1775637481132,KEEP,Kulitnya tetap terlihat alami tanpa riasan,alami | kulitnya | riasan | tanpa | terlihat | tetap,kulitnya | riasan
+1449,1775637505278,KEEP,Versi terbaru aplikasi itu belum tersedia,aplikasi | belum | itu | terbaru | tersedia | versi,versi
+1450,1775637595305,KEEP,"Tanpa konteks, kalimat itu sulit dipahami",dipahami | itu | kalimat | konteks | sulit | tanpa,konteks
+1451,1775724244077,KEEP,Apakah pepatah itu masih relevan sekarang?,apakah | itu | masih | pepatah | relevan | sekarang,pepatah | relevan
+1452,1775724264975,KEEP,Dia tidak pantas diperlakukan seperti itu,dia | diperlakukan | itu | pantas | seperti | tidak,diperlakukan | pantas
+1453,1775724276550,KEEP,Jangan perlakukan aku seperti anak kecil,aku | anak | jangan | kecil | perlakukan | seperti,perlakukan
+1454,1775729913662,KEEP,Negara itu sudah menguji rudal baru,baru | itu | menguji | negara | rudal | sudah,rudal
+1455,1775729926238,KEEP,Mereka sedang membangun pembangkit nuklir baru,baru | membangun | mereka | nuklir | pembangkit | sedang,nuklir | pembangkit
+1456,1775839575446,KEEP,Dia belum mengaku kesalahannya kepada polisi?,belum | dia | kepada | kesalahannya | mengaku | polisi,kesalahannya | mengaku
+1457,1775839586505,KEEP,Aku sudah menyadari kesalahan itu kemarin,aku | itu | kemarin | kesalahan | menyadari | sudah,menyadari
+1458,1775839599372,KEEP,Kejagung sedang menyelidiki kasus besar itu,besar | itu | kasus | kejagung | menyelidiki | sedang,kasus | kejagung | menyelidiki
+1459,1775839618864,KEEP,Apakah selidik kasus itu sudah selesai?,apakah | itu | kasus | selesai | selidik | sudah,selidik
+1460,1775839629020,KEEP,Dia belum setor uang itu ke bank,bank | belum | dia | itu | ke | setor | uang,setor
+1461,1775839648915,KEEP,Apakah sitaan itu akan dilelang minggu depan?,akan | apakah | depan | dilelang | itu | minggu | sitaan,dilelang | sitaan
+1462,1775839657978,KEEP,Mereka akan mengadakan lelang besar besok,akan | besar | besok | lelang | mengadakan | mereka,lelang
+1463,1775839689202,KEEP,Kedua pihak belum mencapai gencatan hingga kini,belum | gencatan | hingga | kedua | kini | mencapai | pihak,gencatan | hingga | pihak
+1464,1775839721411,KEEP,Mereka akan melancarkan serangan besar malam ini,akan | besar | ini | malam | melancarkan | mereka | serangan,melancarkan | serangan
+1465,1775839745502,KEEP,Mengapa antrean ini tidak bergerak sejak tadi?,antrean | bergerak | ini | mengapa | sejak | tadi | tidak,antrean
+1466,1776070934768,KEEP,Sup ini terlalu encer hari ini,encer | hari | ini | sup | terlalu,encer
+1467,1776070954578,KEEP,Umumnya dia tidak datang tepat waktu,datang | dia | tepat | tidak | umumnya | waktu,tepat | umumnya
+1468,1776071020630,KEEP,Apakah aturan ini berlaku umum sekarang?,apakah | aturan | berlaku | ini | sekarang | umum,berlaku | umum
+1469,1776071054501,KEEP,Kelambapan tinggi merusak dinding rumah lama,dinding | kelambapan | lama | merusak | rumah | tinggi,kelambapan
+1470,1776071064470,KEEP,Ruangan ini terasa lambap sejak kemarin,ini | kemarin | lambap | ruangan | sejak | terasa,lambap
+1471,1776071113405,KEEP,Tiket ini akan gratis besok pagi,akan | besok | gratis | ini | pagi | tiket,gratis
+1472,1776071137999,KEEP,Mengapa garis ini tidak lurus sekarang?,garis | ini | lurus | mengapa | sekarang | tidak,garis
+1473,1776071245196,KEEP,Dia akan mempertahankan haknya di pengadilan,akan | di | dia | haknya | mempertahankan | pengadilan,haknya | mempertahankan | pengadilan
+1474,1776071259637,KEEP,Apakah kamu sudah memahami hak sebagai warga?,apakah | hak | kamu | memahami | sebagai | sudah | warga,hak
+1475,1776071330942,KEEP,Persyaratan ini belum dipenuhi oleh pelamar,belum | dipenuhi | ini | oleh | pelamar | persyaratan,dipenuhi | pelamar | persyaratan
+1476,1776071341734,KEEP,Kami akan penuhi janji itu besok,akan | besok | itu | janji | kami | penuhi,penuhi
+1477,1776071385016,KEEP,Mereka sedang beriklan produk baru di televisi,baru | beriklan | di | mereka | produk | sedang | televisi,beriklan
+1478,1776071401841,KEEP,Dia telah mencipta lagu untuk film itu,dia | film | itu | lagu | mencipta | telah | untuk,mencipta
+1479,1776071428970,KEEP,Hak cipta lagu itu belum didaftarkan,belum | cipta | didaftarkan | hak | itu | lagu,cipta | didaftarkan
+1480,1776071613338,KEEP,Apakah kamu akan daftarkan merek itu?,akan | apakah | daftarkan | itu | kamu | merek,daftarkan | merek
+1481,1776179990500,KEEP,Dia sedang membangun karir di luar negeri,di | dia | karir | luar | membangun | negeri | sedang,karir
+1482,1776180002035,KEEP,Mereka belum siap tempur hari ini,belum | hari | ini | mereka | siap | tempur,tempur
+1483,1776180104253,KEEP,Jangan panik saat listrik padam,jangan | listrik | padam | panik | saat,panik
+1484,1776180140279,KEEP,Saya masih penasaran tentang jawabannya,jawabannya | masih | penasaran | saya | tentang,penasaran
+1485,1776180148735,KEEP,Pasar itu ramai saat asar tiba,asar | itu | pasar | ramai | saat | tiba,asar
+1486,1776180214990,KEEP,Perdagangan meningkat setelah kebijakan baru,baru | kebijakan | meningkat | perdagangan | setelah,perdagangan
+1487,1776180264064,KEEP,Mereka akan membentuk kelompok baru besok,akan | baru | besok | kelompok | membentuk | mereka,membentuk
+1488,1776180285049,KEEP,Dia bekerja keras demi keluarganya,bekerja | demi | dia | keluarganya | keras,demi | keluarganya
+1489,1776180306380,KEEP,Kekuasaan itu sering disalahgunakan,disalahgunakan | itu | kekuasaan | sering,disalahgunakan | kekuasaan
+1490,1776180319641,KEEP,Jangan salahgunakan kepercayaan orang lain,jangan | kepercayaan | lain | orang | salahgunakan,salahgunakan
+1491,1776240817397,KEEP,Rencananya sudah disetujui kemarin,disetujui | kemarin | rencananya | sudah,disetujui
+1492,1776240847956,KEEP,Dia akan menjadi yang terkuat nanti,akan | dia | menjadi | nanti | terkuat | yang,terkuat
+1493,1776240887344,KEEP,Apakah dia pernah melaporkan pelecehan itu?,apakah | dia | itu | melaporkan | pelecehan | pernah,melaporkan | pelecehan
+1494,1776240893277,KEEP,Jangan leceh temanmu di sekolah,di | jangan | leceh | sekolah | temanmu,leceh | temanmu
+1495,1776241013063,KEEP,Dia tidak pernah melecehkan rekan kerjanya,dia | kerjanya | melecehkan | pernah | rekan | tidak,kerjanya | melecehkan | rekan
+1496,1776241022156,KEEP,Dia belum bertemu rekan barunya hari ini,barunya | belum | bertemu | dia | hari | ini | rekan,barunya
+1497,1776241443262,KEEP,Dia masih punya hutang ke bank,bank | dia | hutang | ke | masih | punya,hutang
+1498,1776241479819,KEEP,"Dalam cerita itu, buto sedang mengejar anak-anak",anak-anak | buto | cerita | dalam | itu | mengejar | sedang,buto
+1499,1776241595458,KEEP,Tim itu menang lagi kemarin,itu | kemarin | lagi | menang | tim,menang
+1500,1776241614443,KEEP,Dia selalu menjilat atasannya di kantor,atasannya | di | dia | kantor | menjilat | selalu,atasannya
+1501,1776327019462,KEEP,Dia sudah nipu temannya kemarin,dia | kemarin | nipu | sudah | temannya,nipu
+1502,1776327042531,KEEP,Apakah kamu ikut undian itu?,apakah | ikut | itu | kamu | undian,undian
+1503,1776327190595,KEEP,Dia akan undang kita besok,akan | besok | dia | kita | undang,undang
+1504,1776327279107,KEEP,Perusahaan itu belum buka lowongan baru,baru | belum | buka | itu | lowongan | perusahaan,buka | lowongan
+1505,1776327281940,KEEP,Saya belum terima gaji bulan ini,belum | bulan | gaji | ini | saya | terima,gaji
+1506,1776327301100,KEEP,Kami butuh modal untuk mulai usaha,butuh | kami | modal | mulai | untuk | usaha,modal
+1507,1776333565609,KEEP,"Seiring waktu, dia jadi lebih tenang",dia | jadi | lebih | seiring | tenang | waktu,seiring
+1508,1776333703008,KEEP,Kecuali siapa datang besok?,besok | datang | kecuali | siapa,kecuali
+1509,1776333781637,KEEP,Dia sering beo cara bicara gurunya,beo | bicara | cara | dia | gurunya | sering,beo | gurunya
+1510,1776333802127,KEEP,Anak itu tidak meniru perilaku buruk,anak | buruk | itu | meniru | perilaku | tidak,meniru | perilaku
+1511,1776538270136,KEEP,Bukunya akan terbit bulan depan,akan | bukunya | bulan | depan | terbit,bukunya
+1512,1776538333279,KEEP,Dia belum memilih penerbit untuk bukunya,belum | bukunya | dia | memilih | penerbit | untuk,penerbit
+1513,1776538394936,KEEP,Mengapa antrian ini tidak bergerak?,antrian | bergerak | ini | mengapa | tidak,antrian
+1514,1776538440389,KEEP,Aku sedang menulis karangan tentang perjalanan,aku | karangan | menulis | perjalanan | sedang | tentang,karangan
+1515,1776538502631,KEEP,Biaya itu terus akumulasi setiap bulan,akumulasi | biaya | bulan | itu | setiap | terus,akumulasi
+1516,1776538590066,KEEP,"Dia bukan akademisi, tapi praktisi berpengalaman",akademisi | berpengalaman | bukan | dia | praktisi | tapi,akademisi | berpengalaman | praktisi
+1517,1776538656526,KEEP,Apa isinya surat yang kamu terima?,apa | isinya | kamu | surat | terima | yang,isinya
+1518,1776538696043,KEEP,Jangan dasarkan keputusan pada rumor,dasarkan | jangan | keputusan | pada | rumor,dasarkan | rumor
+1519,1776538733459,KEEP,Keputusan itu didasarkan pada data lama,data | didasarkan | itu | keputusan | lama | pada,didasarkan
+1520,1776538801043,KEEP,Laporan ini harus dipertanggungjawabkan dengan jelas,dengan | dipertanggungjawabkan | harus | ini | jelas | laporan,dipertanggungjawabkan
+1521,1776634273170,KEEP,Teknologi ini belum saya pahami sepenuhnya,belum | ini | pahami | saya | sepenuhnya | teknologi,pahami
+1522,1776634278878,KEEP,Apakah silo itu sudah penuh sekarang?,apakah | itu | penuh | sekarang | silo | sudah,silo
+1523,1776634301349,KEEP,Saya akan mengganti kasur lama besok,akan | besok | kasur | lama | mengganti | saya,kasur
+1524,1776634326182,KEEP,Kasurnya tidak nyaman untuk tidur lama,kasurnya | lama | nyaman | tidak | tidur | untuk,kasurnya
+1525,1776634506568,KEEP,Kesalahan itu tidak akan terulang lagi,akan | itu | kesalahan | lagi | terulang | tidak,terulang
+1526,1776634533869,KEEP,Bangunan itu sudah dihancurkan kemarin,bangunan | dihancurkan | itu | kemarin | sudah,dihancurkan
+1527,1776634545368,KEEP,Apakah rencananya akan hancur nanti?,akan | apakah | hancur | nanti | rencananya,hancur
+1528,1776634588083,KEEP,Dia tidak pura-pura sakit tadi,dia | pura-pura | sakit | tadi | tidak,pura-pura
+1529,1776634608726,KEEP,Lihatlah pemandangan saat ini,ini | lihatlah | pemandangan | saat,lihatlah
+1530,1776634651034,KEEP,Intelijen itu sudah mengumpulkan data rahasia,data | intelijen | itu | mengumpulkan | rahasia | sudah,mengumpulkan
+1531,1776634668383,KEEP,Kami sedang mengumpul informasi penting hari ini,hari | informasi | ini | kami | mengumpul | penting | sedang,informasi | mengumpul
+1532,1776674290942,KEEP,Berapa skor tim itu tadi?,berapa | itu | skor | tadi | tim,skor
+1533,1776674392299,KEEP,Apakah penemuan-penemuan itu sudah diuji?,apakah | diuji | itu | penemuan | sudah,penemuan
+1534,1776674432490,KEEP,Umat itu belum siap menerima perubahan,belum | itu | menerima | perubahan | siap | umat,umat
+1535,1776674447115,KEEP,Nasibnya akan berubah tahun depan,akan | berubah | depan | nasibnya | tahun,nasibnya
+1536,1776674454634,KEEP,Masyarakat tidak pernah melupakan kejadian itu,itu | kejadian | masyarakat | melupakan | pernah | tidak,masyarakat
+1537,1776674503164,KEEP,Bagaimana nasib kita nanti?,bagaimana | kita | nanti | nasib,bagaimana | nasib
+1538,1776674537664,KEEP,Purbaya menyimpan banyak rahasia,banyak | menyimpan | purbaya | rahasia,purbaya
+1539,1776674580111,KEEP,Saya terkejut mendengar kabar itu,itu | kabar | mendengar | saya | terkejut,terkejut
+1540,1776674608012,KEEP,Kejutannya membuat semua orang diam,diam | kejutannya | membuat | orang | semua,kejutannya
+1541,1776768013031,KEEP,Apakah dia disebut sebagai antikris?,antikris | apakah | dia | disebut | sebagai,antikris | disebut
+1542,1776768036608,KEEP,Kekaisaran itu pernah runtuh sebelumnya,itu | kekaisaran | pernah | runtuh | sebelumnya,kekaisaran | runtuh
+1543,1776768043545,KEEP,Kaisar itu sedang memimpin upacara,itu | kaisar | memimpin | sedang | upacara,kaisar | upacara
+1544,1776768071115,KEEP,Bangunan itu tidak runtuh saat gempa,bangunan | gempa | itu | runtuh | saat | tidak,gempa
+1545,1776775861242,KEEP,Dia belum punya duit untuk bayar,bayar | belum | dia | duit | punya | untuk,bayar | duit
+1546,1776775876428,KEEP,Serigala itu menjadi semakin ganas malam ini,ganas | ini | itu | malam | menjadi | semakin | serigala,ganas
+1547,1776776098816,KEEP,Rudal itu tidak pernah ditembakkan kemarin,ditembakkan | itu | kemarin | pernah | rudal | tidak,ditembakkan
+1548,1776776115328,KEEP,Kondisinya sedang kritis sejak tadi malam,kondisinya | kritis | malam | sedang | sejak | tadi,kritis
+1549,1776776124176,KEEP,Kondisi pasien belum membaik hari ini,belum | hari | ini | kondisi | membaik | pasien,kondisi
+1550,1776776225230,KEEP,Apakah demokrasi selalu berjalan adil?,adil | apakah | berjalan | demokrasi | selalu,adil | demokrasi
+1551,1776855310605,KEEP,Dia belum menanggapi pesan saya,belum | dia | menanggapi | pesan | saya,menanggapi
+1552,1776855324970,KEEP,Dia akan membenarkan kesalahan laporan itu,akan | dia | itu | kesalahan | laporan | membenarkan,membenarkan
+1553,1776855341808,KEEP,Apakah air ini mengandung belerang?,air | apakah | belerang | ini | mengandung,belerang | mengandung
+1554,1776855358461,KEEP,Kilang itu sedang memperbaiki mesin lama,itu | kilang | lama | memperbaiki | mesin | sedang,kilang
+1555,1776855377069,KEEP,Desa itu dikelilingi hutan lebat,desa | dikelilingi | hutan | itu | lebat,dikelilingi | lebat
+1556,1776855391978,KEEP,Apakah dia agen resmi perusahaan itu?,agen | apakah | dia | itu | perusahaan | resmi,agen | resmi
+1557,1776855401716,KEEP,Kami akan kelilingi pulau kecil itu besok,akan | besok | itu | kami | kecil | kelilingi | pulau,kelilingi
+1558,1776855430005,KEEP,Mobil itu hampir bertabrakan di jalan sempit,bertabrakan | di | hampir | itu | jalan | mobil | sempit,bertabrakan
+1559,1776855512570,KEEP,Kami sedang siap-siap sebelum hujan turun,hujan | kami | sebelum | sedang | siap-siap | turun,siap-siap
+1560,1776855517006,KEEP,Dia harus hadapi masalah itu sendiri,dia | hadapi | harus | itu | masalah | sendiri,hadapi
+1561,1776932812105,KEEP,Pengaruh dia belum terasa sekarang,belum | dia | pengaruh | sekarang | terasa,pengaruh
+1562,1776932827356,KEEP,Emang kamu sudah makan tadi?,emang | kamu | makan | sudah | tadi,emang
+1563,1776932863695,KEEP,Berita itu menguak fakta penting kemarin,berita | fakta | itu | kemarin | menguak | penting,menguak
+1564,1776932869595,KEEP,Rahasia itu belum diguak sepenuhnya,belum | diguak | itu | rahasia | sepenuhnya,diguak
+1565,1776932903276,KEEP,Dia tidak percaya hal ghaib itu,dia | ghaib | hal | itu | percaya | tidak,ghaib
+1566,1777024881597,KEEP,Kami belum melihat peluang besar itu,belum | besar | itu | kami | melihat | peluang,peluang
+1567,1777024907241,KEEP,Dia bersedia membantu kami besok,bersedia | besok | dia | kami | membantu,bersedia
+1568,1777024976572,KEEP,Masalah itu tidak berkaitan denganmu,berkaitan | denganmu | itu | masalah | tidak,berkaitan | denganmu
+1569,1777025004067,KEEP,Apakah ada kaitan antara dua kasus?,ada | antara | apakah | dua | kaitan | kasus,kaitan
+1570,1777025047648,KEEP,Aku sedang bingung memilih jalan,aku | bingung | jalan | memilih | sedang,bingung
+1571,1777147355062,KEEP,Saya mengirim surel kemarin malam?,kemarin | malam | mengirim | saya | surel,surel
+1572,1777147539859,KEEP,Apakah kursus ini bermanfaat untukmu?,apakah | bermanfaat | ini | kursus | untukmu,bermanfaat
+1573,1777147554389,KEEP,Zat itu belum diuji lab,belum | diuji | itu | lab | zat,lab | zat
+1574,1777147606172,KEEP,Air tawar sudah diminum?,air | diminum | sudah | tawar,tawar
+1575,1777154572118,KEEP,Putra itu akan pergi besok,akan | besok | itu | pergi | putra,putra
+1576,1777213388860,KEEP,Apakah kamu sudah membeli sapu baru?,apakah | baru | kamu | membeli | sapu | sudah,sapu
+1577,1777280388314,KEEP,Akun itu belum tertaut ke email saya,akun | belum | email | itu | ke | saya | tertaut,tertaut
+1578,1777280436490,KEEP,Mereka sedang memasang tiang baru di jalan,baru | di | jalan | memasang | mereka | sedang | tiang,memasang | tiang
+1579,1777280450113,KEEP,Dia tidak memakai tali pengaman saat memanjat,dia | memakai | memanjat | pengaman | saat | tali | tidak,pengaman
+1580,1777280727186,KEEP,Apakah sesi ini sudah selesai?,apakah | ini | selesai | sesi | sudah,sesi

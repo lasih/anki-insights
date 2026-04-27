@@ -1,4 +1,4 @@
-order,note_id,status,text,chinese_tokens,latin_tokens,new_words
+order,note_id,status,text,chinese_tokens,latin_tokens,new_tokens
 1,1776876035757,KEEP,你好，我是学生,你好 | 学生 | 我 | 是,,你好 | 学生 | 我 | 是
 2,1776876054070,KEEP,你好，我叫 Nathan,你好 | 叫 | 我,Nathan,叫
 3,1776876430950,KEEP,我不是美国人,不是 | 人 | 我 | 美国,,不是 | 人 | 美国

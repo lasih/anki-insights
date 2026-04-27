@@ -69,8 +69,8 @@ class AnkiClient:
             timeout=60,
         )
         r.raise_for_status()
-
         data: Dict[str, Any] = r.json()
+
         if data.get("error"):
             raise RuntimeError(data["error"])
 
@@ -111,10 +111,6 @@ def strip_html(text: str) -> str:
     return s.get_data()
 
 
-def normalize_whitespace(text: str) -> str:
-    return re.sub(r"\s+", " ", text).strip()
-
-
 # =========================
 # TOKENIZER PROTOCOL
 # =========================
@@ -124,18 +120,11 @@ class Tokenizer(Protocol):
 
 
 # =========================
-# INDONESIAN TOKENIZER
+# SPANISH TOKENIZER
 # =========================
-class IndonesianTokenizer:
-    """
-    Tokenizer simples para indonésio:
-    - usa spaCy blank pipeline
-    - normaliza lowercase
-    - remove pontuação e números
-    """
-
-    def __init__(self) -> None:
-        self._nlp: Language = spacy.blank("id")
+class SpanishTokenizer:
+    def __init__(self, model: str = "es_core_news_sm") -> None:
+        self._nlp: Language = spacy.load(model)
 
     def _normalize(self, token: Token) -> str:
         if token.is_space or token.is_punct:
@@ -144,25 +133,25 @@ class IndonesianTokenizer:
         if token.like_num:
             return ""
 
-        text: str = token.text.lower().strip()
-        text = re.sub(r"^[^\w]+|[^\w]+$", "", text)
+        lemma: str = token.lemma_.lower().strip()
+        lemma = re.sub(r"^[^\w]+|[^\w]+$", "", lemma)
 
-        return text
+        return lemma
 
     def tokenize(self, text: str) -> Set[str]:
         doc = self._nlp(text)
-        tokens: Set[str] = set()
+        out: Set[str] = set()
 
         for tok in doc:
             norm: str = self._normalize(tok)
             if norm:
-                tokens.add(norm)
+                out.add(norm)
 
-        return tokens
+        return out
 
 
 # =========================
-# DEDUPLICATION
+# ANALYSIS
 # =========================
 class Deduplicator:
     def __init__(self, tokenizer: Tokenizer, front_field: str) -> None:
@@ -172,7 +161,7 @@ class Deduplicator:
     def _extract_text(self, note: AnkiNote) -> str:
         fields: Dict[str, AnkiField] = note.get("fields", {})
         raw: str = fields.get(self._front_field, {}).get("value", "")
-        return normalize_whitespace(strip_html(raw))
+        return strip_html(raw).strip()
 
     def analyze(self, notes: List[AnkiNote]) -> AnalysisResult:
         seen: Set[str] = set()
@@ -245,7 +234,7 @@ def export_csv(rows: List[ReportRow], path: str) -> None:
 # =========================
 def run(config: Config) -> None:
     client: AnkiClient = AnkiClient(config.anki_url)
-    tokenizer: Tokenizer = IndonesianTokenizer()
+    tokenizer: Tokenizer = SpanishTokenizer()
 
     dedup: Deduplicator = Deduplicator(
         tokenizer=tokenizer,
@@ -263,7 +252,7 @@ def run(config: Config) -> None:
     print(f"Total: {len(notes)}")
     print(f"Keep: {len(result.keep_ids)}")
     print(f"Duplicate: {len(result.duplicate_ids)}")
-    print(f"Unique tokens: {len(result.seen_tokens)}")
+    print(f"Unique lemmas: {len(result.seen_tokens)}")
     print(f"CSV: {config.export_csv_path}")
 
     if config.tag_duplicates and result.duplicate_ids:
@@ -276,9 +265,9 @@ def run(config: Config) -> None:
 def main() -> None:
     config = Config(
         anki_url="http://localhost:8765",
-        deck_name="🇮🇩",
+        deck_name="🇪🇸",
         front_field="Front",
-        export_csv_path="anki_indonesian_dedup_report.csv",
+        export_csv_path="anki_spanish_dedup_report.csv",
         tag_duplicates=True,
         duplicate_tag="token_duplicate",
     )

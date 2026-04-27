@@ -1,465 +1,222 @@
+from __future__ import annotations
+
 import json
 import os
-import urllib.error
 import urllib.request
+import urllib.error
+from dataclasses import dataclass
 from datetime import datetime
-
-# ==========================================
-# Considerations and assumptions
-#
-# AnkiConnect must be installed and enabled in Anki for this script to work.
-# The script is designed to be run multiple times, and it will only copy
-# source notes that have not been copied before, based on the presence of a tag.
-#
-# The script creates a backup of the source and target decks before making any changes,
-# including the exact notes selected for copying and the payload sent to AnkiConnect.
-#
-# The script expects the source notes to have specific field names for front and back.
-#
-# The script allows duplicates when creating new notes to ensure all valid notes are created,
-# even if Anki's duplicate detection would block some of them for some reason.
-#
-# The script saves a summary of each run, including how many notes were found, prepared, created, and tagged.
-# ==========================================
-
-# ==========================================
-# Configuration
-# ==========================================
-
-# Local AnkiConnect API endpoint
-ANKI_URL = "http://127.0.0.1:8765"
-
-# Decks
-# English: 🇦🇺
-# Indonesian: 🇮🇩
-# Kiswahili: 🇰🇪
-
-# Name of the source deck
-SOURCE_DECK = "🇮🇩"
-
-# Name of the target deck
-TARGET_DECK = "🇦🇺"
-
-# Tag added to source notes after they are copied
-SOURCE_TAG = "copied_source"
-
-# Tag added to newly created inverted notes
-TARGET_TAG = "copied_inverted"
-
-# Field names used in the note type
-FRONT_FIELD = "Front"
-BACK_FIELD = "Back"
-
-# Note type used when creating notes in the target deck
-MODEL_NAME = "Basic"
-
-# ==========================================
-# Project paths
-# ==========================================
-
-# Directory where this script lives
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# Project root (one level above scripts/)
-PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-
-# Backup folder inside the project
-BACKUP_ROOT = os.path.join(PROJECT_ROOT, "backup")
-
-
-# ==========================================
-# AnkiConnect helper
-# ==========================================
-
-
-def invoke(action, **params):
-    """
-    Send a request to AnkiConnect and return the result.
-
-    Parameters
-    ----------
-    action : str
-        The AnkiConnect action name.
-    params : dict
-        Parameters passed to the action.
-
-    Returns
-    -------
-    any
-        The result returned by AnkiConnect.
-
-    Raises
-    ------
-    RuntimeError
-        If AnkiConnect is not reachable or returns an error.
-    """
-    payload = json.dumps({"action": action, "version": 6, "params": params}).encode(
-        "utf-8"
-    )
-
-    request = urllib.request.Request(
-        ANKI_URL, data=payload, headers={"Content-Type": "application/json"}
-    )
-
-    try:
-        with urllib.request.urlopen(request) as response:
-            data = json.loads(response.read().decode("utf-8"))
-    except urllib.error.URLError as exc:
-        raise RuntimeError(
-            "Could not connect to AnkiConnect. Make sure Anki is open "
-            "and the AnkiConnect add-on is installed."
-        ) from exc
-
-    if data.get("error"):
-        raise RuntimeError(data["error"])
-
-    return data["result"]
-
-
-# ==========================================
-# File helpers
-# ==========================================
-
-
-def save_json(path, data):
-    """
-    Save Python data as a formatted JSON file.
-    """
-    with open(path, "w", encoding="utf-8") as file:
-        json.dump(data, file, ensure_ascii=False, indent=2)
-
-
-def clean_tsv_value(value):
-    """
-    Convert a field value into a safe single-line TSV value.
-
-    Tabs and line breaks are replaced so the TSV structure remains valid.
-    """
-    if value is None:
-        return ""
-
-    text = str(value)
-    text = text.replace("\t", " ")
-    text = text.replace("\r", " ")
-    text = text.replace("\n", " ")
-    return text
-
-
-def export_notes_tsv(path, notes):
-    """
-    Export notes to a TSV file using the configured front/back field names.
-
-    The first row is a header row.
-    Each next row contains:
-    Front<TAB>Back
-    """
-    with open(path, "w", encoding="utf-8") as file:
-        file.write(f"{FRONT_FIELD}\t{BACK_FIELD}\n")
-
-        for note in notes:
-            fields = note.get("fields", {})
-
-            front = fields.get(FRONT_FIELD, {}).get("value", "")
-            back = fields.get(BACK_FIELD, {}).get("value", "")
-
-            front = clean_tsv_value(front)
-            back = clean_tsv_value(back)
-
-            file.write(f"{front}\t{back}\n")
-
-
-def make_backup_dir():
-    """
-    Create and return a timestamped backup directory.
-
-    Returns
-    -------
-    tuple[str, str]
-        (timestamp, absolute backup directory path)
-    """
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    backup_dir = os.path.abspath(os.path.join(BACKUP_ROOT, timestamp))
-    os.makedirs(backup_dir, exist_ok=True)
-    return timestamp, backup_dir
-
-
-# ==========================================
-# Deck helpers
-# ==========================================
-
-
-def create_deck_if_missing(deck_name):
-    """
-    Create the deck if it does not already exist.
-    """
-    invoke("createDeck", deck=deck_name)
-
-
-def find_note_ids_in_deck(deck_name):
-    """
-    Return all note IDs in the given deck.
-    """
-    return invoke("findNotes", query=f'deck:"{deck_name}"')
-
-
-def get_notes_info(note_ids):
-    """
-    Return detailed information for the given note IDs.
-    """
-    if not note_ids:
-        return []
-    return invoke("notesInfo", notes=note_ids)
-
-
-def get_all_deck_notes(deck_name):
-    """
-    Return all notes in a deck as:
-    (note_ids, notes_info)
-    """
-    note_ids = find_note_ids_in_deck(deck_name)
-    notes = get_notes_info(note_ids)
-    return note_ids, notes
-
-
-# ==========================================
-# Backup logic
-# ==========================================
-
-
-def backup_current_state(backup_dir):
-    """
-    Backup both source and target decks before making any changes.
-
-    Files created:
-    - source_notes.json
-    - target_notes.json
-    - source.tsv
-    - target.tsv
-    """
-    _, source_notes = get_all_deck_notes(SOURCE_DECK)
-    _, target_notes = get_all_deck_notes(TARGET_DECK)
-
-    save_json(os.path.join(backup_dir, "source_notes.json"), source_notes)
-    save_json(os.path.join(backup_dir, "target_notes.json"), target_notes)
-
-    export_notes_tsv(os.path.join(backup_dir, "source.tsv"), source_notes)
-    export_notes_tsv(os.path.join(backup_dir, "target.tsv"), target_notes)
-
-
-# ==========================================
-# Copy logic
-# ==========================================
-
-
-def find_uncopied_source_note_ids():
-    """
-    Return source note IDs that do not have the source tag yet.
-
-    This is what prevents repeated copying across runs.
-    """
-    query = f'deck:"{SOURCE_DECK}" -tag:{SOURCE_TAG} -tag:{TARGET_TAG}'
-    return invoke("findNotes", query=query)
-
-
-def prepare_inverted_notes(source_notes):
-    """
-    Build the payload for new inverted notes.
-
-    For each valid source note:
-    - new Front = original Back
-    - new Back  = original Front
-
-    Returns
-    -------
-    tuple[list[dict], list[int]]
-        (new_notes_payload, valid_source_note_ids)
-
-    valid_source_note_ids contains only the source note IDs that were
-    successfully prepared, so they can be tagged later without mismatch.
-    """
-    new_notes = []
-    valid_source_note_ids = []
-
-    for note in source_notes:
-        note_id = note.get("noteId")
-        fields = note.get("fields", {})
-
-        # Skip notes that do not contain the required fields
-        if FRONT_FIELD not in fields or BACK_FIELD not in fields:
-            print(
-                f"Skipping note {note_id}: missing '{FRONT_FIELD}' or '{BACK_FIELD}'."
-            )
-            continue
-
-        original_front = fields[FRONT_FIELD]["value"]
-        original_back = fields[BACK_FIELD]["value"]
-
-        if not str(original_front).strip() or not str(original_back).strip():
-            print(f"Skipping note {note_id}: empty front or back.")
-            continue
-
-        new_notes.append(
-            {
-                "deckName": TARGET_DECK,
-                "modelName": MODEL_NAME,
-                "fields": {
-                    FRONT_FIELD: original_back,
-                    BACK_FIELD: original_front,
-                },
-                "tags": [TARGET_TAG],
-                "options": {
-                    "allowDuplicate": True  # Allow duplicates because it's blocking the creation of inverted notes somehow,
-                    # even when the content is different.
-                    # This is a workaround to ensure all valid notes are created.
-                },
-            }
+from typing import Any, Dict, List, Optional
+
+
+# =========================
+# CONFIG
+# =========================
+@dataclass(frozen=True)
+class Config:
+    anki_url: str
+    source_deck: str
+    target_deck: str
+    source_tag: str = "copied_source"
+    target_tag: str = "copied_inverted"
+    model_name: str = "Basic"
+    front_field: str = "Front"
+    back_field: str = "Back"
+    backup_root: str = "backup"
+
+
+# =========================
+# ANKI CLIENT
+# =========================
+class AnkiClient:
+    def __init__(self, url: str) -> None:
+        self.url = url
+
+    def invoke(self, action: str, **params: Any) -> Any:
+        payload = json.dumps(
+            {"action": action, "version": 6, "params": params}
+        ).encode("utf-8")
+
+        req = urllib.request.Request(
+            self.url,
+            data=payload,
+            headers={"Content-Type": "application/json"},
         )
 
-        valid_source_note_ids.append(note_id)
+        try:
+            with urllib.request.urlopen(req) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+        except urllib.error.URLError as exc:
+            raise RuntimeError("AnkiConnect not reachable") from exc
 
-    return new_notes, valid_source_note_ids
+        if data.get("error"):
+            raise RuntimeError(data["error"])
 
+        return data["result"]
 
-def tag_successfully_copied_source_notes(source_note_ids, created_note_ids):
-    """
-    Add the source tag only to source notes whose corresponding target note
-    was created successfully.
+    def find_notes(self, query: str) -> List[int]:
+        return self.invoke("findNotes", query=query)
 
-    Parameters
-    ----------
-    source_note_ids : list[int]
-        Source note IDs that were actually prepared.
-    created_note_ids : list[int | None]
-        Result list returned by addNotes.
+    def get_notes(self, note_ids: List[int]) -> List[Dict[str, Any]]:
+        if not note_ids:
+            return []
+        return self.invoke("notesInfo", notes=note_ids)
 
-    Returns
-    -------
-    list[int]
-        Source note IDs that were successfully tagged.
-    """
-    tagged_source_ids = []
+    def add_notes(self, notes: List[Dict[str, Any]]) -> List[Optional[int]]:
+        return self.invoke("addNotes", notes=notes)
 
-    for source_id, created_id in zip(source_note_ids, created_note_ids):
-        if created_id is not None:
-            tagged_source_ids.append(source_id)
+    def add_tags(self, note_ids: List[int], tag: str) -> None:
+        if note_ids:
+            self.invoke("addTags", notes=note_ids, tags=tag)
 
-    if tagged_source_ids:
-        invoke("addTags", notes=tagged_source_ids, tags=SOURCE_TAG)
-
-    return tagged_source_ids
+    def create_deck(self, deck: str) -> None:
+        self.invoke("createDeck", deck=deck)
 
 
-# ==========================================
-# Main script
-# ==========================================
+# =========================
+# UTIL
+# =========================
+def now_ts() -> str:
+    return datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
 
-def main():
-    """
-    Main workflow:
+def save_json(path: str, data: Any) -> None:
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
-    1. Ensure the target deck exists.
-    2. Create a timestamped backup folder.
-    3. Save source/target deck backups as JSON and TSV.
-    4. Find source notes that have not yet been copied.
-    5. Prepare inverted notes.
-    6. Save backup files for the selected notes and payload.
-    7. Create notes in the target deck.
-    8. Tag copied source notes.
-    9. Save a run summary.
-    """
-    # Ensure the target deck exists before any operation
-    create_deck_if_missing(TARGET_DECK)
 
-    # Create the backup folder for this run
-    timestamp, backup_dir = make_backup_dir()
+def ensure_dir(path: str) -> None:
+    os.makedirs(path, exist_ok=True)
 
-    # Backup the current state of both decks before changing anything
-    backup_current_state(backup_dir)
 
-    # Find only source notes that have not been copied before
-    uncopied_source_note_ids = find_uncopied_source_note_ids()
+# =========================
+# CORE ENGINE
+# =========================
+class Inverter:
+    def __init__(self, cfg: Config) -> None:
+        self.cfg = cfg
+        self.client = AnkiClient(cfg.anki_url)
 
-    # If there is nothing new to copy, save a summary and exit
-    if not uncopied_source_note_ids:
+    # -------------------------
+    # QUERY
+    # -------------------------
+    def _find_source_notes(self) -> List[int]:
+        query = (
+            f'deck:"{self.cfg.source_deck}" '
+            f'-tag:{self.cfg.source_tag}'
+        )
+        return self.client.find_notes(query)
+
+    # -------------------------
+    # TRANSFORM
+    # -------------------------
+    def _build_notes(
+        self, notes: List[Dict[str, Any]]
+    ) -> tuple[List[Dict[str, Any]], List[int]]:
+        payload: List[Dict[str, Any]] = []
+        source_ids: List[int] = []
+
+        for note in notes:
+            nid = note["noteId"]
+            fields = note.get("fields", {})
+
+            front = fields.get(self.cfg.front_field, {}).get("value", "").strip()
+            back = fields.get(self.cfg.back_field, {}).get("value", "").strip()
+
+            if not front or not back:
+                continue
+
+            payload.append(
+                {
+                    "deckName": self.cfg.target_deck,
+                    "modelName": self.cfg.model_name,
+                    "fields": {
+                        self.cfg.front_field: back,
+                        self.cfg.back_field: front,
+                    },
+                    "tags": [],
+                    "options": {
+                        "allowDuplicate": True
+                    },
+                }
+            )
+
+            source_ids.append(nid)
+
+        return payload, source_ids
+
+    # -------------------------
+    # TAGGING
+    # -------------------------
+    def _tag(self, source_ids: List[int], created_ids: List[Optional[int]]) -> None:
+        for sid, tid in zip(source_ids, created_ids):
+            if tid is None:
+                continue
+
+            self.client.add_tags([sid], self.cfg.source_tag)
+            self.client.add_tags([tid], self.cfg.target_tag)
+
+    # -------------------------
+    # BACKUP
+    # -------------------------
+    def _backup(self, notes: List[Dict[str, Any]]) -> str:
+        path = os.path.join(self.cfg.backup_root, now_ts())
+        ensure_dir(path)
+        save_json(os.path.join(path, "snapshot.json"), notes)
+        return path
+
+    # -------------------------
+    # RUN
+    # -------------------------
+    def run(self) -> None:
+        self.client.create_deck(self.cfg.target_deck)
+
+        source_ids = self._find_source_notes()
+        source_notes = self.client.get_notes(source_ids)
+
+        backup_dir = self._backup(source_notes)
+
+        if not source_notes:
+            print("No new notes found.")
+            print(f"Backup: {backup_dir}")
+            return
+
+        payload, valid_ids = self._build_notes(source_notes)
+
+        if not payload:
+            print("No valid notes.")
+            return
+
+        created_ids = self.client.add_notes(payload)
+
+        self._tag(valid_ids, created_ids)
+
         summary = {
-            "timestamp": timestamp,
-            "source_deck": SOURCE_DECK,
-            "target_deck": TARGET_DECK,
-            "found_new_notes": 0,
-            "prepared_notes": 0,
-            "created_notes": 0,
-            "tagged_source_notes": 0,
-            "backup_dir": backup_dir,
+            "source_deck": self.cfg.source_deck,
+            "target_deck": self.cfg.target_deck,
+            "found": len(source_notes),
+            "created": sum(x is not None for x in created_ids),
+            "backup": backup_dir,
         }
 
-        save_json(os.path.join(backup_dir, "selected_source_notes.json"), [])
-        save_json(os.path.join(backup_dir, "copied_notes_payload.json"), [])
         save_json(os.path.join(backup_dir, "run_summary.json"), summary)
 
-        print("No new notes to copy.")
-        print(f"Backup stored in: {backup_dir}")
-        return
+        print(f"Found: {len(source_notes)}")
+        print(f"Created: {summary['created']}")
+        print(f"Backup: {backup_dir}")
 
-    # Load full note details for the selected source notes
-    selected_source_notes = get_notes_info(uncopied_source_note_ids)
 
-    # Save the exact source notes selected for this run
-    save_json(
-        os.path.join(backup_dir, "selected_source_notes.json"), selected_source_notes
+# =========================
+# ENTRYPOINT
+# =========================
+def main() -> None:
+    cfg = Config(
+        anki_url="http://127.0.0.1:8765",
+        source_deck="🇮🇩",
+        target_deck="🇦🇺",
     )
 
-    # Build the new inverted notes and keep only valid source note IDs
-    new_notes, valid_source_note_ids = prepare_inverted_notes(selected_source_notes)
-
-    # Save the exact payload that will be sent to the target deck
-    save_json(os.path.join(backup_dir, "copied_notes_payload.json"), new_notes)
-
-    # If no valid notes could be prepared, save summary and exit
-    if not new_notes:
-        summary = {
-            "timestamp": timestamp,
-            "source_deck": SOURCE_DECK,
-            "target_deck": TARGET_DECK,
-            "found_new_notes": len(uncopied_source_note_ids),
-            "prepared_notes": 0,
-            "created_notes": 0,
-            "tagged_source_notes": 0,
-        }
-
-        save_json(os.path.join(backup_dir, "run_summary.json"), summary)
-
-        print("Notes were found, but none could be prepared.")
-        print(f"Backup stored in: {backup_dir}")
-        return
-
-    # Create the new inverted notes in the target deck
-    created_note_ids = invoke("addNotes", notes=new_notes)
-
-    # Tag only the source notes whose inverted copies were created successfully
-    tagged_source_ids = tag_successfully_copied_source_notes(
-        valid_source_note_ids, created_note_ids
-    )
-
-    # Save the final run summary
-    summary = {
-        "timestamp": timestamp,
-        "source_deck": SOURCE_DECK,
-        "target_deck": TARGET_DECK,
-        "found_new_notes": len(uncopied_source_note_ids),
-        "prepared_notes": len(new_notes),
-        "created_notes": sum(note_id is not None for note_id in created_note_ids),
-        "tagged_source_notes": len(tagged_source_ids),
-    }
-
-    save_json(os.path.join(backup_dir, "run_summary.json"), summary)
-
-    # Print a short terminal summary
-    print(f"Backup stored in: {backup_dir}")
-    print(f"Source notes found: {len(uncopied_source_note_ids)}")
-    print(f"Prepared notes: {len(new_notes)}")
-    print(f"Created notes: {sum(note_id is not None for note_id in created_note_ids)}")
-    print(f"Tagged source notes: {len(tagged_source_ids)}")
+    Inverter(cfg).run()
 
 
 if __name__ == "__main__":

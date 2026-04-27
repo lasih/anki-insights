@@ -1,104 +1,188 @@
+from __future__ import annotations
+
 import csv
 import html
 import re
+from dataclasses import dataclass
 from html.parser import HTMLParser
-from typing import Any, Dict, List, Set
+from typing import Any, Dict, List, Protocol, Set, TypedDict
 
 import requests
 import jieba
+
+try:
+    from opencc import OpenCC  # type: ignore
+except ImportError:
+    OpenCC = None
 
 
 # =========================
 # CONFIG
 # =========================
-ANKI_CONNECT_URL = "http://localhost:8765"
-DECK_NAME = "🇨🇳"
-FRONT_FIELD = "Front"
-
-TAG_DUPLICATES = True
-DUPLICATE_TAG = "token_duplicate"
-
-EXPORT_CSV_PATH = "anki_mandarin_dedup_report.csv"
+@dataclass(frozen=True)
+class Config:
+    anki_url: str
+    deck_name: str
+    front_field: str
+    export_csv_path: str
+    tag_duplicates: bool
+    duplicate_tag: str
 
 
 # =========================
-# ANKICONNECT
+# TYPES
 # =========================
-def invoke(action: str, **params) -> Any:
-    r = requests.post(
-        ANKI_CONNECT_URL,
-        json={"action": action, "version": 6, "params": params},
-        timeout=60,
-    )
-    r.raise_for_status()
-    data = r.json()
-    if data.get("error"):
-        raise RuntimeError(data["error"])
-    return data["result"]
+class AnkiField(TypedDict):
+    value: str
 
 
-def find_notes(deck: str) -> List[int]:
-    return invoke("findNotes", query=f'deck:"{deck}"')
+class AnkiNote(TypedDict, total=False):
+    noteId: int
+    fields: Dict[str, AnkiField]
 
 
-def notes_info(note_ids: List[int]) -> List[Dict[str, Any]]:
-    if not note_ids:
-        return []
-    return invoke("notesInfo", notes=note_ids)
+class ReportRow(TypedDict):
+    order: int
+    note_id: int
+    status: str
+    text: str
+    chinese_tokens: str
+    latin_tokens: str
+    new_tokens: str
 
 
-def add_tags(note_ids: List[int], tag: str) -> None:
-    if note_ids:
-        invoke("addTags", notes=note_ids, tags=tag)
+@dataclass(frozen=True)
+class AnalysisResult:
+    keep_ids: List[int]
+    duplicate_ids: List[int]
+    rows: List[ReportRow]
+    seen_tokens: Set[str]
+
+
+# =========================
+# ANKI CLIENT
+# =========================
+class AnkiClient:
+    def __init__(self, url: str) -> None:
+        self._url: str = url
+
+    def _invoke(self, action: str, **params: Any) -> Any:
+        r = requests.post(
+            self._url,
+            json={"action": action, "version": 6, "params": params},
+            timeout=60,
+        )
+        r.raise_for_status()
+
+        data: Dict[str, Any] = r.json()
+        if data.get("error"):
+            raise RuntimeError(data["error"])
+
+        return data["result"]
+
+    def find_notes(self, deck: str) -> List[int]:
+        return self._invoke("findNotes", query=f'deck:"{deck}"')
+
+    def get_notes(self, note_ids: List[int]) -> List[AnkiNote]:
+        if not note_ids:
+            return []
+        return self._invoke("notesInfo", notes=note_ids)
+
+    def add_tags(self, note_ids: List[int], tag: str) -> None:
+        if note_ids:
+            self._invoke("addTags", notes=note_ids, tags=tag)
 
 
 # =========================
 # CLEANING
 # =========================
-class MLStripper(HTMLParser):
-    def __init__(self):
+class HTMLStripper(HTMLParser):
+    def __init__(self) -> None:
         super().__init__()
-        self.parts = []
+        self._parts: List[str] = []
 
-    def handle_data(self, data: str):
-        self.parts.append(data)
+    def handle_data(self, data: str) -> None:
+        self._parts.append(data)
 
-    def get_data(self):
-        return "".join(self.parts)
+    def get_data(self) -> str:
+        return "".join(self._parts)
 
 
 def strip_html(text: str) -> str:
-    text = html.unescape(text)
-    s = MLStripper()
-    s.feed(text)
+    unescaped: str = html.unescape(text)
+    s = HTMLStripper()
+    s.feed(unescaped)
     return s.get_data()
 
 
-def normalize(text: str) -> str:
+def normalize_whitespace(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
 # =========================
-# TOKENIZATION
+# TOKENIZER PROTOCOL
 # =========================
-def has_chinese(text: str) -> bool:
-    return re.search(r"[\u4e00-\u9fff]", text) is not None
+class Tokenizer(Protocol):
+    def tokenize(self, text: str) -> Set[str]:
+        ...
 
 
-def tokenize_chinese(text: str) -> Set[str]:
-    tokens = set()
+# =========================
+# MANDARIN TOKENIZER
+# =========================
+class MandarinTokenizer:
+    """
+    Tokenizer para mandarim:
+    - normaliza Tradicional → Simplificado (opcional)
+    - usa jieba para segmentação
+    - fallback para caracteres individuais
+    - não filtra frequência (todo conteúdo é considerado útil)
+    """
 
-    for w in jieba.lcut(text, cut_all=False):
-        w = w.strip()
-        if not w:
-            continue
+    _chinese_re = re.compile(r"[\u4e00-\u9fff]")
 
-        if not has_chinese(w):
-            continue
+    def __init__(
+        self,
+        *,
+        use_opencc: bool = True,
+        opencc_config: str = "t2s",
+        char_fallback: bool = True,
+    ) -> None:
+        self._char_fallback: bool = char_fallback
 
-        tokens.add(w)
+        if use_opencc and OpenCC is not None:
+            self._cc = OpenCC(opencc_config)
+        else:
+            self._cc = None
 
-    return tokens
+    def _normalize_script(self, text: str) -> str:
+        if self._cc:
+            return self._cc.convert(text)
+        return text
+
+    def _has_chinese(self, text: str) -> bool:
+        return bool(self._chinese_re.search(text))
+
+    def tokenize(self, text: str) -> Set[str]:
+        normalized: str = self._normalize_script(text)
+        tokens: Set[str] = set()
+
+        for word in jieba.lcut(normalized, cut_all=False):
+            w: str = word.strip()
+
+            if not w:
+                continue
+
+            if self._has_chinese(w):
+                tokens.add(w)
+                continue
+
+            if self._char_fallback:
+                for ch in w:
+                    if self._has_chinese(ch):
+                        tokens.add(ch)
+
+        return tokens
 
 
 def extract_latin(text: str) -> List[str]:
@@ -106,70 +190,72 @@ def extract_latin(text: str) -> List[str]:
 
 
 # =========================
-# CORE LOGIC
+# DEDUPLICATION
 # =========================
-def extract_text(note: Dict[str, Any]) -> str:
-    fields = note.get("fields", {})
-    raw = fields.get(FRONT_FIELD, {}).get("value", "")
-    return normalize(strip_html(raw))
+class Deduplicator:
+    def __init__(self, tokenizer: Tokenizer, front_field: str) -> None:
+        self._tokenizer: Tokenizer = tokenizer
+        self._front_field: str = front_field
 
+    def _extract_text(self, note: AnkiNote) -> str:
+        fields: Dict[str, AnkiField] = note.get("fields", {})
+        raw: str = fields.get(self._front_field, {}).get("value", "")
+        return normalize_whitespace(strip_html(raw))
 
-def analyze(notes: List[Dict[str, Any]]):
-    seen_words: Set[str] = set()
+    def analyze(self, notes: List[AnkiNote]) -> AnalysisResult:
+        seen: Set[str] = set()
 
-    keep_ids = []
-    dup_ids = []
-    rows = []
+        keep: List[int] = []
+        dup: List[int] = []
+        rows: List[ReportRow] = []
 
-    for i, note in enumerate(notes, start=1):
-        nid = note["noteId"]
-        text = extract_text(note)
+        for i, note in enumerate(notes, start=1):
+            nid: int = note["noteId"]
+            text: str = self._extract_text(note)
 
-        if not text:
-            dup_ids.append(nid)
+            if not text:
+                dup.append(nid)
+                rows.append({
+                    "order": i,
+                    "note_id": nid,
+                    "status": "EMPTY",
+                    "text": text,
+                    "chinese_tokens": "",
+                    "latin_tokens": "",
+                    "new_tokens": "",
+                })
+                continue
+
+            tokens: Set[str] = self._tokenizer.tokenize(text)
+            new_tokens: Set[str] = tokens - seen
+
+            latin: List[str] = extract_latin(text)
+
+            if new_tokens:
+                keep.append(nid)
+                seen.update(tokens)
+                status: str = "KEEP"
+            else:
+                dup.append(nid)
+                status = "DUPLICATE"
+
             rows.append({
                 "order": i,
                 "note_id": nid,
-                "status": "EMPTY",
+                "status": status,
                 "text": text,
-                "chinese_tokens": "",
-                "latin_tokens": "",
-                "new_words": "",
+                "chinese_tokens": " | ".join(sorted(tokens)),
+                "latin_tokens": " | ".join(latin),
+                "new_tokens": " | ".join(sorted(new_tokens)),
             })
-            continue
 
-        # Chinese vocabulary layer (dedup logic)
-        words = tokenize_chinese(text)
-        new_words = words - seen_words
-
-        # Latin pass-through (ignored for logic)
-        latin = extract_latin(text)
-
-        if new_words:
-            status = "KEEP"
-            keep_ids.append(nid)
-            seen_words.update(new_words)
-        else:
-            status = "DUPLICATE"
-            dup_ids.append(nid)
-
-        rows.append({
-            "order": i,
-            "note_id": nid,
-            "status": status,
-            "text": text,
-            "chinese_tokens": " | ".join(sorted(words)),
-            "latin_tokens": " | ".join(latin),
-            "new_words": " | ".join(sorted(new_words)),
-        })
-
-    return keep_ids, dup_ids, rows, seen_words
+        return AnalysisResult(keep, dup, rows, seen)
 
 
 # =========================
 # EXPORT
 # =========================
-def export_csv(rows, path):
+def export_csv(rows: List[ReportRow], path: str) -> None:
     with open(path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
             f,
@@ -180,7 +266,7 @@ def export_csv(rows, path):
                 "text",
                 "chinese_tokens",
                 "latin_tokens",
-                "new_words",
+                "new_tokens",
             ],
         )
         writer.writeheader()
@@ -188,28 +274,53 @@ def export_csv(rows, path):
 
 
 # =========================
-# MAIN
+# RUNNER
 # =========================
-def main():
-    note_ids = find_notes(DECK_NAME)
-    notes = notes_info(note_ids)
+def run(config: Config) -> None:
+    client: AnkiClient = AnkiClient(config.anki_url)
 
-    keep, dup, rows, seen = analyze(notes)
+    tokenizer: Tokenizer = MandarinTokenizer(
+        use_opencc=True,
+        char_fallback=True,
+    )
 
-    export_csv(rows, EXPORT_CSV_PATH)
+    dedup: Deduplicator = Deduplicator(
+        tokenizer=tokenizer,
+        front_field=config.front_field,
+    )
 
-    print(f"Deck: {DECK_NAME}")
+    note_ids: List[int] = client.find_notes(config.deck_name)
+    notes: List[AnkiNote] = client.get_notes(note_ids)
+
+    result: AnalysisResult = dedup.analyze(notes)
+
+    export_csv(result.rows, config.export_csv_path)
+
+    print(f"Deck: {config.deck_name}")
     print(f"Total: {len(notes)}")
-    print(f"Keep: {len(keep)}")
-    print(f"Duplicate: {len(dup)}")
-    print(f"Unique Chinese words: {len(seen)}")
-    print(f"CSV: {EXPORT_CSV_PATH}")
+    print(f"Keep: {len(result.keep_ids)}")
+    print(f"Duplicate: {len(result.duplicate_ids)}")
+    print(f"Unique tokens: {len(result.seen_tokens)}")
+    print(f"CSV: {config.export_csv_path}")
 
-    if TAG_DUPLICATES and dup:
-        add_tags(dup, DUPLICATE_TAG)
-        print(f"Tagged duplicates: {DUPLICATE_TAG}")
+    if config.tag_duplicates and result.duplicate_ids:
+        client.add_tags(result.duplicate_ids, config.duplicate_tag)
 
-    print("Done.")
+
+# =========================
+# ENTRYPOINT
+# =========================
+def main() -> None:
+    config = Config(
+        anki_url="http://localhost:8765",
+        deck_name="🇨🇳",
+        front_field="Front",
+        export_csv_path="anki_mandarin_dedup_report.csv",
+        tag_duplicates=True,
+        duplicate_tag="token_duplicate",
+    )
+
+    run(config)
 
 
 if __name__ == "__main__":

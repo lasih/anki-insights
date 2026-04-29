@@ -1,0 +1,16 @@
+order,note_id,status,text,tokens,new_tokens
+1,1777329829009,KEEP,Apakah kamu sudah kirim balasan?,apakah | balasan | kamu | kirim | sudah,apakah | balasan | kamu | kirim | sudah
+2,1777329852427,KEEP,Berita terkini belum diumumkan hari ini,belum | berita | diumumkan | hari | ini | terkini,belum | berita | diumumkan | hari | ini | terkini
+3,1777329884758,KEEP,Sudah lihat gambar tadi?,gambar | lihat | sudah | tadi,gambar | lihat | tadi
+4,1777329906954,KEEP,Saya tidak pernah pakai aplikasi itu,aplikasi | itu | pakai | pernah | saya | tidak,aplikasi | itu | pakai | pernah | saya | tidak
+5,1777329917727,KEEP,Kita akan mulai obrolan nanti,akan | kita | mulai | nanti | obrolan,akan | kita | mulai | nanti | obrolan
+6,1777364830800,KEEP,Selanjutnya apa yang kamu lakukan?,apa | kamu | lakukan | selanjutnya | yang,apa | lakukan | selanjutnya | yang
+7,1777364906425,KEEP,Air itu terasa halus di kulit,air | di | halus | itu | kulit | terasa,air | di | halus | kulit | terasa
+8,1777364921034,KEEP,Kopi ini tidak pakai gula,gula | ini | kopi | pakai | tidak,gula | kopi
+9,1777364927266,KEEP,Sup itu terlalu asin karena garam,asin | garam | itu | karena | sup | terlalu,asin | garam | karena | sup | terlalu
+10,1777364937877,KEEP,Arti kata itu belum jelas,arti | belum | itu | jelas | kata,arti | jelas | kata
+11,1777458282295,KEEP,Penerbangan kami akan berangkat besok pagi,akan | berangkat | besok | kami | pagi | penerbangan,berangkat | besok | kami | pagi | penerbangan
+12,1777458302073,KEEP,Dia tidak akan tinggal di sini selamanya,akan | di | dia | selamanya | sini | tidak | tinggal,dia | selamanya | sini | tinggal
+13,1777458311355,KEEP,Apakah hasil ini sudah sempurna?,apakah | hasil | ini | sempurna | sudah,hasil | sempurna
+14,1777458331049,KEEP,Aku sedang menunggu di bandara sekarang,aku | bandara | di | menunggu | sedang | sekarang,aku | bandara | menunggu | sedang | sekarang
+15,1777458357661,KEEP,Pesawat itu belum tiba dari Jakarta,belum | dari | itu | jakarta | pesawat | tiba,dari | jakarta | pesawat | tiba

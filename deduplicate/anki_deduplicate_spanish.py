@@ -8,12 +8,9 @@ from html.parser import HTMLParser
 from typing import Any, Dict, List, Protocol, Set, TypedDict
 
 import requests
-import jieba
-
-try:
-    from opencc import OpenCC  # type: ignore
-except ImportError:
-    OpenCC = None
+import spacy
+from spacy.language import Language
+from spacy.tokens import Token
 
 
 # =========================
@@ -46,8 +43,7 @@ class ReportRow(TypedDict):
     note_id: int
     status: str
     text: str
-    chinese_tokens: str
-    latin_tokens: str
+    tokens: str
     new_tokens: str
 
 
@@ -73,8 +69,8 @@ class AnkiClient:
             timeout=60,
         )
         r.raise_for_status()
-
         data: Dict[str, Any] = r.json()
+
         if data.get("error"):
             raise RuntimeError(data["error"])
 
@@ -115,82 +111,46 @@ def strip_html(text: str) -> str:
     return s.get_data()
 
 
-def normalize_whitespace(text: str) -> str:
-    return re.sub(r"\s+", " ", text).strip()
-
-
 # =========================
 # TOKENIZER PROTOCOL
 # =========================
 class Tokenizer(Protocol):
-    def tokenize(self, text: str) -> Set[str]:
-        ...
+    def tokenize(self, text: str) -> Set[str]: ...
 
 
 # =========================
-# MANDARIN TOKENIZER
+# SPANISH TOKENIZER
 # =========================
-class MandarinTokenizer:
-    """
-    Tokenizer para mandarim:
-    - normaliza Tradicional → Simplificado (opcional)
-    - usa jieba para segmentação
-    - fallback para caracteres individuais
-    - não filtra frequência (todo conteúdo é considerado útil)
-    """
+class SpanishTokenizer:
+    def __init__(self, model: str = "es_core_news_sm") -> None:
+        self._nlp: Language = spacy.load(model)
 
-    _chinese_re = re.compile(r"[\u4e00-\u9fff]")
+    def _normalize(self, token: Token) -> str:
+        if token.is_space or token.is_punct:
+            return ""
 
-    def __init__(
-        self,
-        *,
-        use_opencc: bool = True,
-        opencc_config: str = "t2s",
-        char_fallback: bool = True,
-    ) -> None:
-        self._char_fallback: bool = char_fallback
+        if token.like_num:
+            return ""
 
-        if use_opencc and OpenCC is not None:
-            self._cc = OpenCC(opencc_config)
-        else:
-            self._cc = None
+        lemma: str = token.lemma_.lower().strip()
+        lemma = re.sub(r"^[^\w]+|[^\w]+$", "", lemma)
 
-    def _normalize_script(self, text: str) -> str:
-        if self._cc:
-            return self._cc.convert(text)
-        return text
-
-    def _has_chinese(self, text: str) -> bool:
-        return bool(self._chinese_re.search(text))
+        return lemma
 
     def tokenize(self, text: str) -> Set[str]:
-        normalized: str = self._normalize_script(text)
-        tokens: Set[str] = set()
+        doc = self._nlp(text)
+        out: Set[str] = set()
 
-        for word in jieba.lcut(normalized, cut_all=False):
-            w: str = word.strip()
+        for tok in doc:
+            norm: str = self._normalize(tok)
+            if norm:
+                out.add(norm)
 
-            if not w:
-                continue
-
-            if self._has_chinese(w):
-                tokens.add(w)
-                continue
-
-            if self._char_fallback:
-                for ch in w:
-                    if self._has_chinese(ch):
-                        tokens.add(ch)
-
-        return tokens
-
-
-def extract_latin(text: str) -> List[str]:
-    return re.findall(r"[A-Za-z0-9']+", text)
+        return out
 
 
 # =========================
-# DEDUPLICATION
+# ANALYSIS
 # =========================
 class Deduplicator:
     def __init__(self, tokenizer: Tokenizer, front_field: str) -> None:
@@ -200,7 +160,7 @@ class Deduplicator:
     def _extract_text(self, note: AnkiNote) -> str:
         fields: Dict[str, AnkiField] = note.get("fields", {})
         raw: str = fields.get(self._front_field, {}).get("value", "")
-        return normalize_whitespace(strip_html(raw))
+        return strip_html(raw).strip()
 
     def analyze(self, notes: List[AnkiNote]) -> AnalysisResult:
         seen: Set[str] = set()
@@ -215,21 +175,20 @@ class Deduplicator:
 
             if not text:
                 dup.append(nid)
-                rows.append({
-                    "order": i,
-                    "note_id": nid,
-                    "status": "EMPTY",
-                    "text": text,
-                    "chinese_tokens": "",
-                    "latin_tokens": "",
-                    "new_tokens": "",
-                })
+                rows.append(
+                    {
+                        "order": i,
+                        "note_id": nid,
+                        "status": "EMPTY",
+                        "text": text,
+                        "tokens": "",
+                        "new_tokens": "",
+                    }
+                )
                 continue
 
             tokens: Set[str] = self._tokenizer.tokenize(text)
             new_tokens: Set[str] = tokens - seen
-
-            latin: List[str] = extract_latin(text)
 
             if new_tokens:
                 keep.append(nid)
@@ -239,15 +198,16 @@ class Deduplicator:
                 dup.append(nid)
                 status = "DUPLICATE"
 
-            rows.append({
-                "order": i,
-                "note_id": nid,
-                "status": status,
-                "text": text,
-                "chinese_tokens": " | ".join(sorted(tokens)),
-                "latin_tokens": " | ".join(latin),
-                "new_tokens": " | ".join(sorted(new_tokens)),
-            })
+            rows.append(
+                {
+                    "order": i,
+                    "note_id": nid,
+                    "status": status,
+                    "text": text,
+                    "tokens": " | ".join(sorted(tokens)),
+                    "new_tokens": " | ".join(sorted(new_tokens)),
+                }
+            )
 
         return AnalysisResult(keep, dup, rows, seen)
 
@@ -264,8 +224,7 @@ def export_csv(rows: List[ReportRow], path: str) -> None:
                 "note_id",
                 "status",
                 "text",
-                "chinese_tokens",
-                "latin_tokens",
+                "tokens",
                 "new_tokens",
             ],
         )
@@ -278,11 +237,7 @@ def export_csv(rows: List[ReportRow], path: str) -> None:
 # =========================
 def run(config: Config) -> None:
     client: AnkiClient = AnkiClient(config.anki_url)
-
-    tokenizer: Tokenizer = MandarinTokenizer(
-        use_opencc=True,
-        char_fallback=True,
-    )
+    tokenizer: Tokenizer = SpanishTokenizer()
 
     dedup: Deduplicator = Deduplicator(
         tokenizer=tokenizer,
@@ -300,7 +255,7 @@ def run(config: Config) -> None:
     print(f"Total: {len(notes)}")
     print(f"Keep: {len(result.keep_ids)}")
     print(f"Duplicate: {len(result.duplicate_ids)}")
-    print(f"Unique tokens: {len(result.seen_tokens)}")
+    print(f"Unique lemmas: {len(result.seen_tokens)}")
     print(f"CSV: {config.export_csv_path}")
 
     if config.tag_duplicates and result.duplicate_ids:
@@ -313,9 +268,9 @@ def run(config: Config) -> None:
 def main() -> None:
     config = Config(
         anki_url="http://localhost:8765",
-        deck_name="🇨🇳",
+        deck_name="🇪🇸",
         front_field="Front",
-        export_csv_path="anki_mandarin_dedup_report.csv",
+        export_csv_path="deduplicate/csv/anki_spanish_dedup_report.csv",
         tag_duplicates=True,
         duplicate_tag="token_duplicate",
     )

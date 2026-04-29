@@ -119,8 +119,7 @@ def normalize_whitespace(text: str) -> str:
 # TOKENIZER PROTOCOL
 # =========================
 class Tokenizer(Protocol):
-    def tokenize(self, text: str) -> Set[str]:
-        ...
+    def tokenize(self, text: str) -> Set[str]: ...
 
 
 # =========================
@@ -187,14 +186,16 @@ class Deduplicator:
 
             if not text:
                 dup.append(nid)
-                rows.append({
-                    "order": i,
-                    "note_id": nid,
-                    "status": "EMPTY",
-                    "text": text,
-                    "tokens": "",
-                    "new_tokens": "",
-                })
+                rows.append(
+                    {
+                        "order": i,
+                        "note_id": nid,
+                        "status": "EMPTY",
+                        "text": text,
+                        "tokens": "",
+                        "new_tokens": "",
+                    }
+                )
                 continue
 
             tokens: Set[str] = self._tokenizer.tokenize(text)
@@ -208,14 +209,16 @@ class Deduplicator:
                 dup.append(nid)
                 status = "DUPLICATE"
 
-            rows.append({
-                "order": i,
-                "note_id": nid,
-                "status": status,
-                "text": text,
-                "tokens": " | ".join(sorted(tokens)),
-                "new_tokens": " | ".join(sorted(new_tokens)),
-            })
+            rows.append(
+                {
+                    "order": i,
+                    "note_id": nid,
+                    "status": status,
+                    "text": text,
+                    "tokens": " | ".join(sorted(tokens)),
+                    "new_tokens": " | ".join(sorted(new_tokens)),
+                }
+            )
 
         return AnalysisResult(keep, dup, rows, seen)
 
@@ -278,7 +281,7 @@ def main() -> None:
         anki_url="http://localhost:8765",
         deck_name="🇮🇩",
         front_field="Front",
-        export_csv_path="anki_indonesian_dedup_report.csv",
+        export_csv_path="deduplicate/csv/anki_indonesian_dedup_report.csv",
         tag_duplicates=True,
         duplicate_tag="token_duplicate",
     )

@@ -9,3 +9,33 @@ order,note_id,status,text,tokens,new_tokens
 8,1784065972762,KEEP,Kita makan yuk,kita | makan | yuk,kita | makan | yuk
 9,1784066014613,KEEP,Kami pergi kemarin,kami | kemarin | pergi,kami | kemarin | pergi
 10,1784066079708,KEEP,Kamu lagi ngapain?,kamu | lagi | ngapain,ngapain
+11,1784121350205,KEEP,"Siap, nanti aku datang",aku | datang | nanti | siap,datang | nanti | siap
+12,1784121376272,KEEP,Aku beli mobil baru,aku | baru | beli | mobil,baru | beli | mobil
+13,1784121391652,KEEP,Dia membuat kue,dia | kue | membuat,kue | membuat
+14,1784121424355,KEEP,Kita lanjutnya obrolan ini besok,besok | ini | kita | lanjutnya | obrolan,besok | ini | lanjutnya | obrolan
+15,1784121443396,KEEP,Terima kasih buat obrolannya,buat | kasih | obrolannya | terima,buat | kasih | obrolannya | terima
+16,1784121504713,KEEP,Ayo makan!,ayo | makan,ayo
+17,1784121525408,KEEP,Yuk minum!,minum | yuk,minum
+18,1784121542796,KEEP,Yuk istirahat dulu,dulu | istirahat | yuk,dulu | istirahat
+19,1784121572453,KEEP,"Kita ngopi dulu, yuk",dulu | kita | ngopi | yuk,ngopi
+20,1784121615410,KEEP,Dia dapat pekerjaan baru,baru | dapat | dia | pekerjaan,dapat | pekerjaan
+21,1784130789098,KEEP,Nomor HP ini masih aktif,aktif | hp | ini | masih | nomor,aktif | hp | masih | nomor
+22,1784130828723,KEEP,Itu bikin aku senang,aku | bikin | itu | senang,bikin | senang
+23,1784130889959,KEEP,Dia bikin aku senyum,aku | bikin | dia | senyum,senyum
+24,1784130900462,KEEP,Aktifkan mode pesawat dulu,aktifkan | dulu | mode | pesawat,aktifkan | mode | pesawat
+25,1784131013581,KEEP,Dokter itu pemeriksa kesehatan di perusahaan kami,di | dokter | itu | kami | kesehatan | pemeriksa | perusahaan,dokter | kesehatan | pemeriksa | perusahaan
+26,1784131206000,KEEP,"Kalau nggak tahu, tanya aja",aja | kalau | nggak | tahu | tanya,aja | kalau | nggak | tahu | tanya
+27,1784131250669,KEEP,Pendapat kita berbeda,berbeda | kita | pendapat,berbeda | pendapat
+28,1784131281482,KEEP,Aku suka cewek yang lucu,aku | cewek | lucu | suka | yang,cewek | lucu | suka | yang
+29,1784131304061,KEEP,"Dia cowok, bukan cewek",bukan | cewek | cowok | dia,bukan | cowok
+30,1784131357952,KEEP,Aku nggak makan daging babi,aku | babi | daging | makan | nggak,babi | daging
+31,1784131402361,KEEP,Aku kangen kalian,aku | kalian | kangen,kalian | kangen
+32,1784131457132,KEEP,Siapa namamu?,namamu | siapa,namamu | siapa
+33,1784131503060,KEEP,Tanya aja sama dia,aja | dia | sama | tanya,sama
+34,1784131555251,KEEP,Hati-hati di jalan!,di | hati-hati | jalan,hati-hati | jalan
+35,1784131616538,KEEP,Hadiah ini untuk ibu,hadiah | ibu | ini | untuk,hadiah | ibu | untuk
+36,1784131659896,KEEP,Aku mulai kerja jam sembilan,aku | jam | kerja | mulai,jam | kerja | mulai
+37,1784131704861,KEEP,Dia tiba-tiba muncul,dia | muncul | tiba-tiba,muncul | tiba-tiba
+38,1784131741396,KEEP,Aplikasi ini menghubungkan pengguna dengan dokter,aplikasi | dengan | dokter | ini | menghubungkan | pengguna,aplikasi | dengan | menghubungkan | pengguna
+39,1784131947471,KEEP,Akun ini diblokir,akun | diblokir | ini,akun | diblokir
+40,1784132036785,KEEP,Pembayaran sudah diterima,diterima | pembayaran | sudah,diterima | pembayaran | sudah

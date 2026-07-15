@@ -1,0 +1,10 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["spacy", "es_core_news_sm"],
+      "groupName": "spacy-models",
+      "schedule": ["after 3am and before 6am"]
+    }
+  ]
+}

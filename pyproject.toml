@@ -1,0 +1,30 @@
+[project]
+name = "anki-insights"
+version = "1.0.0"
+description = "Anki deduplication and note inversion utilities"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.dependencies]
+requests = "^2.33.1"
+spacy = "^3.8.13"
+jieba = "^0.42.1"
+opencc-python-reimplemented = "^0.1.6"
+
+[project.optional-dependencies]
+testing = [
+    "pytest>=8.0",
+    "mypy>=1.9",
+    "ruff>=0.1",
+    "pre-commit>=3.0",
+]
+
+[project.scripts]
+anki-insights = "anki_insights.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"

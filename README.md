@@ -35,16 +35,25 @@ python -m spacy download es_core_news_sm
 
 ### Deduplication
 
-Run a language-specific script or call the shared library.
+Use the package API directly or the simple CLI entrypoint:
 
 ```bash
-python deduplicate/anki_deduplicate_spanish.py
+anki-insights dedup --language en
+anki-insights dedup --language id
+anki-insights dedup --language zh
 ```
 
 ### Inversion
 
-```bash
-python invert/anki_invert_notes_from_src_deck_to_tgt_deck.py
+```python
+from anki_insights import Inverter, InvertConfig
+
+config = InvertConfig(
+    anki_url="http://localhost:8765",
+    src_deck="Source",
+    tgt_deck="Target",
+)
+Inverter(config).run()
 ```
 
 ## Testing

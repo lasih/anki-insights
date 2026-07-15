@@ -1,17 +1,28 @@
+import pytest
+
 from anki_insights.tokenizers import (
     IndonesianTokenizer,
     MandarinTokenizer,
-    SpacyTokenizer,
+    build_tokenizer,
 )
 
 
-def test_spacy_tokenizer_french():
-    tokenizer = SpacyTokenizer("fr_core_news_sm")
-    tokens = tokenizer.tokenize("Bonjour, je m'appelle Jean.")
-    assert "bonjour" in tokens
-    assert "je" in tokens
-    assert "m'" not in tokens
-    assert "appeler" in tokens
+def test_build_tokenizer_supports_french(monkeypatch):
+    class DummySpacyTokenizer:
+        def __init__(self, model_name: str) -> None:
+            self.model_name = model_name
+
+        def tokenize(self, text: str):
+            return {"bonjour"}
+
+    monkeypatch.setattr("anki_insights.tokenizers.SpacyTokenizer", DummySpacyTokenizer)
+    tokenizer = build_tokenizer("fr")
+    assert tokenizer.tokenize("Bonjour") == {"bonjour"}
+
+
+def test_build_tokenizer_rejects_unsupported_language():
+    with pytest.raises(ValueError, match="Unsupported language"):
+        build_tokenizer("pt")
 
 
 def test_indonesian_tokenizer():

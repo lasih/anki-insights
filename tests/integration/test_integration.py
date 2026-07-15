@@ -1,21 +1,15 @@
 import json
 from pathlib import Path
 
-import spacy
-
 from anki_insights import Deduplicator
-from anki_insights.tokenizers import IndonesianTokenizer, SpacyTokenizer
+from anki_insights.tokenizers import build_tokenizer
 
 
 def test_offline_dedup_fixture(tmp_path: Path):
     fixture = Path(__file__).parents[2] / "examples" / "fixtures" / "sample_notes.json"
     notes = json.loads(fixture.read_text(encoding="utf-8"))
 
-    try:
-        tokenizer = SpacyTokenizer("en_core_web_sm")
-    except OSError:
-        tokenizer = IndonesianTokenizer()
-
+    tokenizer = build_tokenizer("en")
     dedup = Deduplicator(tokenizer, "Front")
     res = dedup.analyze(notes)
 

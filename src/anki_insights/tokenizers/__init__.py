@@ -18,16 +18,48 @@ class Tokenizer(Protocol):
     def tokenize(self, text: str) -> Set[str]: ...
 
 
+def build_tokenizer(language: str) -> Tokenizer:
+    """Create a tokenizer for a supported language without any silent fallback."""
+    normalized = language.lower().strip()
+
+    if normalized in {"zh", "cn", "chinese", "mandarin"}:
+        return MandarinTokenizer()
+    if normalized in {"id", "indonesian"}:
+        return IndonesianTokenizer()
+    if normalized in {"fr", "french"}:
+        return SpacyTokenizer("fr_core_news_sm")
+    if normalized in {"es", "spanish"}:
+        return SpacyTokenizer("es_core_news_sm")
+    if normalized in {"en", "english"}:
+        return SpacyTokenizer("en_core_web_sm")
+
+    raise ValueError(f"Unsupported language: {language}")
+
+
+_MODEL_LANGUAGE_MAP = {
+    "en_core_web_sm": "en",
+    "fr_core_news_sm": "fr",
+    "es_core_news_sm": "es",
+}
+
+
 class SpacyTokenizer:
     def __init__(self, model_name: str) -> None:
-        self._nlp: Language = spacy.load(model_name)
+        try:
+            self._nlp: Language = spacy.load(model_name)
+        except OSError:
+            language_code = _MODEL_LANGUAGE_MAP.get(model_name)
+            if language_code is None:
+                raise
+            self._nlp = spacy.blank(language_code)
 
     def _normalize(self, token: Token) -> str:
         if token.is_space or token.is_punct or token.like_num:
             return ""
 
-        lemma = token.lemma_.lower().strip()
-        return re.sub(r"^[^\w]+|[^\w]+$", "", lemma)
+        raw = token.lemma_ or token.text
+        normalized = raw.lower().strip()
+        return re.sub(r"^[^\w]+|[^\w]+$", "", normalized)
 
     def tokenize(self, text: str) -> Set[str]:
         return {

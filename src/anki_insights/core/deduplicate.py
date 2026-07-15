@@ -152,6 +152,16 @@ def run_deduplication(config: DedupConfig, tokenizer: Tokenizer) -> AnalysisResu
 
     note_ids = client.find_notes(f'deck:"{config.deck_name}"')
     notes = client.get_notes(note_ids)
+    if not note_ids:
+        result = AnalysisResult([], [], [], set())
+        export_csv(result.rows, config.export_csv_path)
+        logger.info("Deck: %s", config.deck_name)
+        logger.info("Total: %d", 0)
+        logger.info("Keep: %d", 0)
+        logger.info("Duplicate: %d", 0)
+        logger.info("Unique tokens: %d", 0)
+        logger.info("CSV: %s", config.export_csv_path)
+        return result
     # `client.get_notes` returns untyped dicts from AnkiConnect; cast for analysis
     notes_typed = cast(List[AnkiNote], notes)
     result = deduplicator.analyze(notes_typed, initial_seen=initial_seen)

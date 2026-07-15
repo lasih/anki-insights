@@ -1,4 +1,5 @@
 """Simple benchmark harness for tokenization/dedup over a synthetic large dataset."""
+
 import time
 from typing import List
 
@@ -8,7 +9,9 @@ from anki_insights import Deduplicator, SpacyTokenizer
 def make_notes(n: int) -> List[dict]:
     notes = []
     for i in range(n):
-        notes.append({"noteId": i, "fields": {"Front": {"value": f"word{i} word{i+1}"}}})
+        notes.append(
+            {"noteId": i, "fields": {"Front": {"value": f"word{i} word{i+1}"}}}
+        )
     return notes
 
 

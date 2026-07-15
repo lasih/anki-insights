@@ -1,4 +1,4 @@
-from anki_insights.deduplicate import Deduplicator
+from anki_insights.deduplicate import Deduplicator, dedup_texts
 
 
 class DummyTokenizer:
@@ -37,3 +37,9 @@ def test_deduplicator_keeps_unique_note():
     result = dedup.analyze(notes)
     assert result.keep_ids == [1, 2]
     assert result.duplicate_ids == []
+
+
+def test_dedup_texts_returns_a_simple_result():
+    result = dedup_texts(["apple banana", "banana apple"], tokenizer=DummyTokenizer())
+    assert result.keep_ids == [1]
+    assert result.duplicate_ids == [2]

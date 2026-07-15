@@ -6,14 +6,24 @@ Provides a minimal Typer app so the package entrypoint works after `src/` layout
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 from typing import Optional
 
 import typer
 
 from .deduplicate import Deduplicator
-from .tokenizers import IndonesianTokenizer, MandarinTokenizer, SpacyTokenizer
+from .tokenizers import build_tokenizer
 
 app = typer.Typer(name="anki-insights", add_completion=False)
+
+
+def _resolve_tokenizer(language: str):
+    try:
+        return build_tokenizer(language)
+    except (OSError, ValueError) as exc:
+        raise typer.BadParameter(
+            f"Unable to configure tokenizer for language '{language}': {exc}"
+        ) from exc
 
 
 @app.command()
@@ -30,10 +40,41 @@ def version() -> None:
 
 
 @app.command()
-def dedup(language: str = "en", field: str = "Front") -> None:
-    """Run a basic offline deduplication demo using the bundled fixture."""
+def dedup(
+    language: str = "en",
+    field: str = "Front",
+    deck: str = "",
+    anki_url: str = "http://localhost:8765",
+    tag_duplicates: bool = True,
+    output_dir: str = "reports",
+    cache_path: str | None = None,
+) -> None:
+    """Deduplicate a deck from AnkiConnect or run the bundled offline demo."""
     import json
-    from pathlib import Path
+
+    if deck:
+        from .core.deduplicate import DedupConfig, run_deduplication
+
+        tokenizer = _resolve_tokenizer(language)
+
+        report_path = (
+            Path(output_dir) / f"dedup_{deck.replace(' ', '_').lower()}_report.csv"
+        )
+        report_path.parent.mkdir(parents=True, exist_ok=True)
+
+        config = DedupConfig(
+            anki_url=anki_url,
+            deck_name=deck,
+            front_field=field,
+            export_csv_path=str(report_path),
+            tag_duplicates=tag_duplicates,
+            token_cache_path=cache_path,
+        )
+        result = run_deduplication(config, tokenizer)
+        typer.echo(
+            f"kept={len(result.keep_ids)} duplicates={len(result.duplicate_ids)}"
+        )
+        return
 
     fixture = (
         Path(__file__).resolve().parents[2]
@@ -43,16 +84,7 @@ def dedup(language: str = "en", field: str = "Front") -> None:
     )
     notes = json.loads(fixture.read_text(encoding="utf-8"))
 
-    if language == "zh":
-        tokenizer = MandarinTokenizer()
-    elif language == "id":
-        tokenizer = IndonesianTokenizer()
-    else:
-        try:
-            tokenizer = SpacyTokenizer("en_core_web_sm")
-        except OSError:
-            tokenizer = IndonesianTokenizer()
-
+    tokenizer = _resolve_tokenizer(language)
     result = Deduplicator(tokenizer, field).analyze(notes)
     typer.echo(f"kept={len(result.keep_ids)} duplicates={len(result.duplicate_ids)}")
 

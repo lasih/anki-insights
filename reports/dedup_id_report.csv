@@ -1,0 +1,11 @@
+order,note_id,status,text,tokens,new_tokens
+1,1783348679977,KEEP,Aku paham itu,aku | itu | paham,aku | itu | paham
+2,1784058683178,KEEP,Saya mau pesan kopi,kopi | mau | pesan | saya,kopi | mau | pesan | saya
+3,1784058711428,KEEP,Aku lagi belajar bahasa Indonesia,aku | bahasa | belajar | indonesia | lagi,bahasa | belajar | indonesia | lagi
+4,1784065879346,KEEP,Kamu mau ikut?,ikut | kamu | mau,ikut | kamu
+5,1784065910646,KEEP,Apakah Anda ingin belajar bahasa Indonesia?,anda | apakah | bahasa | belajar | indonesia | ingin,anda | apakah | ingin
+6,1784065932263,KEEP,Dia orang Indonesia,dia | indonesia | orang,dia | orang
+7,1784065952530,KEEP,Mereka tinggal di Jakarta,di | jakarta | mereka | tinggal,di | jakarta | mereka | tinggal
+8,1784065972762,KEEP,Kita makan yuk,kita | makan | yuk,kita | makan | yuk
+9,1784066014613,KEEP,Kami pergi kemarin,kami | kemarin | pergi,kami | kemarin | pergi
+10,1784066079708,KEEP,Kamu lagi ngapain?,kamu | lagi | ngapain,ngapain

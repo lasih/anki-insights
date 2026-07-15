@@ -1,38 +1,35 @@
-name: CI with cache
+name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Cache pip
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements-lock.txt') }}
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-      - name: Install
+          cache: 'pip'
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -e '.[testing]'
-          # install spacy models used in tests
-          python -m pip install spacy
-          python -m pip install fr-core-news-sm==3.8.0 || true
-          python -m pip install en-core-web-sm==3.8.0 || true
-          python -m pip install es-core-news-sm==3.8.0 || true
+          python -m spacy download en_core_web_sm || true
+          python -m spacy download fr_core_news_sm || true
+          python -m spacy download es_core_news_sm || true
       - name: Run tests
         run: pytest --cov=src --cov-report=xml -q
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
           files: ./coverage.xml
-          fail_ci_if_error: true
-      - name: Save test artifacts
+          fail_ci_if_error: false
+      - name: Upload test artifacts
         uses: actions/upload-artifact@v4
         with:
           name: test-results

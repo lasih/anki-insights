@@ -1,60 +1,55 @@
 # anki-insights
 
-Utilities to analyze and manipulate Anki note collections: deduplication, inversion, and reporting.
-
-Quick start
-
-```bash
-python -m venv .venv
-. .venv/bin/activate
-pip install -e .[testing]
-anki-insights --help
-```
-
-Docs: see `docs/` (mkdocs)
-# Anki Insights
-
-Utilities for Anki note deduplication and inversion.
+Utilities for deduplicating and transforming Anki note collections with a simple, production-friendly API.
 
 ## Features
 
-- Deduplicate notes by token overlaps using language-specific tokenizers
-- Export deduplication reports to CSV
-- Invert source deck notes into a target deck with backup snapshots
-- Shared Anki client and utilities for consistent behavior
+- Deduplicate notes using language-aware tokenizers for English, French, Spanish, Indonesian, and Mandarin
+- Run deduplication from the CLI or directly from Python
+- Export CSV reports and optional duplicate-tagging for Anki workflows
+- Invert notes between decks with backup snapshots
 
 ## Installation
 
 ```bash
-python -m pip install -e .
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e .[testing]
+```
+
+Optional spaCy models:
+
+```bash
+python -m spacy download en_core_web_sm
 python -m spacy download fr_core_news_sm
 python -m spacy download es_core_news_sm
 ```
 
-## Usage
+## Quick start
 
-### Deduplication
-
-Use the package API directly or the simple CLI entrypoint:
+### CLI deduplication
 
 ```bash
 anki-insights dedup --language en
-anki-insights dedup --language id
-anki-insights dedup --language zh
+anki-insights dedup --deck "My Deck" --language fr --output-dir reports
 ```
 
-### Inversion
+### Python API
 
 ```python
-from anki_insights import Inverter, InvertConfig
+from anki_insights.deduplicate import dedup_texts
+from anki_insights.tokenizers import SpacyTokenizer
 
-config = InvertConfig(
-    anki_url="http://localhost:8765",
-    src_deck="Source",
-    tgt_deck="Target",
+result = dedup_texts(
+    ["Bonjour le monde", "Bonjour monde"],
+    tokenizer=SpacyTokenizer("fr_core_news_sm"),
 )
-Inverter(config).run()
+print(result.keep_ids, result.duplicate_ids)
 ```
+
+## Documentation
+
+See the docs folder for MkDocs-based documentation.
 
 ## Testing
 

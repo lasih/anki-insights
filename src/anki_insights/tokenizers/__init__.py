@@ -13,6 +13,11 @@ try:
 except ImportError:  # pragma: no cover
     OpenCC = None
 
+try:
+    from sudachipy import Dictionary, SplitMode
+except ImportError:  # pragma: no cover
+    Dictionary = None
+    SplitMode = None
 
 class Tokenizer(Protocol):
     def tokenize(self, text: str) -> Set[str]: ...
@@ -32,6 +37,8 @@ def build_tokenizer(language: str) -> Tokenizer:
         return SpacyTokenizer("es_core_news_sm")
     if normalized in {"en", "english"}:
         return SpacyTokenizer("en_core_web_sm")
+    if normalized in {"ja", "jp", "japanese"}:
+        return JapaneseTokenizer()
 
     raise ValueError(f"Unsupported language: {language}")
 
@@ -123,3 +130,66 @@ class MandarinTokenizer:
                 tokens.update(ch for ch in token if self._contains_chinese(ch))
 
         return tokens
+    
+class JapaneseTokenizer:
+    def __init__(self) -> None:
+        if Dictionary is None or SplitMode is None:
+            raise ImportError(
+                "SudachiPy is required for Japanese tokenization. "
+                "Install it with: pip install sudachipy sudachidict-core"
+            )
+
+        self._tokenizer = Dictionary().create()
+        self._split_mode = SplitMode.C
+
+    @staticmethod
+    def _is_japanese(char: str) -> bool:
+        code = ord(char)
+
+        return (
+            0x3040 <= code <= 0x309F or  # Hiragana
+            0x30A0 <= code <= 0x30FF or  # Katakana
+            0x4E00 <= code <= 0x9FFF    # Kanji
+        )
+
+    def _normalize(self, morpheme) -> str:
+        surface = morpheme.surface().strip()
+
+        if not surface:
+            return ""
+
+        if surface.isnumeric():
+            return ""
+
+        # Remove particles, auxiliary verbs and symbols
+        part_of_speech = morpheme.part_of_speech()
+
+        if part_of_speech[0] in {
+            "助詞",      # particles
+            "助動詞",    # auxiliary verbs
+            "補助記号",  # symbols
+        }:
+            return ""
+
+        if all(
+            not c.isalnum() and not self._is_japanese(c)
+            for c in surface
+        ):
+            return ""
+
+        normalized = morpheme.dictionary_form()
+
+        if normalized == "*":
+            normalized = surface
+
+        return normalized.lower()
+
+    def tokenize(self, text: str) -> Set[str]:
+        return {
+            normalized
+            for morpheme in self._tokenizer.tokenize(
+                text or "",
+                self._split_mode,
+            )
+            if (normalized := self._normalize(morpheme))
+        }

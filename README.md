@@ -4,7 +4,7 @@ Utilities for deduplicating and transforming Anki note collections with a simple
 
 ## Features
 
-- Deduplicate notes using language-aware tokenizers for English, French, Spanish, Indonesian, and Mandarin
+- Deduplicate notes using language-aware tokenizers for English, French, Spanish, Indonesian, Mandarin and Japanese
 - Run deduplication from the CLI or directly from Python
 - Export CSV reports and optional duplicate-tagging for Anki workflows
 - Invert notes between decks with backup snapshots

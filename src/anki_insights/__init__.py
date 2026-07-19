@@ -15,6 +15,7 @@ from .core.invert import InvertConfig, Inverter
 from .io.html_utils import normalize_whitespace, strip_html
 from .tokenizers import (
     IndonesianTokenizer,
+    JapaneseTokenizer,
     MandarinTokenizer,
     SpacyTokenizer,
     Tokenizer,
@@ -34,6 +35,7 @@ __all__ = [
     "Inverter",
     "IndonesianTokenizer",
     "MandarinTokenizer",
+    "JapaneseTokenizer",
     "SpacyTokenizer",
     "Tokenizer",
 ]

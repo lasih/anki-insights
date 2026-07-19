@@ -2,6 +2,7 @@ import pytest
 
 from anki_insights.tokenizers import (
     IndonesianTokenizer,
+    JapaneseTokenizer,
     MandarinTokenizer,
     build_tokenizer,
 )
@@ -39,3 +40,11 @@ def test_mandarin_tokenizer():
     tokens = tokenizer.tokenize("你好，世界")
     assert "你好" in tokens or "你" in tokens
     assert "世界" in tokens
+
+
+def test_japanese_tokenizer():
+    tokenizer = JapaneseTokenizer()
+    tokens = tokenizer.tokenize("私は日本語を勉強しています")
+    assert "日本語" in tokens
+    assert "勉強" in tokens
+    assert "する" in tokens

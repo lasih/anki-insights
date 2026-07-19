@@ -9,6 +9,8 @@ dependencies = [
     "spacy>=3.8.13",
     "jieba>=0.42.1",
     "opencc-python-reimplemented>=0.1.6",
+    "sudachipy>=0.6.10",
+    "sudachidict-core",    
 ]
 
 [tool.setuptools.packages.find]

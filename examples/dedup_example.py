@@ -20,7 +20,7 @@ def main() -> None:
         fh.write("order,note_id,status,text,tokens,new_tokens\n")
         for r in res.rows:
             fh.write(
-                f"{r['order']},{r['note_id']},{r['status']},\"{r['text']}\",\"{r['tokens']}\",\"{r['new_tokens']}\"\n"
+                f'{r["order"]},{r["note_id"]},{r["status"]},"{r["text"]}","{r["tokens"]}","{r["new_tokens"]}"\n'
             )
 
 

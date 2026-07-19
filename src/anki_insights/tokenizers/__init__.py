@@ -19,6 +19,7 @@ except ImportError:  # pragma: no cover
     Dictionary = None
     SplitMode = None
 
+
 class Tokenizer(Protocol):
     def tokenize(self, text: str) -> Set[str]: ...
 
@@ -130,7 +131,8 @@ class MandarinTokenizer:
                 tokens.update(ch for ch in token if self._contains_chinese(ch))
 
         return tokens
-    
+
+
 class JapaneseTokenizer:
     def __init__(self) -> None:
         if Dictionary is None or SplitMode is None:
@@ -147,9 +149,9 @@ class JapaneseTokenizer:
         code = ord(char)
 
         return (
-            0x3040 <= code <= 0x309F or  # Hiragana
-            0x30A0 <= code <= 0x30FF or  # Katakana
-            0x4E00 <= code <= 0x9FFF    # Kanji
+            0x3040 <= code <= 0x309F  # Hiragana
+            or 0x30A0 <= code <= 0x30FF  # Katakana
+            or 0x4E00 <= code <= 0x9FFF  # Kanji
         )
 
     def _normalize(self, morpheme) -> str:
@@ -165,16 +167,13 @@ class JapaneseTokenizer:
         part_of_speech = morpheme.part_of_speech()
 
         if part_of_speech[0] in {
-            "助詞",      # particles
-            "助動詞",    # auxiliary verbs
+            "助詞",  # particles
+            "助動詞",  # auxiliary verbs
             "補助記号",  # symbols
         }:
             return ""
 
-        if all(
-            not c.isalnum() and not self._is_japanese(c)
-            for c in surface
-        ):
+        if all(not c.isalnum() and not self._is_japanese(c) for c in surface):
             return ""
 
         normalized = morpheme.dictionary_form()

@@ -2,11 +2,10 @@ import pytest
 
 from anki_insights.tokenizers import (
     IndonesianTokenizer,
-    MandarinTokenizer,
     JapaneseTokenizer,
+    MandarinTokenizer,
     build_tokenizer,
 )
-from anki_insights.tokenizers import 
 
 
 def test_build_tokenizer_supports_french(monkeypatch):

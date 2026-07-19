@@ -163,16 +163,6 @@ class JapaneseTokenizer:
         if surface.isnumeric():
             return ""
 
-        # Remove particles, auxiliary verbs and symbols
-        part_of_speech = morpheme.part_of_speech()
-
-        if part_of_speech[0] in {
-            "助詞",  # particles
-            "助動詞",  # auxiliary verbs
-            "補助記号",  # symbols
-        }:
-            return ""
-
         if all(not c.isalnum() and not self._is_japanese(c) for c in surface):
             return ""
 
